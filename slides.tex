@@ -1,0 +1,53 @@
+\documentclass[ hyperref={colorlinks=true,filecolor=blue,linkcolor=blue,urlcolor=blue}]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{listings}
+
+\usepackage{beamerthemesplit}
+\setbeamertemplate{navigation symbols}{}
+\usetheme{esc}
+
+\lstdefinestyle{basic}{
+    captionpos=t,%
+    basicstyle=\footnotesize\ttfamily,%
+    numberstyle=\tiny,%
+    numbers=left,%
+    stepnumber=1,%
+    frame=single,%
+    showspaces=false,%
+    showstringspaces=false,%
+    showtabs=false,%
+    %
+    keywordstyle=\color{blue},%
+    identifierstyle=,%
+    commentstyle=\color{red}\large,%
+    stringstyle=\color{magenta}%
+}
+
+
+\author{Valentin H\"anel\\
+        valentin@cs.tu-berlin.de}
+\institute{Technische Universität Berlin \\
+Bernstein Center for Computational Neuroscience Berlin}
+
+\title{Profiling PyMVPA }
+\definecolor{gray}{rgb}{0.10,0.10,0.10}
+\date{May 2009}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+    \begin{figure}
+	    \includegraphics[scale=0.05]{BCCN_logo_berlin.pdf}
+	    \includegraphics[scale=0.14]{tu_logo.png}
+    \end{figure}
+\end{frame}
+
+\input{slides.wiki.tex}
+
+\end{document}

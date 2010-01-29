@@ -1,0 +1,192 @@
+== Introduction ==
+
+==== Outline ====
+
+\tableofcontents[currentsection]
+
+==== whoami ====
+
+* Valentin Haenel
+* Currently Masters Student in Berlin
+* Working as student assistant in the lab of Felix Wichmann
+* Did work on PyMVPA as part of a \textit{Lab Rotation}
+* Worked in the lab of John Dylan Haynes
+
+==== What work? ====
+
+* Compare the PyMVPA searchlight with Matlab
+* Matlab script is lab internal
+* A well defined algorithm should be easy to compare
+* Compare for correctness and speed
+* Use a dataset with known results
+
+==== Dataset ====
+
+<[block]{Dataset came from:}
+S.Bode and J.D. Haynes. Decoding sequential stages of task preperation in the human brain.\\
+''Neuroimage'', 45(2):606-613, Apr 2009
+[block]>
+
+* Finite Impulse Response (FIR) Betas
+* Linear C SVM, C = 1
+* 4-Fold Crossvalidation
+* Searchlight radius: 4 voxels/12 mm
+
+==== Initial Results ====
+
+One subject, all 8 FIR Timebins:
+
+* Accuracy maps $99.99\%$ equal
+* Matlab + SPM  $\approx$ 22 minutes
+* PyMVPA $\approx$ 2 Hours 43 minutes
+
+* Cluster Node
+* 2 x Dual Core Athlon Opteron 2220
+* 16 GB of Ram
+* Debian 5.0 (Lenny), updated April 2009
+
+== Timing and Improvements ==
+
+==== Profiling ====
+
+* Used standard profiling tools: cProfile and pstats
+* \texttt{python -m cProfile -o runprof6 analysis.py}
+* Sort stats using option: \texttt{time}
+* Looking at callees and callers can be useful
+* Try to get a feel first
+* Output will not fit on the slides, show in a shell instead
+
+* Post mortem reconstruction of the process
+* Forgot to annotate the session with commit sha-1 :-(
+
+==== runprof1 - Comments ====
+
+* Probably done on a single FIR timebin
+* \texttt{\_svm.py:179(convert2SVMNode)} is obvious
+* Thus: look at that function
+* We see lots of unnecessary appends
+* So lets fix something easy first
+
+==== Commit 1 - 8d9237d ====
+
+* Optimizations at the python level
+* Factor out the appends
+* introduce
+** constructor
+** \texttt{range} function
+** list comprehension
+
+==== runprof2 - Comments ====
+
+* Probably done on a single FIR timebin
+* The \texttt{append} method has disappeared
+* This is great but the original bottleneck is still present
+* So lets try something more radical...
+
+==== Commit 2 - 6fd8bae ====
+
+* Tricky optimization involving SWIG wrapper
+* Move loops from python to C
+* Make use of the Python C API
+
+==== runprof3 - Comments ====
+
+* Probably done on a single FIR timebin
+* All of the SVM stuff is gone
+* However we see the following
+** mask.py:216(isValidInId)
+** mask.py:221(getOutId)
+** support.py:306(isInVolume)
+* Some intelligent guesswork leads us to believe that this might be caused by the searchlight algorithm
+
+==== Commit 3 - origin/val/new-sl ====
+
+* Unfortunately still unmerged - maybe this can be done during the workshop
+* Basic idea is to cache the searchlights when operating on FIR datasets
+* The assumption is that each dataset in a list of datasets came from the same brain
+* Hence no need to recompute the searchlights every time
+* Diff is slightly more involved so will not be presented here
+
+==== runprof4 - comments ====
+
+* Probably done on all 8 timebins
+* We now see that our guesswork was fruitfull
+* Most references to \texttt{mask.py} and \texttt{support.py} have dissapeared
+* We see the infamous \texttt{state.py:306(\_\_getattribute\_\_)} turn up.
+* This was the last real improvement, runprof5 and runprof6 don't make real gain
+
+==== Commit 4 - 7de1069 ====
+
+* Instead of converting our ndarray to a list, we just pass the ndarray directly
+* Make use of Numpy C API
+
+==== runprof5 - comments ====
+
+* Probably done on all 8 timebins
+* \texttt{\{method 'tolist' of 'numpy.ndarray' objects\}} Has disappeared.
+
+==== Commit 5 - d8490ad ====
+
+* Remove a defensive deepcopy only needed when sorting
+* Just noticed: searchlight should be adapted to use this (!)
+* Just noticed: could be improved further
+
+==== runprof6 - comments ====
+
+* Probably done on all 8 timebins
+* We see that \texttt{copy.py:144(deepcopy)} has disappeared.
+* \texttt{state.py} now holds the top 5 slots in the profiler output
+* I guess optimizing this would be beneficial to all of PyMVPA
+* The question is just how to do it?
+* Suggestion: use property injection to do the delegation
+
+==== Some last words on timing ====
+
+\begin{tabular}{ l l  }
+description                    &  time                              \\      
+No improvements                &  2 hrs 43 mins and 27 secs \\ 
+No improvements WITH -O        &  2 hrs 5  mins and 44 secs \\ 
+New Searchlight                &  2 hrs 10 mins and 28 secs \\ 
+New Searchlight WITH -O        &  1 hrs 28 mins and 26 secs \\  
+New LIBSVM Wrapper             &  1 hrs 40 mins and 24 secs \\ 
+New LIBSVM Wrapper WITH -O     &  1 hrs 34 mins and 26 secs \\ 
+Searchlight + LIBSVM           &  0 hrs 58 mins and 27 secs \\  
+Searchlight + LIBSVM WITH -O   &  0 hrs 52 mins and 18 secs \\ 
+\end{tabular}
+
+==== LIBSVM Wrapper ====
+
+* I understand that its from upstream?
+* Does it make sense to backpropagate/merge/fork/separate?
+* MDP uses SVMs too? 
+* Need for a PyLIBSVM project? (!)
+
+== Conclusions ==
+ 
+==== The Pains and Perils of Optimization ====
+
+<[block]{Common saying amongst Pythonistas:}
+First get it right... then make it fast!
+[block]>
+
+\hspace{1cm}
+
+<[block]{Quoting Donald Knuth, author of}
+Premature Optimization is the root of all evil. 
+[block]>
+
+\hspace{1cm}
+
+<[block]{Quote from the PyMVPA Mailinglist}
+[...]in our craving for being generic we sacrificed \\
+quite a bit in terms of the performance.[...]
+[block]>
+
+==== Conclusion ====
+
+* Look for spots of maximum reward with minimum gain
+* Its always an iterative process, patience is a virtue
+* Optimize only what you need
+* Use the right tools
+* Measure your success
+
