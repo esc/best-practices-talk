@@ -21,4 +21,4 @@ clean:
 	-rm -vf *.{toc,snm,log,dvi,aux,out,nav,vrb}
 
 distclean: clean
-	-rm -vf $(base).pdf $(base)-*.tex
+	-rm -vf $(base).pdf $(base).wiki.tex
