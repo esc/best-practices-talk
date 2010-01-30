@@ -153,19 +153,21 @@ Make small iterations
 This should all happen within one coding session, for example an afternoon.
 
 
-(If you can't make this happen, at least write the test after you wrote the code...)
+\tiny{(If you can't make this happen, at least write the test after you wrote the code...)}
 
 ===== What is a unit? ====
 
-* Units are smallish chunks of code
+* The smallest possible testable part of an application.
+* In python this is a function or method
 * Examples:
 ** function to compute the euclidian distance
 ** decimal to binary converter
-* I always think of them as the bricks of lego i write for myself
+** sort function
 
 ==== Benefits of unit tests ====
 
 * Provide additional confidence that your code and design works as intended
+* Ease integration testing, since we are confident the individual components work
 * Make it much easier to modify the code, and be confident that you didn't break it
 * Provide an example of how to use your code to other developers
 * If your code is hard to test, this suggests a bad design
