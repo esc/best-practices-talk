@@ -4,189 +4,222 @@
 
 \tableofcontents[currentsection]
 
-==== whoami ====
+==== Modern programming practices and science ====
 
-* Valentin Haenel
-* Currently Masters Student in Berlin
-* Working as student assistant in the lab of Felix Wichmann
-* Did work on PyMVPA as part of a \textit{Lab Rotation}
-* Worked in the lab of John Dylan Haynes
+* Many of us have to routinely write computer programs
+* but few of us have been trained to do so
+* Good programming practices can make a lot of difference
+* Development methodologies have been introduced for the development of commercial software, but we can learn a lot from them about making science
 
-==== What work? ====
+==== Scenarios ====
 
-* Compare the PyMVPA searchlight with Matlab
-* Matlab script is lab internal
-* A well defined algorithm should be easy to compare
-* Compare for correctness and speed
-* Use a dataset with known results
+*  Lone scientist, coding up a model or data  analysis tool for a research project
+*  Small team of scientists, working on a  common library
+*  The bottleneck is developing speed, not  execution speed
+*  Need to try out different ideas:
+*  rapid prototyping, re-use code, identify common patterns and use known solutions
 
-==== Dataset ====
+==== Requirements for scientific programming ====
 
-<[block]{Dataset came from:}
-S.Bode and J.D. Haynes. Decoding sequential stages of task preperation in the human brain.\\
-''Neuroimage'', 45(2):606-613, Apr 2009
+* {Every scientific result (especially if important) should be independently reproduced at least internally before publication (DFG, 1999)}
+** Translation: there must be guarantees that the source code works as advertised (testing frameworks, pair programming)
+* Increasing pressure for making the source code used in publications available online (especially for theoretical papers)
+** Translation: you shouldn’t be embarrassed of publishing your code
+** Your code must be readable and easily reusable
+
+== Development methodologies ==
+
+==== Outline ====
+
+\tableofcontents[currentsection]
+
+
+==== What is a development methodology ====
+
+<[block]{Wikipedia Definition}
+refers to the framework that is used to structure, plan, and control the process of developing an information system.
 [block]>
 
-* Finite Impulse Response (FIR) Betas
-* Linear C SVM, C = 1
-* 4-Fold Crossvalidation
-* Searchlight radius: 4 voxels/12 mm
+Help answer the following questions:
 
-==== Initial Results ====
+* How far ahead should we plan?
+* What should we prioritize?
+* When do we write tests and documentation?
 
-One subject, all 8 FIR Timebins:
+Consist of:
 
-* Accuracy maps $99.99\%$ equal
-* Matlab + SPM  $\approx$ 22 minutes
-* PyMVPA $\approx$ 2 Hours 43 minutes
+* A philosophy that giverns the style and approach towards development
+* A set of tools and models to support the particular approach
 
-* Cluster Node
-* 2 x Dual Core Athlon Opteron 2220
-* 16 GB of Ram
-* Debian 5.0 (Lenny), updated April 2009
+==== The waterfall model, Royce 1970 ====
 
-== Timing and Improvements ==
+<[figure][ht]
+    <<<Waterfall_model.png, scale=0.25>>>
+[figure]>
 
-==== Profiling ====
+* Iterative process
+* But: very heavyweight
+* Not cost efficient
 
-* Used standard profiling tools: cProfile and pstats
-* \texttt{python -m cProfile -o runprof6 analysis.py}
-* Sort stats using option: \texttt{time}
-* Looking at callees and callers can be useful
-* Try to get a feel first
-* Output will not fit on the slides, show in a shell instead
+\tiny{This work is licensed under the Creative Commons Attribution 3.0 License. (c) Paul Smith}
 
-* Post mortem reconstruction of the process
-* Forgot to annotate the session with commit sha-1 :-(
+==== The spiral model, Beuss 1980 ====
 
-==== runprof1 - Comments ====
+<[figure][ht]
+    <<<Spiral_model.png, scale=0.25>>>
+[figure]>
 
-* Probably done on a single FIR timebin
-* \texttt{\_svm.py:179(convert2SVMNode)} is obvious
-* Thus: look at that function
-* We see lots of unnecessary appends
-* So lets fix something easy first
+* Better, since the ietration cycles are smaller
+* Still quite heavyweight and cumbersome
 
-==== Commit 1 - 8d9237d ====
+\tiny{This work is public domain. (c) Marc Troy, modified by Wikipedia User Conan.}
 
-* Optimizations at the python level
-* Factor out the appends
-* introduce
-** constructor
-** \texttt{range} function
-** list comprehension
+==== Xtreme Programming, 1999 Kent Beck, Ward Cunningham, and Ron Jeffries ====
 
-==== runprof2 - Comments ====
+<[figure][ht]
+    <<<Xp-loop.png, scale=0.25>>>
+[figure]>
 
-* Probably done on a single FIR timebin
-* The \texttt{append} method has disappeared
-* This is great but the original bottleneck is still present
-* So lets try something more radical...
+* Tight integration cycles
+* Very adaptive method
+* Relies heavily on testing
 
-==== Commit 2 - 6fd8bae ====
+\tiny{This work is licensed under the Creative Commons Attribution 3.0 License. (c) Marcel Douwe Dekker}
 
-* Tricky optimization involving SWIG wrapper
-* Move loops from python to C
-* Make use of the Python C API
+==== Agile development ====
 
-==== runprof3 - Comments ====
+* Agile methods grew out of their iterative predecessors
+* Generic name for set of more specific paradigms
+* Most influential eXtreme Programming (XP), 
+* Set of best practices, from design of software to development to maintenance
+* Particularly suited for small teams ( less than 10 people) facing  unpredictable or rapidly changing requirements (sounds familiar?)
 
-* Probably done on a single FIR timebin
-* All of the SVM stuff is gone
-* However we see the following
-** mask.py:216(isValidInId)
-** mask.py:221(getOutId)
-** support.py:306(isInVolume)
-* Some intelligent guesswork leads us to believe that this might be caused by the searchlight algorithm
+==== The agile manifesto ====
 
-==== Commit 3 - origin/val/new-sl ====
+We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:
 
-* Unfortunately still unmerged - maybe this can be done during the workshop
-* Basic idea is to cache the searchlights when operating on FIR datasets
-* The assumption is that each dataset in a list of datasets came from the same brain
-* Hence no need to recompute the searchlights every time
-* Diff is slightly more involved so will not be presented here
+* Individuals and interactions over processes and tools
+* Working software over comprehensive documentation
+* Customer collaboration over contract negotiation
+* Responding to change over following a plan
 
-==== runprof4 - comments ====
+That is, while there is value in the items on the right, we value the items on the left more.
 
-* Probably done on all 8 timebins
-* We now see that our guesswork was fruitfull
-* Most references to \texttt{mask.py} and \texttt{support.py} have dissapeared
-* We see the infamous \texttt{state.py:306(\_\_getattribute\_\_)} turn up.
-* This was the last real improvement, runprof5 and runprof6 don't make real gain
+== Best Practices ==
 
-==== Commit 4 - 7de1069 ====
+==== Outline ====
 
-* Instead of converting our ndarray to a list, we just pass the ndarray directly
-* Make use of Numpy C API
+\tableofcontents[currentsection]
 
-==== runprof5 - comments ====
+==== What should i use? ====
 
-* Probably done on all 8 timebins
-* \texttt{\{method 'tolist' of 'numpy.ndarray' objects\}} Has disappeared.
+* All agile methods together suggest an overwhelming number of ideas
+* In practice you will not use all (even most)
+* Experiment to figure out what works for you
+* However, some are '''strongly''' recommended
 
-==== Commit 5 - d8490ad ====
+=== Unit Testing ===
 
-* Remove a defensive deepcopy only needed when sorting
-* Just noticed: searchlight should be adapted to use this (!)
-* Just noticed: could be improved further
+==== Unit Tests ====
 
-==== runprof6 - comments ====
+* Today, any software without unit tests is considered ''legacy software''
+* Tests the ''units'' with a predefined input, to ascertain they return the expected output
+* Usually automated so that all unit tests can be executed with a single command
 
-* Probably done on all 8 timebins
-* We see that \texttt{copy.py:144(deepcopy)} has disappeared.
-* \texttt{state.py} now holds the top 5 slots in the profiler output
-* I guess optimizing this would be beneficial to all of PyMVPA
-* The question is just how to do it?
-* Suggestion: use property injection to do the delegation
+==== Test driven development ====
 
-==== Some last words on timing ====
+Make small iterations
 
-\begin{tabular}{ l l  }
-description                    &  time                              \\      
-No improvements                &  2 hrs 43 mins and 27 secs \\ 
-No improvements WITH -O        &  2 hrs 5  mins and 44 secs \\ 
-New Searchlight                &  2 hrs 10 mins and 28 secs \\ 
-New Searchlight WITH -O        &  1 hrs 28 mins and 26 secs \\  
-New LIBSVM Wrapper             &  1 hrs 40 mins and 24 secs \\ 
-New LIBSVM Wrapper WITH -O     &  1 hrs 34 mins and 26 secs \\ 
-Searchlight + LIBSVM           &  0 hrs 58 mins and 27 secs \\  
-Searchlight + LIBSVM WITH -O   &  0 hrs 52 mins and 18 secs \\ 
-\end{tabular}
+* Write the test for a unit first
+* Then write the unit
+* Lastly make sure all tests pass
 
-==== LIBSVM Wrapper ====
+This should all happen within one coding session, for example an afternoon.
 
-* I understand that its from upstream?
-* Does it make sense to backpropagate/merge/fork/separate?
-* MDP uses SVMs too? 
-* Need for a PyLIBSVM project? (!)
+===== What is a unit? ====
 
-== Conclusions ==
- 
-==== The Pains and Perils of Optimization ====
+* Units are smallsh chunks of code
+* Examples:
+** function to compute the euclidian distance
+** decimal to binary converter
+* I always think of them as the bricks of lego i write for myself
 
-<[block]{Common saying amongst Pythonistas:}
-First get it right... then make it fast!
-[block]>
+==== Benefits of unit tests ====
 
-\hspace{1cm}
+* Provide additional confidence that your code works as intended
+* Make it much easier to modify the code, and be confident that you didn't break it
+* Provide an example of how to use your code to other developers
+* If your code is hard to test, this suggests a bad design
 
-<[block]{Quoting Donald Knuth, author of}
-Premature Optimization is the root of all evil. 
-[block]>
+==== Examples of unit tests ====
 
-\hspace{1cm}
+==== Examples of testing frameworks ====
 
-<[block]{Quote from the PyMVPA Mailinglist}
-[...]in our craving for being generic we sacrificed \\
-quite a bit in terms of the performance.[...]
-[block]>
+* 'unittest'
+* 'nosetest'
+* 'doctest'
 
-==== Conclusion ====
 
-* Look for spots of maximum reward with minimum gain
-* Its always an iterative process, patience is a virtue
-* Optimize only what you need
-* Use the right tools
-* Measure your success
+==== Dealing with bugs ====
 
+* Write a unit test to expose the bug
+* Fix the code, and ensure the test passes
+* Use the test to identify if the bug reappears
+
+==== Dealing with probabalistic code ====
+
+* Use those toy examples as tests
+* Test all units of the algorithm
+* Consider fixing the seed for your PRNG
+
+=== Version Control ===
+
+==== What is version control ====
+
+* Toolkit to track modifications of source code
+
+* Two main paradigms
+** Centralised
+** Distributed
+
+* How often do you ask yourself the question: "Help my code worked yesterday, but i can't recall what i changed!"
+
+==== Benefits of version control ====
+
+* Revert changes without effort
+* Document developer effort
+* Easy collaboration across the globe
+* Synchronisation
+
+==== Centralised version control ====
+
+==== Distributed version control ====
+
+
+===  Other techniques ===
+
+==== Pair Programming ====
+
+* Two developers, one computer
+* Two roles: driver and navigator
+* Driver sits at keyboard
+* Navigator observers and instructs
+* Switch roles every so often
+
+==== A note about Optimization ====
+
+==== Refactor all the time ====
+
+* Don't live with broken windows
+* If you find yourself copy and pasting code for the second time, refactor and make a function/method
+* Simplify your code
+* Coding is an itertaive process
+* However, don't refactor if its not itching, instead code only what you need
+
+==== Other ideas ====
+
+* Use a build system
+* Adhere to coding conventions, or use a consisten style
+* Prototype ideas
+* Use automated testing, and collect statistics
+* Using a bug tracker
