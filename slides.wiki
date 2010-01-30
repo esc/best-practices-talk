@@ -169,7 +169,7 @@ This should all happen within one coding session, for example an afternoon.
 ==== Dealing with probabalistic code ====
 
 * Use those toy examples as tests
-* Test all units of the algorithm
+* Test all ''units'' of the algorithm
 * Consider fixing the seed for your PRNG
 
 === Version Control ===
@@ -192,9 +192,27 @@ This should all happen within one coding session, for example an afternoon.
 * Synchronisation
 
 ==== Centralised version control ====
+<[figure][ht]
+    <<<centralised.png>>>
+[figure]>
 
 ==== Distributed version control ====
+<[figure][ht]
+    <<<centralised.png, scale=0.5>>>
+[figure]>
+<[figure][ht]
+    <<<distributed1.png, scale=0.5>>>
+[figure]>
+<[figure][ht]
+    <<<distributed2.png, scale=0.5>>>
+[figure]>
 
+==== What will we use? ====
+
+* Distributed is more flexible
+* Centralised has a shallow learning curve
+* Hence we will teach you to use the de-fact centralised standard:
+* @subversion@
 
 ===  Other techniques ===
 
@@ -207,6 +225,9 @@ This should all happen within one coding session, for example an afternoon.
 * Switch roles every so often
 
 ==== A note about Optimization ====
+
+* Only optimize if its absolutely necessary
+* Only optimize your bottlenecks
 
 ==== Refactor all the time ====
 
