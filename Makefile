@@ -18,7 +18,7 @@ wiki2beamer:
 	ln -s wiki2beamer-0.8.1 wiki2beamer
 
 clean:
-	-rm -vf $(base).{toc,snm,log,dvi,aux,out,nav,vrb}
+	-rm -vf $(base).{toc,snm,log,aux,out,nav}
 
 distclean: clean
 	-rm -vf $(base).pdf $(base).wiki.tex

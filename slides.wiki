@@ -124,7 +124,9 @@ That is, while there is value in the items on the right, we value the items on t
 * All agile methods together suggest an overwhelming number of ideas
 * In practice you will not use all (even most)
 * Experiment to figure out what works for you
-* However, some are '''strongly''' recommended
+* However, some are '''strongly''' recommended, and we will focus on two today:
+** Unit Testing
+** Version Control
 * Its best to adopt these early on, since bad habits will be very hard to break
 
 === Unit Testing ===
@@ -134,6 +136,11 @@ That is, while there is value in the items on the right, we value the items on t
 * Today, any software without unit tests is considered ''legacy software''
 * Tests the ''units'' with a predefined input, to ascertain they return the expected output
 * Usually automated so that all unit tests can be executed with a single command
+
+Tests serve to:
+* check code works
+* check design works
+* catch regression
 
 ==== Test driven development ====
 
@@ -145,6 +152,9 @@ Make small iterations
 
 This should all happen within one coding session, for example an afternoon.
 
+
+(If you can't make this happen, at least write the test after you wrote the code...)
+
 ===== What is a unit? ====
 
 * Units are smallish chunks of code
@@ -155,7 +165,7 @@ This should all happen within one coding session, for example an afternoon.
 
 ==== Benefits of unit tests ====
 
-* Provide additional confidence that your code works as intended
+* Provide additional confidence that your code and design works as intended
 * Make it much easier to modify the code, and be confident that you didn't break it
 * Provide an example of how to use your code to other developers
 * If your code is hard to test, this suggests a bad design
@@ -197,6 +207,12 @@ if __name__ == "__main__":
     unittest.main()
 [code]>
 
+==== What makes a good test? ====
+
+* independent (of each other, and of user input)
+* repeatable
+* self-contained
+
 ==== Dealing with bugs ====
 
 * Isolate the bug (preferably with a debugger)
@@ -204,11 +220,19 @@ if __name__ == "__main__":
 * Fix the code, and ensure the test passes
 * Use the test to identify if the bug reappears
 
-==== Dealing with probabalistic code ====
+==== Stuff thats harder to test ====
 
+Probabalistic code
 * Use those toy examples as tests
 * Test all ''units'' of the algorithm
 * Consider fixing the seed for your PRNG
+
+Hardware
+* use a mock up that behaves like the hardware should
+
+Plots
+* ???
+
 
 === Version Control ===
 
