@@ -6,26 +6,34 @@
 
 ==== Modern programming practices and science ====
 
-* Many of us have to routinely write computer programs
-* but few of us have been trained to do so
+* Most scientists have to write computer programs on a regular basis
+* Not many have been trained to do so
+* Its not just about the raw functionality
 * Good programming practices can make a lot of difference
 * Development methodologies have been introduced for the development of commercial software, but we can learn a lot from them about making science
 
 ==== Scenarios ====
 
-*  Lone scientist, coding up a model or data  analysis tool for a research project
-*  Small team of scientists, working on a  common library
-*  The bottleneck is developing speed, not  execution speed
+*  Lone student/sceintist
+** coding up a model
+** implementing a data analysis tool
+*  Small team of scientists, working on a common library
+*  The bottleneck is developing speed, not execution speed
 *  Need to try out different ideas:
-*  rapid prototyping, re-use code, identify common patterns and use known solutions
+** rapid prototyping
+** re-use code
+** identify common patterns
+** use known solutions
 
 ==== Requirements for scientific programming ====
 
-* {Every scientific result (especially if important) should be independently reproduced at least internally before publication (DFG, 1999)}
-** Translation: there must be guarantees that the source code works as advertised (testing frameworks, pair programming)
+<[block]{DFG 1999}
+Every scientific result (especially if important) should be independently reproduced at least internally before publication.
+[block]>
+* Translation: there must be guarantees that the source code works as advertised (testing frameworks, pair programming)
 * Increasing pressure for making the source code used in publications available online (especially for theoretical papers)
-** Translation: you shouldn’t be embarrassed of publishing your code
-** Your code must be readable and easily reusable
+* You shouldn’t be embarrassed of publishing your code, more eyes = less bugs
+* Your code must be readable and easily reusable (but thats actually quite hard)
 
 == Development methodologies ==
 
@@ -48,7 +56,7 @@ Help answer the following questions:
 
 Consist of:
 
-* A philosophy that giverns the style and approach towards development
+* A philosophy that governs the style and approach towards development
 * A set of tools and models to support the particular approach
 
 ==== The waterfall model, Royce 1970 ====
@@ -69,12 +77,12 @@ Consist of:
     <<<Spiral_model.png, scale=0.25>>>
 [figure]>
 
-* Better, since the ietration cycles are smaller
+* Better, since the iteration cycles are smaller
 * Still quite heavyweight and cumbersome
 
 \tiny{This work is public domain. (c) Marc Troy, modified by Wikipedia User Conan.}
 
-==== Xtreme Programming, 1999 Kent Beck, Ward Cunningham, and Ron Jeffries ====
+==== Xtreme Programming, 1999 Beck, Cunningham, and Jeffries ====
 
 <[figure][ht]
     <<<Xp-loop.png, scale=0.25>>>
@@ -90,8 +98,8 @@ Consist of:
 
 * Agile methods grew out of their iterative predecessors
 * Generic name for set of more specific paradigms
-* Most influential eXtreme Programming (XP), 
-* Set of best practices, from design of software to development to maintenance
+* XP is the most prominent example
+* Can be understood as a set of ''best practices''
 * Particularly suited for small teams ( less than 10 people) facing  unpredictable or rapidly changing requirements (sounds familiar?)
 
 ==== The agile manifesto ====
@@ -117,6 +125,7 @@ That is, while there is value in the items on the right, we value the items on t
 * In practice you will not use all (even most)
 * Experiment to figure out what works for you
 * However, some are '''strongly''' recommended
+* Its best to adopt these early on, since bad habits will be very hard to break
 
 === Unit Testing ===
 
@@ -131,14 +140,14 @@ That is, while there is value in the items on the right, we value the items on t
 Make small iterations
 
 * Write the test for a unit first
-* Then write the unit
+* Then write the unit itself
 * Lastly make sure all tests pass
 
 This should all happen within one coding session, for example an afternoon.
 
 ===== What is a unit? ====
 
-* Units are smallsh chunks of code
+* Units are smallish chunks of code
 * Examples:
 ** function to compute the euclidian distance
 ** decimal to binary converter
@@ -151,17 +160,46 @@ This should all happen within one coding session, for example an afternoon.
 * Provide an example of how to use your code to other developers
 * If your code is hard to test, this suggests a bad design
 
-==== Examples of unit tests ====
+==== How to test ? ====
 
-==== Examples of testing frameworks ====
+* Test with simple (but general) cases, using hard coded solutions
+** @sum(3,5) = 5@
 
-* 'unittest'
-* 'nosetest'
-* 'doctest'
+* Test general routines with specific ones
+** test @polyomial\_expansion(data, degree)@ with @quadratic\_expansion(data)@
 
+* Test special or boundary cases
+** test @has\_prefix(string, pfx)@ for @pfx=""@
+
+* Test that the code raises meaningful errors when wrong data is passed
+** Relevant when writing scientific libraries
+
+==== Example of unit tests ====
+
+<[code]
+import numpy
+import unittest
+
+def euclidian_distance(x, y):
+    return numpy.sqrt(sum((x - y)**2))
+
+class TestEuclid(unittest.TestCase):
+    def test_scalar(self):
+        self.assertEqual(
+            euclidian_distance(
+            numpy.array(\[2\]), numpy.array(\[3\])),1.0)
+    def test_vector(self):
+        self.assertEqual(
+            euclidian_distance(
+            numpy.array(\[2,2\]), numpy.array(\[5,6\])), 5.0)
+
+if __name__ == "__main__":
+    unittest.main()
+[code]>
 
 ==== Dealing with bugs ====
 
+* Isolate the bug (preferably with a debugger)
 * Write a unit test to expose the bug
 * Fix the code, and ensure the test passes
 * Use the test to identify if the bug reappears
@@ -224,23 +262,40 @@ This should all happen within one coding session, for example an afternoon.
 * Navigator observers and instructs
 * Switch roles every so often
 
-==== A note about Optimization ====
+==== Optimization ====
 
-* Only optimize if its absolutely necessary
+* Readable code is usually better than fast code
+* Only optimize if its absolutely necessary, seriously
 * Only optimize your bottlenecks
+* and identify these using a profiler
 
-==== Refactor all the time ====
+Optimizations Strategies for Scientific Python
+* replace for loops with arry multiplication
+* implement bottlenecks in Cython
+* parallelize you application and run it on a cluster
 
-* Don't live with broken windows
-* If you find yourself copy and pasting code for the second time, refactor and make a function/method
-* Simplify your code
-* Coding is an itertaive process
-* However, don't refactor if its not itching, instead code only what you need
+==== Refactoring ====
+
+* Re-organisation of your code without changing its function:
+** remove duplicates by creating functions and methods
+** break large code blocks into functions
+** rename and restructure code to increase readability and reveal intention
+
+* Always refactor one step at a time, and make sure the code still works in between
+* Learn how to use refactoring tools to make your life easier
+* Do it continously for maximum effect
+
+==== Coding Style ====
+
+* Adhere to coding conventions (PEP8)
+* OR use a consisten style
+* Use automated tools to ensure adherence
 
 ==== Other ideas ====
 
 * Use a build system
-* Adhere to coding conventions, or use a consisten style
-* Prototype ideas
+* If you are unsure how to do something build a prototype to check feasability
 * Use automated testing, and collect statistics
-* Using a bug tracker
+* Use a bug tracker
+
+
