@@ -25,43 +25,40 @@
 
 \tableofcontents[currentsection]
 
-==== Modern programming practices and science ====
+==== Motivation ====
 
-* Most scientists have to write computer programs on a regular basis
+* Most (Almost All?) scientists write computer programs on a regular basis
 * Not many have been trained to do so
-* Its not just about the raw functionality
-* Good programming practices can make a lot of difference
-* Development methodologies have been introduced for the development of commercial software, but we can learn a lot from them about making science
+* Often its not just about the raw functionality
+* Best practices can make a lot of difference
+* Development methodologies are established in the software engineer industry
+* We can learn a lot from them to improve our coding skills 
 
 ==== Scenarios ====
 
 *  Lone student/sceintist
-** coding up a model
-** implementing a data analysis tool
 *  Small team of scientists, working on a common library
-*  The bottleneck is developing speed, not execution speed
-*  Need to try out different ideas:
-** rapid prototyping
-** re-use code
-** identify common patterns
-** use known solutions
+*  The bottleneck is usually speed of development
+*  '''Not''' execution speed
 
-==== Requirements for scientific programming ====
+*  Often need to try out different ideas quickly:
+** rapid prototyping of a proposed algorithm
+** re-use/modify existing code
 
-<[block]{DFG 1999}
-Every scientific result (especially if important) should be independently reproduced at least internally before publication.
-[block]>
-* Translation: there must be guarantees that the source code works as advertised (testing frameworks, pair programming)
-* Increasing pressure for making the source code used in publications available online (especially for theoretical papers)
+==== Requirements ====
+
+* Every scientific result (especially if important) should be independently reproduced at least internally before publication. (DFG 1999)
+* Hence there must be checks to ensure the code works as advertised
+
+* Increasing pressure for making the source code used in publications available online (especially for theoretical/modelling papers)
 * You shouldn’t be embarrassed of publishing your code, more eyes = less bugs
-* Your code must be readable and easily reusable (but thats actually quite hard)
+* Your code should be readable and easily reusable (but thats actually quite hard)
 
 == Development methodologies ==
 
 ==== Outline ====
 
 \tableofcontents[currentsection]
-
 
 ==== What is a development methodology ====
 
