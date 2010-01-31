@@ -133,13 +133,7 @@ Consist of:
 * Can be understood as a set of ''best practices''
 * Particularly suited for small teams ( less than 10 people) facing  unpredictable or rapidly changing requirements (sounds familiar?)
 
-== Best Practices ==
-
-==== Outline ====
-
-\tableofcontents[currentsection]
-
-==== What should i use? ====
+==== What should I use? ====
 
 * All agile methods together suggest an overwhelming number of ideas
 * In practice you will not use all (even most)
@@ -149,15 +143,21 @@ Consist of:
 ** Version Control
 * Its best to adopt these early on, since bad habits will be very hard to break once established
 
+
+== Best Practices ==
+
+==== Outline ====
+
+\tableofcontents[currentsection]
+
 === Unit Testing ===
 
 ==== Unit Tests ====
 
-
-
-* Today, any software without unit tests is considered ''legacy software''
-* Tests the ''units'' with a predefined input, to ascertain they return the expected output
-* Usually automated so that all unit tests can be executed with a single command
+<[block]{Definition of a ''Unit''}
+* The smallest testable piece of code
+* A function or a method
+[block]>
 
 Tests serve to:
 * check code works
@@ -166,33 +166,22 @@ Tests serve to:
 
 ==== Test driven development ====
 
-Make small iterations
-
+<[block]{Make small iterations of:}
 * Write the test for a unit first
 * Then write the unit itself
 * Lastly make sure all tests pass
+[block]>
 
-This should all happen within one coding session, for example an afternoon.
-
+* This should all happen within one coding session
 
 \tiny{(If you can't make this happen, at least write the test after you wrote the code...)}
 
-===== What is a unit? ====
+==== Additional benefits ====
 
-* The smallest possible testable part of an application.
-* In python this is a function or method
-* Examples:
-** function to compute the euclidian distance
-** decimal to binary converter
-** sort function
-
-==== Benefits of unit tests ====
-
-* Provide additional confidence that your code and design works as intended
-* Ease integration testing, since we are confident the individual components work
-* Make it much easier to modify the code, and be confident that you didn't break it
-* Provide an example of how to use your code to other developers
-* If your code is hard to test, this suggests a bad design
+* Ease integration and system testing 
+* Much easier to modify code without breaking whats already there
+* Provide examples of how to use code
+* If your code is hard to test, this might suggests a bad design
 
 ==== How to test ? ====
 
@@ -205,36 +194,15 @@ This should all happen within one coding session, for example an afternoon.
 * Test special or boundary cases
 ** test @has\_prefix(string, pfx)@ for @pfx=""@
 
-* Test that the code raises meaningful errors when wrong data is passed
+* Test that meaningful error messages are raised upon corrupt input
 ** Relevant when writing scientific libraries
 
-==== Example of unit tests ====
-
-<[code]
-import numpy
-import unittest
-
-def euclidian_distance(x, y):
-    return numpy.sqrt(sum((x - y)**2))
-
-class TestEuclid(unittest.TestCase):
-    def test_scalar(self):
-        self.assertEqual(
-            euclidian_distance(
-            numpy.array(\[2\]), numpy.array(\[3\])),1.0)
-    def test_vector(self):
-        self.assertEqual(
-            euclidian_distance(
-            numpy.array(\[2,2\]), numpy.array(\[5,6\])), 5.0)
-
-if __name__ == "__main__":
-    unittest.main()
-[code]>
+(There will be some more concrete example in the second part.)
 
 ==== What makes a good test? ====
 
 * independent (of each other, and of user input)
-* repeatable
+* repeatable (i.e. deterministic)
 * self-contained
 
 ==== Dealing with bugs ====
@@ -247,16 +215,22 @@ if __name__ == "__main__":
 ==== Stuff thats harder to test ====
 
 Probabalistic code
-* Use those toy examples as tests
-* Test all ''units'' of the algorithm
-* Consider fixing the seed for your PRNG
+* Use toy examples as validation
+* Test all ''units'' of your algorithm
+* Consider fixing the seed for your pseudo random number generator
 
 Hardware
 * use a mock up that behaves like the hardware should
 
 Plots
-* ???
+* (any creative ideas welcome)
 
+==== Some last thoughts ====
+
+* Today, any software without unit tests is considered ''legacy software''
+* Usually automated so that all unit tests can be executed with a single command
+* Tests increase the confidence that your code works correctly, not only for yourself but also for your reviewers
+* It might take you a while to get used to the idea, but it will pay off quite rapidly
 
 === Version Control ===
 
