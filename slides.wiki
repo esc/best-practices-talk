@@ -246,33 +246,44 @@ Plots
 
 ==== Benefits of version control ====
 
-* Revert changes without effort
+* Revert to previous versions without effort
 * Document developer effort
 * Easy collaboration across the globe
 * Synchronisation
 
 ==== Centralised version control ====
+
 <[figure][ht]
-    <<<centralised.png>>>
+    <<<centralised.pdf, scale=0.3>>>
 [figure]>
 
+* Central server stores all revisions
+* Developers must connect to this server
+
 ==== Distributed version control ====
+
 <[figure][ht]
-    <<<centralised.png, scale=0.5>>>
+    <<<distributed.pdf, scale=0.19>>>
 [figure]>
-<[figure][ht]
-    <<<distributed1.png, scale=0.5>>>
-[figure]>
-<[figure][ht]
-    <<<distributed2.png, scale=0.5>>>
-[figure]>
+
+* Support any workflow ?!
 
 ==== What will we use? ====
 
 * Distributed is more flexible
-* Centralised has a shallow learning curve
+* Centralised has a shallower learning curve
 * Hence we will teach you to use the de-fact centralised standard:
 * @subversion@
+
+<[figure][ht]
+    <<<Subversion_logo.pdf, scale=0.3>>>
+[figure]>
+
+(There will be a demo and introduction in the seond part)
+
+\hspace{2cm}
+
+\tiny{Subversive comment: If you are interested in distributed version control, got checkout \texttt{git}, the stupid content tracker.}
 
 ===  Other techniques ===
 
