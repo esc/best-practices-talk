@@ -38,11 +38,11 @@
 
 ==== Motivation ====
 
-* Most (Almost All?) scientists write computer programs on a regular basis
-* Not many have been trained to do so
+* Most (Almost All?) scientists write programs regularly
+* Not many (Almost None?) have been trained to do so
 * Often its not just about the raw functionality
 * Best practices can make a lot of difference
-* Development methodologies are established in the software engineer industry
+* Development methodologies are established in the software engineering industry
 * We can learn a lot from them to improve our coding skills 
 
 ==== Scenarios ====
@@ -61,9 +61,12 @@
 * Every scientific result (especially if important) should be independently reproduced at least internally before publication. (DFG 1999)
 * Hence there must be checks to ensure the code works as advertised
 
-* Increasing pressure for making the source code used in publications available online (especially for theoretical/modelling papers)
-* You shouldn’t be embarrassed of publishing your code, more eyes = less bugs
-* Your code should be readable and easily reusable (but thats actually quite hard)
+* Increasing pressure to make the source used in publications available
+* (especially for theoretical/modelling papers)
+* You shouldn’t be embarrassed to publishing your code
+* (You shouldn't write crappy code that you are embaressed to publish)
+* Your code should be readable and easily reusable
+* (But: thats actually quite hard)
 
 == Development methodologies ==
 
@@ -343,7 +346,7 @@ Optimizations Strategies for Scientific Python
 ==== Coding Style ====
 
 * Adhere to coding conventions (PEP8)
-* OR use a consisten style
+* OR use a consistent style
 * Use automated tools to ensure adherence
 
 ==== Other ideas ====
@@ -352,5 +355,6 @@ Optimizations Strategies for Scientific Python
 * If you are unsure how to do something build a prototype to check feasability
 * Use automated testing, and collect statistics
 * Use a bug tracker
+* Mailinglists and IRC
 
 
