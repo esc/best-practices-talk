@@ -2,7 +2,7 @@
 
 ==== Todays Schedule ====
 
-<[bock]{Morning}
+<[block]{Morning}
 
 * Valentin
 ** Development Methodologies
@@ -18,6 +18,17 @@
 * Exercise
 ** Subversion
 ** Unit Tetsing 
+
+[block]>
+
+==== Todays Schedule ====
+
+<[block]{Afternoon}
+
+* Nico
+** Design Principles
+** Object Orientation
+** Design Patterns
 
 [block]>
 
