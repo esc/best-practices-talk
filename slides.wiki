@@ -101,30 +101,29 @@ Consist of:
 * But: very heavyweight
 * Not cost efficient
 
-\tiny{This work is licensed under the Creative Commons Attribution 3.0 License. (c) Paul Smith}
 
+\tiny{The image is licensed under the Creative Commons Attribution 3.0 License. (c) Paul Smith}
 ==== The spiral model, Beuss 1980 ====
 
 <[figure][ht]
-    <<<Spiral_model.png, scale=0.25>>>
+    <<<Spiral_model.png, scale=0.30>>>
 [figure]>
 
 * Better, since the iteration cycles are smaller
 * Still quite heavyweight and cumbersome
 
-\tiny{This work is public domain. (c) Marc Troy, modified by Wikipedia User Conan.}
+\tiny{The image is public domain. (c) Marc Troy, modified by Wikipedia User Conan.}
 
 ==== Xtreme Programming, 1999 Beck, Cunningham, and Jeffries ====
 
 <[figure][ht]
-    <<<Xp-loop.png, scale=0.25>>>
+    <<<xp_flow.png, scale=0.5>>>
 [figure]>
 
 * Tight integration cycles
 * Very adaptive method
 * Relies heavily on testing
-
-\tiny{This work is licensed under the Creative Commons Attribution 3.0 License. (c) Marcel Douwe Dekker}
+* Release early and often
 
 ==== Agile development ====
 
@@ -133,17 +132,6 @@ Consist of:
 * XP is the most prominent example
 * Can be understood as a set of ''best practices''
 * Particularly suited for small teams ( less than 10 people) facing  unpredictable or rapidly changing requirements (sounds familiar?)
-
-==== The agile manifesto ====
-
-We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:
-
-* Individuals and interactions over processes and tools
-* Working software over comprehensive documentation
-* Customer collaboration over contract negotiation
-* Responding to change over following a plan
-
-That is, while there is value in the items on the right, we value the items on the left more.
 
 == Best Practices ==
 
@@ -159,11 +147,13 @@ That is, while there is value in the items on the right, we value the items on t
 * However, some are '''strongly''' recommended, and we will focus on two today:
 ** Unit Testing
 ** Version Control
-* Its best to adopt these early on, since bad habits will be very hard to break
+* Its best to adopt these early on, since bad habits will be very hard to break once established
 
 === Unit Testing ===
 
 ==== Unit Tests ====
+
+
 
 * Today, any software without unit tests is considered ''legacy software''
 * Tests the ''units'' with a predefined input, to ascertain they return the expected output
