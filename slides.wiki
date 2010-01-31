@@ -1,5 +1,26 @@
 == Introduction ==
 
+==== Todays Schedule ====
+
+<[bock]{Morning}
+
+* Valentin
+** Development Methodologies
+** Agile Methods
+** Unit testing
+** Version Control
+
+* Rike
+** Unit testing demo
+** Subversion demo
+** Debugging demo
+
+* Exercise
+** Subversion
+** Unit Tetsing 
+
+[block]>
+
 ==== Outline ====
 
 \tableofcontents[currentsection]
