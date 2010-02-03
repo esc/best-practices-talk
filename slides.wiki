@@ -152,6 +152,11 @@ Consist of:
 
 === Unit Testing ===
 
+==== Outline ====
+
+\tableofcontents[section=Unit Testing]
+
+
 ==== Unit Tests ====
 
 <[block]{Definition of a ''Unit''}
@@ -268,6 +273,7 @@ Plots
 
 * Support any workflow ?!
 
+
 ==== What will we use? ====
 
 * Distributed is more flexible
@@ -323,6 +329,12 @@ Optimizations Strategies for Scientific Python
 * Adhere to coding conventions (PEP8)
 * OR use a consistent style
 * Use automated tools to ensure adherence
+
+==== Documentation ====
+
+* When i learnt to programm... documentation was of paramount importance
+* With concise and clear languages like python this is less so
+* Minimum requirement: a docstring
 
 ==== Other ideas ====
 
