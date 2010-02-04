@@ -47,7 +47,7 @@
 
 ==== Scenarios ====
 
-*  Lone student/sceintist
+*  Lone student/scientist
 *  Small team of scientists, working on a common library
 *  The bottleneck is usually speed of development
 *  '''Not''' execution speed
@@ -63,8 +63,8 @@
 
 * Increasing pressure to make the source used in publications available
 * (especially for theoretical/modelling papers)
-* You shouldn’t be embarrassed to publishing your code
-* (You shouldn't write crappy code that you are embaressed to publish)
+* You shouldn’t be embarrassed to publish your code
+* (You shouldn't write crappy code that you are embarrassed to publish)
 * Your code should be readable and easily reusable
 * (But: thats actually quite hard)
 
@@ -247,7 +247,7 @@ Plots
 ** Centralised
 ** Distributed
 
-* How often do you ask yourself the question: "Help my code worked yesterday, but i can't recall what i changed!"
+* How often do you ask yourself the question: "Help my code worked yesterday, but I can't recall what I changed!"
 
 ==== Benefits of version control ====
 
@@ -285,7 +285,7 @@ Plots
     <<<Subversion_logo.pdf, scale=0.3>>>
 [figure]>
 
-(There will be a demo and introduction in the seond part)
+(There will be a demo and introduction in the second part)
 
 \hspace{2cm}
 
@@ -309,7 +309,7 @@ Plots
 * and identify these using a profiler
 
 Optimizations Strategies for Scientific Python
-* replace for loops with arry multiplication
+* replace for loops with array multiplication
 * implement bottlenecks in Cython
 * parallelize you application and run it on a cluster
 
@@ -322,7 +322,7 @@ Optimizations Strategies for Scientific Python
 
 * Always refactor one step at a time, and make sure the code still works in between
 * Learn how to use refactoring tools to make your life easier
-* Do it continously for maximum effect
+* Do it continuously for maximum effect
 
 ==== Coding Style ====
 
@@ -332,14 +332,14 @@ Optimizations Strategies for Scientific Python
 
 ==== Documentation ====
 
-* When i learnt to programm... documentation was of paramount importance
+* When I learnt to program... documentation was of paramount importance
 * With concise and clear languages like python this is less so
-* Minimum requirement: a docstring
+* Minimum requirement: at least a docstring
 
 ==== Other ideas ====
 
 * Use a build system
-* If you are unsure how to do something build a prototype to check feasability
+* If you are unsure how to do something build a prototype to check feasibility
 * Use automated testing, and collect statistics
 * Use a bug tracker
 * Mailinglists and IRC
