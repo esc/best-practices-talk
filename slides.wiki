@@ -38,9 +38,7 @@
 
 ==== Motivation ====
 
-* Most (Almost All?) scientists write programs regularly
-* Not many (Almost None?) have been trained to do so
-* Often its not just about the raw functionality
+* Many scientists write code regularly but few have formally been trained to do so
 * Best practices can make a lot of difference
 * Development methodologies are established in the software engineering industry
 * We can learn a lot from them to improve our coding skills 
@@ -48,9 +46,13 @@
 ==== Scenarios ====
 
 *  Lone student/scientist
+
+<[figure][ht]
+    <<<lucky_luke.jpg, scale=0.30>>>
+[figure]>
+
 *  Small team of scientists, working on a common library
-*  The bottleneck is usually speed of development
-*  '''Not''' execution speed
+*  Speed of development more important than execution speed
 
 *  Often need to try out different ideas quickly:
 ** rapid prototyping of a proposed algorithm
