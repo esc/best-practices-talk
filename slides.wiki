@@ -5,7 +5,6 @@
 <[block]{Morning}
 
 * Valentin
-** Development Methodologies
 ** Agile Methods
 ** Unit testing
 ** Version Control
@@ -31,10 +30,6 @@
 ** Design Patterns
 
 [block]>
-
-==== Outline ====
-
-\tableofcontents[currentsection]
 
 ==== Motivation ====
 
@@ -273,6 +268,19 @@ Plots
 
 * Can be used to provide reports and statistics
 
+==== Refactoring ====
+
+This is what its called when you write a ''better'' version of your code.
+
+* Re-organisation of your code without changing its function:
+** remove duplicates by creating functions and methods
+** increase modularity by breaking large code blocks into units
+** rename and restructure code to increase readability and reveal intention
+
+* Always refactor one step at a time, and use the unit tests to check code still works
+* Learn how to use automatic refactoring tools to make your life easier
+
+
 ==== Dealing with bugs ====
 
 * Isolate the bug
@@ -379,7 +387,16 @@ Plots
 
 * Again, it might take a while to get used to the idea, but it will pay off rapidly.
 
-===  Other techniques ===
+
+* Questions
+
+===  Additional techniques ===
+
+==== Additional Techniques ====
+
+* Pair Programming
+* Optmization?
+* Style and documentation
 
 ==== Pair Programming ====
 
@@ -400,17 +417,6 @@ Optimizations Strategies for Scientific Python
 * replace for loops with array multiplication
 * implement bottlenecks in Cython
 * parallelize you application and run it on a cluster
-
-==== Refactoring ====
-
-* Re-organisation of your code without changing its function:
-** remove duplicates by creating functions and methods
-** break large code blocks into functions
-** rename and restructure code to increase readability and reveal intention
-
-* Always refactor one step at a time, and make sure the code still works in between
-* Learn how to use refactoring tools to make your life easier
-* Do it continuously for maximum effect
 
 ==== Coding Style ====
 
