@@ -148,59 +148,86 @@ def my_sum(my_list):
 [code]>
 [block]>
 
+==== Agile methods ====
+<[figure][ht]
+    <<<dilbert-agile_programming.jpg, scale=0.4>>>
+[figure]>
+
+
 ==== Whats Next ====
 
-* We will look at tools to support the agile philosophy
+* Look at tools to support the agile workflow
 
 * Better testing with '''Unit Tests'''
 
-* Keeping track of changes with '''Version Control'''
+* Keeping track of changes and collaborating with '''Version Control'''
 
 * Additional techniques
 
 == Best Practices ==
 
-==== Outline ====
-
-\tableofcontents[currentsection]
-
 === Unit Testing ===
-
-==== Outline ====
-
-\tableofcontents[section=Unit Testing]
-
 
 ==== Unit Tests ====
 
 <[block]{Definition of a ''Unit''}
 * The smallest testable piece of code
-* A function or a method
+* Example: @my\_sum@
 [block]>
 
-Tests serve to:
+* We wish to automate testing of our units
+* In python we use the package @unittest@
+
+==== Example ====
+
+<[code][style=basic, language=Python]
+import unittest
+
+def my_sum(my_list):
+    return sum(my_list)
+
+class Test(unittest.TestCase):
+    def test_my_sum(self):
+        self.assertEqual(my_sum(\[1,2,3\]),6)
+
+if __name__ == "__main__":
+    unittest.main()
+
+[code]>
+
+==== Running the Example ====
+
+<[code][style=basic, language=Python]
+% python example-test2.py
+.
+--------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+[code]>
+
+==== The Basic Agile Workflow - Reloaded ====
+
+* Write unit tests
+* Write simplest version of unit
+* Ensure all unit tests pass
+* Write better version of unit
+
+==== Goals ====
+
 * check code works
+
 * check design works
+
 * catch regression
 
-==== Test driven development ====
+==== Benefits ====
 
-<[block]{Make small iterations of:}
-* Write the test for a unit first
-* Then write the unit itself
-* Lastly make sure all tests pass
-[block]>
+* Easier to test the whole, if the units work
 
-* This should all happen within one coding session
+* Can modify parts, and be sure the rest still works
 
-\tiny{(If you can't make this happen, at least write the test after you wrote the code...)}
-
-==== Additional benefits ====
-
-* Ease integration and system testing 
-* Much easier to modify code without breaking whats already there
 * Provide examples of how to use code
-* If your code is hard to test, this might suggests a bad design
 
 ==== How to test ? ====
 
@@ -221,35 +248,66 @@ Tests serve to:
 ==== What makes a good test? ====
 
 * independent (of each other, and of user input)
+
 * repeatable (i.e. deterministic)
+
 * self-contained
-
-==== Dealing with bugs ====
-
-* Isolate the bug (preferably with a debugger)
-* Write a unit test to expose the bug
-* Fix the code, and ensure the test passes
-* Use the test to identify if the bug reappears
 
 ==== Stuff thats harder to test ====
 
-Probabalistic code
+Probabilistic code
 * Use toy examples as validation
-* Test all ''units'' of your algorithm
 * Consider fixing the seed for your pseudo random number generator
 
 Hardware
-* use a mock up that behaves like the hardware should
+* use mock up software that behaves like the hardware should
 
 Plots
 * (any creative ideas welcome)
 
+==== Test Suits ====
+
+* All unit tests are collected into a test suite
+
+* Execute the entire test suite with a single command
+
+* Can be used to provide reports and statistics
+
+==== Dealing with bugs ====
+
+* Isolate the bug
+
+* Write a unit test to expose the bug
+
+* Fix the code, and ensure the test passes
+
+* Use the test to catch the bug should it reappear
+
+==== Dealing with Bugs ====
+
+<[figure][ht]
+    <<<phd_bug.jpg, scale=0.4>>>
+[figure]>
+
+==== Introducing new features ====
+
+* Split feature into units
+
+* Use the agile workflow 
+
+* Tests drive the development
+
+* Keep the iterations small 
+
 ==== Some last thoughts ====
 
-* Today, any software without unit tests is considered ''legacy software''
-* Usually automated so that all unit tests can be executed with a single command
 * Tests increase the confidence that your code works correctly, not only for yourself but also for your reviewers
+* Tests are the only way to trust your code
 * It might take you a while to get used to the idea, but it will pay off quite rapidly
+
+\hspace{4cm}
+
+* Questions?
 
 === Version Control ===
 
