@@ -376,4 +376,11 @@ Optimizations Strategies for Scientific Python
 * Use a bug tracker
 * Mailinglists and IRC
 
+==== Results ====
+
+* Every scientific result (especially if important) should be independently reproduced at least internally before publication. (German Research Council 1999)
+
+* Increasing pressure to make the source used in publications available
+
+* With unit tested code you need not be embarrassed to publish your code
 
