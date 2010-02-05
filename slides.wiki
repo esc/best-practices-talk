@@ -14,20 +14,18 @@
 ** Subversion demo
 ** Debugging demo
 
-* Exercise
-** Subversion
-** Unit Tetsing 
-
 [block]>
 
 ==== Todays Schedule ====
 
 <[block]{Afternoon}
 
-* Nico
-** Design Principles
-** Object Orientation
-** Design Patterns
+Niko
+* General Design Principles
+* Object Oriented Programming in Python
+* Object Oriented Design Principles
+* Design Patterns
+
 
 [block]>
 
@@ -36,7 +34,7 @@
 * Many scientists write code regularly but few have formally been trained to do so
 * Best practices can make a lot of difference
 * Development methodologies are established in the software engineering industry
-* We can learn a lot from them to improve our coding skills 
+* We can learn a lot from them to improve our coding skills
 
 ==== Scenarios ====
 
