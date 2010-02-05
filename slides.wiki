@@ -150,21 +150,13 @@ def my_sum(my_list):
 
 ==== Whats Next ====
 
+* We will look at tools to support the agile philosophy
+
 * Better testing with '''Unit Tests'''
 
 * Keeping track of changes with '''Version Control'''
 
-* Additional 
-
-==== What should I use? ====
-
-* All agile methods together suggest an overwhelming number of ideas
-* In practice you will not use all (even most)
-* Experiment to figure out what works for you
-* However, some are '''strongly''' recommended, and we will focus on two today:
-** Unit Testing
-** Version Control
-* Its best to adopt these early on, since bad habits will be very hard to break once established
+* Additional techniques
 
 == Best Practices ==
 
