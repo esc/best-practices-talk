@@ -311,60 +311,66 @@ Plots
 
 === Version Control ===
 
-==== What is version control ====
+==== What is Version Control? ====
+<[block]{Problem 1}
+"Help my code worked yesterday, but I can't recall what I changed!"
+[block]>
 
-* Toolkit to track modifications of source code
+<[block]{Problem 2}
+"We would like to work together, but we don't know how!"
+[block]>
 
-* Two main paradigms
-** Centralised
-** Distributed
+\hspace{6cm}
 
-* How often do you ask yourself the question: "Help my code worked yesterday, but I can't recall what I changed!"
+* Version control is a method to track changes in source code
+* Concurrent editing is possible via merging
 
-==== Benefits of version control ====
+==== Features ====
 
-* Revert to previous versions without effort
+* Revert to previous versions
+
 * Document developer effort
 ** Who changed what, when and why?
+
 * Easy collaboration across the globe
-* Synchronisation
-
-==== Centralised version control ====
-
-<[figure][ht]
-    <<<centralised.pdf, scale=0.3>>>
-[figure]>
-
-* Central server stores all revisions
-* Developers must connect to this server
-
-==== Distributed version control ====
-
-<[figure][ht]
-    <<<distributed.pdf, scale=0.19>>>
-[figure]>
-
-* Support any workflow ?!
-
 
 ==== What will we use? ====
 
-* Distributed is more flexible
-* Centralised has a shallower learning curve
-* Hence we will teach you to use the de-facto centralised standard:
-* @subversion@
+* Many different systems available
+
+* We will use the de-facto standard:
 
 <[figure][ht]
     <<<Subversion_logo.pdf, scale=0.3>>>
 [figure]>
 
-(There will be a demo and introduction in the second part)
+==== Where the versions are stored ====
 
-\hspace{4cm}
+<[figure][ht]
+    <<<centralised.pdf, scale=0.3>>>
+[figure]>
 
-\tiny{Subversive comment: If you are interested in distributed version control, checkout \texttt{git}, the stupid content tracker.}
+* Central server stores all revisions in a '''repository'''
+* Developers must connect to this server
 
-===== Some last thoughts ====
+==== Contents of the Repository ====
+
+* Each revision consists of:
+** Version Number 
+** Author
+** Message
+** Date
+** Changes
+
+==== Basic Workflow ====
+
+* Check for updates
+
+* Write code
+
+* Submit to repository
+
+==== Some last thoughts ====
 
 * Use version control for anything thats text
 ** Code
@@ -433,4 +439,13 @@ Optimizations Strategies for Scientific Python
 * Increasing pressure to make the source used in publications available
 
 * With unit tested code you need not be embarrassed to publish your code
+
+==== Distributed version control ====
+
+<[figure][ht]
+    <<<distributed.pdf, scale=0.19>>>
+[figure]>
+
+* Support any workflow ?!
+
 
