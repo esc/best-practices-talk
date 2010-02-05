@@ -253,6 +253,7 @@ Plots
 
 * Revert to previous versions without effort
 * Document developer effort
+** Who changed what, when and why?
 * Easy collaboration across the globe
 * Synchronisation
 
@@ -278,7 +279,7 @@ Plots
 
 * Distributed is more flexible
 * Centralised has a shallower learning curve
-* Hence we will teach you to use the de-fact centralised standard:
+* Hence we will teach you to use the de-facto centralised standard:
 * @subversion@
 
 <[figure][ht]
@@ -287,9 +288,18 @@ Plots
 
 (There will be a demo and introduction in the second part)
 
-\hspace{2cm}
+\hspace{4cm}
 
-\tiny{Subversive comment: If you are interested in distributed version control, got checkout \texttt{git}, the stupid content tracker.}
+\tiny{Subversive comment: If you are interested in distributed version control, checkout \texttt{git}, the stupid content tracker.}
+
+===== Some last thoughts ====
+
+* Use version control for anything thats text
+** Code
+** Thesis
+** Letters
+
+* Again, it might take a while to get used to the idea, but it will pay off rapidly.
 
 ===  Other techniques ===
 
@@ -298,7 +308,7 @@ Plots
 * Two developers, one computer
 * Two roles: driver and navigator
 * Driver sits at keyboard
-* Navigator observers and instructs
+* Navigator observes and instructs
 * Switch roles every so often
 
 ==== Optimization ====
@@ -306,7 +316,7 @@ Plots
 * Readable code is usually better than fast code
 * Only optimize if its absolutely necessary, seriously
 * Only optimize your bottlenecks
-* and identify these using a profiler
+* ...and identify these using a profiler
 
 Optimizations Strategies for Scientific Python
 * replace for loops with array multiplication
