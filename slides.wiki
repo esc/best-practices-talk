@@ -58,19 +58,7 @@
 ** rapid prototyping of a proposed algorithm
 ** re-use/modify existing code
 
-==== Requirements ====
-
-* Every scientific result (especially if important) should be independently reproduced at least internally before publication. (DFG 1999)
-* Hence there must be checks to ensure the code works as advertised
-
-* Increasing pressure to make the source used in publications available
-* (especially for theoretical/modelling papers)
-* You shouldn’t be embarrassed to publish your code
-* (You shouldn't write crappy code that you are embarrassed to publish)
-* Your code should be readable and easily reusable
-* (But: thats actually quite hard)
-
-== Development methodologies ==
+== Agile methods ==
 
 ==== Outline ====
 
@@ -78,20 +66,16 @@
 
 ==== What is a development methodology ====
 
-<[block]{Wikipedia Definition}
-refers to the framework that is used to structure, plan, and control the process of developing an information system.
-[block]>
-
-Help answer the following questions:
-
-* How far ahead should we plan?
-* What should we prioritize?
-* When do we write tests and documentation?
-
 Consist of:
 
 * A philosophy that governs the style and approach towards development
 * A set of tools and models to support the particular approach
+
+Help answer the following questions:
+
+* How far ahead should I plan?
+* What should I prioritize?
+* When do I write tests and documentation?
 
 ==== The waterfall model, Royce 1970 ====
 
@@ -101,39 +85,76 @@ Consist of:
 
 * Iterative process
 * But: very heavyweight
-* Not cost efficient
-
+* Not efficient or adaptive
 
 \tiny{The image is licensed under the Creative Commons Attribution 3.0 License. (c) Paul Smith}
-==== The spiral model, Beuss 1980 ====
 
-<[figure][ht]
-    <<<Spiral_model.png, scale=0.30>>>
-[figure]>
+==== Agile Methods ====
 
-* Better, since the iteration cycles are smaller
-* Still quite heavyweight and cumbersome
-
-\tiny{The image is public domain. (c) Marc Troy, modified by Wikipedia User Conan.}
-
-==== Xtreme Programming, 1999 Beck, Cunningham, and Jeffries ====
-
-<[figure][ht]
-    <<<xp_flow.png, scale=0.5>>>
-[figure]>
-
-* Tight integration cycles
-* Very adaptive method
-* Relies heavily on testing
-* Release early and often
-
-==== Agile development ====
-
-* Agile methods grew out of their iterative predecessors
+* Agile methods grew out of their iterative predecessors during the late 90's
 * Generic name for set of more specific paradigms
-* XP is the most prominent example
-* Can be understood as a set of ''best practices''
+* Set of ''best practices''
+
 * Particularly suited for small teams ( less than 10 people) facing  unpredictable or rapidly changing requirements (sounds familiar?)
+
+==== Prominent Features of Agile methods ====
+
+* Minimal planning
+
+* Small development iterations
+
+* Rely heavily on testing
+
+* Promote collaboration and teamwork
+
+* Very adaptive
+
+==== The Basic Agile Workflow ====
+
+* Define test
+* Write simplest version of code
+* Ensure tests pass
+* Write better version of code
+
+==== Example ====
+
+<[block]{Define Test}
+function @my\_sum@ should return the sum of a list.
+[block]>
+
+<[block]{Simplest version of the code}
+<[code][style=basic, language=Python]
+def my_sum(l):
+    a = 0
+    for i in l:
+        a = a + i
+    return a
+[code]>
+[block]>
+
+==== Example ====
+
+<[block]{Ensure the test passes}
+<[code][style=basic, language=Python]
+>>> my_sum(\[1,2,3\]) 
+6 
+[code]>
+[block]>
+
+<[block]{Better version of the code}
+<[code][style=basic, language=Python]
+def my_sum(my_list):
+    return sum(my_list)
+[code]>
+[block]>
+
+==== Whats Next ====
+
+* Better testing with '''Unit Tests'''
+
+* Keeping track of changes with '''Version Control'''
+
+* Additional 
 
 ==== What should I use? ====
 
@@ -144,7 +165,6 @@ Consist of:
 ** Unit Testing
 ** Version Control
 * Its best to adopt these early on, since bad habits will be very hard to break once established
-
 
 == Best Practices ==
 
