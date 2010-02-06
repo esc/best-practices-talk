@@ -40,9 +40,9 @@ Niko
 
 *  Lone student/scientist
 
-<[figure][ht]
+<[center]
     <<<lucky_luke.jpg, scale=0.30>>>
-[figure]>
+[center]>
 
 *  Small team of scientists, working on a common library
 *  Speed of development more important than execution speed
@@ -84,11 +84,13 @@ Help answer the following questions:
 
 ==== Agile Methods ====
 
-* Agile methods grew out of their iterative predecessors during the late 90's
+* Agile methods emerged during the late 90's
 * Generic name for set of more specific paradigms
 * Set of ''best practices''
 
-* Particularly suited for small teams ( less than 10 people) facing  unpredictable or rapidly changing requirements (sounds familiar?)
+* Particularly suited for:
+** small teams ( less than 10 people)
+** unpredictable or rapidly changing requirements
 
 ==== Prominent Features of Agile methods ====
 
@@ -104,46 +106,74 @@ Help answer the following questions:
 
 ==== The Basic Agile Workflow ====
 
-* Define test
-* Write simplest version of code
-* Ensure tests pass
-* Write better version of code
+
+<[figure]
+    <<<basic_agile_workflow.pdf, scale=0.25>>>
+[figure]>
 
 ==== Example ====
 
-<[block]{Define Test}
+<[center]
+<<<define_test.pdf, scale=0.25>>>
+
+\hspace{10cm}
+
 function @my\_sum@ should return the sum of a list.
-[block]>
 
-<[block]{Simplest version of the code}
-<[code][style=basic, language=Python]
-def my_sum(l):
-    a = 0
-    for i in l:
-        a = a + i
-    return a
-[code]>
-[block]>
+[center]>
 
 ==== Example ====
 
-<[block]{Ensure the test passes}
+<[center]
+<<<simplest_version.pdf, scale=0.25>>>
+
+
+\hspace{10cm}
+
+<[code][style=basic, language=Python]
+def my_sum(my_list):
+    """ Compute sum of list elements. """
+    answer = 0
+    for item in my_list:
+        answer = answer + item
+    return answer
+[code]>
+
+[center]>
+
+==== Example ====
+
+<[center]
+<<<ensure_test.pdf, scale=0.25>>>
+
+\hspace{10cm}
+
 <[code][style=basic, language=Python]
 >>> my_sum(\[1,2,3\]) 
 6 
 [code]>
-[block]>
 
-<[block]{Better version of the code}
+[center]>
+
+==== Example ====
+
+<[center]
+<<<better_version.pdf, scale=0.25>>>
+
+\hspace{10cm}
+
 <[code][style=basic, language=Python]
 def my_sum(my_list):
+    """ Compute sum of list elements. """
     return sum(my_list)
 [code]>
-[block]>
+
+[center]>
 
 ==== Agile methods ====
+
 <[figure][ht]
-    <<<dilbert-agile_programming.jpg, scale=0.4>>>
+    <<<dilbert-agile_programming.jpg, scale=0.45>>>
 [figure]>
 
 
@@ -173,10 +203,11 @@ def my_sum(my_list):
 
 ==== Example ====
 
-<[code][style=basic, language=Python]
+<[code][style=basic, language=Python, frame=none]
 import unittest
 
 def my_sum(my_list):
+    """ Compute sum of list elements. """
     return sum(my_list)
 
 class Test(unittest.TestCase):
@@ -201,10 +232,10 @@ OK
 
 ==== The Basic Agile Workflow - Reloaded ====
 
-* Write unit tests
-* Write simplest version of unit
-* Ensure all unit tests pass
-* Write better version of unit
+<[figure]
+    <<<agile_reloaded.pdf, scale=0.25>>>
+[figure]>
+
 
 ==== Goals ====
 

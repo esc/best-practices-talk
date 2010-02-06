@@ -1,6 +1,7 @@
 import unittest
 
 def my_sum(my_list):
+    """ Compute sum of list elements. """
     return sum(my_list)
 
 class Test(unittest.TestCase):
