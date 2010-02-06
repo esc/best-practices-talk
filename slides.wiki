@@ -6,13 +6,14 @@
 
 * Valentin
 ** Agile Methods
-** Unit testing
+** Unit Testing
 ** Version Control
 
 * Rike
-** Unit testing demo
-** Subversion demo
-** Debugging demo
+** Unit Testing Examples
+** Subversion
+** Debugging
+** Profiling
 
 [block]>
 
@@ -57,7 +58,7 @@ Niko
 
 \tableofcontents[currentsection]
 
-==== What is a development methodology ====
+==== What is a Development Methodology ====
 
 Consist of:
 
@@ -250,7 +251,7 @@ OK
 
 * Provide examples of how to use code
 
-==== How to test ? ====
+==== How to Test ? ====
 
 * Test with simple (but general) cases, using hard coded solutions
 ** @sum(3,5) = 5@
@@ -266,7 +267,7 @@ OK
 
 (There will be some more concrete example in the second part.)
 
-==== What makes a good test? ====
+==== What Makes a Good Test? ====
 
 * independent (of each other, and of user input)
 
@@ -274,7 +275,7 @@ OK
 
 * self-contained
 
-==== Stuff thats harder to test ====
+==== Stuff Thats Harder to Test ====
 
 Probabilistic code
 * Use toy examples as validation
@@ -307,7 +308,7 @@ This is what its called when you write a ''better'' version of your code.
 * Learn how to use automatic refactoring tools to make your life easier
 
 
-==== Dealing with bugs ====
+==== Dealing with Bugs ====
 
 * Isolate the bug
 
@@ -323,7 +324,7 @@ This is what its called when you write a ''better'' version of your code.
     <<<phd_bug.jpg, scale=0.4>>>
 [figure]>
 
-==== Introducing new features ====
+==== Introducing New Features ====
 
 * Split feature into units
 
@@ -333,7 +334,7 @@ This is what its called when you write a ''better'' version of your code.
 
 * Keep the iterations small 
 
-==== Some last thoughts ====
+==== Some Last Thoughts ====
 
 * Tests increase the confidence that your code works correctly, not only for yourself but also for your reviewers
 * Tests are the only way to trust your code
@@ -372,7 +373,7 @@ This is what its called when you write a ''better'' version of your code.
 
 * Easy collaboration across the globe
 
-==== Where the Versions are Stored ? ====
+==== Where the Versions are Stored? ====
 
 <[figure][ht]
     <<<central.pdf, scale=0.25>>>
@@ -403,7 +404,7 @@ This is what its called when you write a ''better'' version of your code.
     <<<Subversion_logo.pdf, scale=0.3>>>
 [figure]>
 
-==== Some last thoughts ====
+==== Some Last Thoughts ====
 
 * Use version control for anything thats text
 ** Code
@@ -468,6 +469,8 @@ Optimizations Strategies for Scientific Python
 * Increasing pressure to make the source used in publications available
 
 * With unit tested code you need not be embarrassed to publish your code
+
+* Using version control allows you to share and collaborate easily
 
 ==== Distributed version control ====
 
