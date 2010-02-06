@@ -181,9 +181,12 @@ def my_sum(my_list):
 
 * Additional techniques
 
-== Best Practices ==
+== Unit Testing ==
 
-=== Unit Testing ===
+==== Outline ====
+
+\tableofcontents[currentsection]
+
 
 ==== Unit Tests ====
 
@@ -340,7 +343,11 @@ This is what its called when you write a ''better'' version of your code.
 
 * Questions?
 
-=== Version Control ===
+== Version Control ==
+
+==== Outline ====
+
+\tableofcontents[currentsection]
 
 ==== What is Version Control? ====
 <[block]{Problem 1}
@@ -365,16 +372,6 @@ This is what its called when you write a ''better'' version of your code.
 
 * Easy collaboration across the globe
 
-==== What Will We Use ? ====
-
-* Many different systems available
-
-* We will use the de-facto standard:
-
-<[figure][ht]
-    <<<Subversion_logo.pdf, scale=0.3>>>
-[figure]>
-
 ==== Where the Versions are Stored ? ====
 
 <[figure][ht]
@@ -396,6 +393,16 @@ This is what its called when you write a ''better'' version of your code.
     <<<vc_workflow.pdf, scale=0.25>>>
 [figure]>
 
+==== What Will We Use ? ====
+
+* Many different systems available
+
+* We will use the de-facto standard:
+
+<[figure][ht]
+    <<<Subversion_logo.pdf, scale=0.3>>>
+[figure]>
+
 ==== Some last thoughts ====
 
 * Use version control for anything thats text
@@ -408,13 +415,11 @@ This is what its called when you write a ''better'' version of your code.
 
 * Questions
 
-===  Additional techniques ===
+==  Additional techniques ==
 
-==== Additional Techniques ====
+==== Outline ====
 
-* Pair Programming
-* Optmization?
-* Style and documentation
+\tableofcontents[currentsection]
 
 ==== Pair Programming ====
 
