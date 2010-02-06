@@ -221,7 +221,7 @@ if __name__ == "__main__":
 
 ==== Running the Example ====
 
-<[code][style=basic, language=Python]
+<[code][style=basic,  frame=none]
 % python example-test2.py
 .
 --------------------------------------------------------
@@ -371,7 +371,7 @@ This is what its called when you write a ''better'' version of your code.
 
 * Easy collaboration across the globe
 
-==== What will we use? ====
+==== What Will We Use ? ====
 
 * Many different systems available
 
@@ -381,31 +381,26 @@ This is what its called when you write a ''better'' version of your code.
     <<<Subversion_logo.pdf, scale=0.3>>>
 [figure]>
 
-==== Where the versions are stored ====
+==== Where the Versions are Stored ? ====
 
 <[figure][ht]
-    <<<centralised.pdf, scale=0.3>>>
+    <<<central.pdf, scale=0.25>>>
 [figure]>
 
-* Central server stores all revisions in a '''repository'''
+* '''repository''' is located on a server
 * Developers must connect to this server
 
 ==== Contents of the Repository ====
 
-* Each revision consists of:
-** Version Number 
-** Author
-** Message
-** Date
-** Changes
+<[figure]
+    <<<repository.pdf, scale=0.25>>>
+[figure]>
 
-==== Basic Workflow ====
+==== Basic Version Control Workflow ====
 
-* Check for updates
-
-* Write code
-
-* Submit to repository
+<[figure]
+    <<<vc_workflow.pdf, scale=0.25>>>
+[figure]>
 
 ==== Some last thoughts ====
 
@@ -413,7 +408,7 @@ This is what its called when you write a ''better'' version of your code.
 ** Code
 ** Thesis
 ** Letters
-
+* We will be using '''centralised''' version control, note there exists also '''decentralised''' version control
 * Again, it might take a while to get used to the idea, but it will pay off rapidly.
 
 
