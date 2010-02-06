@@ -70,17 +70,11 @@ Help answer the following questions:
 * What should I prioritize?
 * When do I write tests and documentation?
 
-==== The waterfall model, Royce 1970 ====
+==== The Waterfall Model, Royce 1970 ====
 
 <[figure][ht]
-    <<<Waterfall_model.png, scale=0.25>>>
+    <<<waterfall.pdf, scale=0.25>>>
 [figure]>
-
-* Iterative process
-* But: very heavyweight
-* Not efficient or adaptive
-
-\tiny{The image is licensed under the Creative Commons Attribution 3.0 License. (c) Paul Smith}
 
 ==== Agile Methods ====
 
