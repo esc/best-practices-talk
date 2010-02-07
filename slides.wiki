@@ -306,7 +306,7 @@ This is what its called when you write a ''better'' version of your code.
 
 ==== Dealing with Bugs ====
 
-* Isolate the bug
+* Isolate the bug (using a debugger)
 
 * Write a unit test to expose the bug
 
@@ -314,10 +314,14 @@ This is what its called when you write a ''better'' version of your code.
 
 * Use the test to catch the bug should it reappear
 
+<[block]{Debugger}
+A program to run your code one step at a time, and giving you the ability to inspect its current state. 
+[block]>
+
 ==== Dealing with Bugs ====
 
 <[figure][ht]
-    <<<phd_bug.jpg, scale=0.4>>>
+    <<<phd_bug.jpg, scale=0.45>>>
 [figure]>
 
 ==== Introducing New Features ====
