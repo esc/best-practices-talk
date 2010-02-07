@@ -253,19 +253,15 @@ OK
 
 ==== How to Test ? ====
 
-* Test with simple (but general) cases, using hard coded solutions
-** @sum(3,5) = 5@
-
-* Test general routines with specific ones
-** test @polyomial\_expansion(data, degree)@ with @quadratic\_expansion(data)@
+* Test with simple cases, using hard coded solutions
+** @my\_sum([1,2,3]) == 6@
 
 * Test special or boundary cases
-** test @has\_prefix(string, pfx)@ for @pfx=""@
+** @my\_sum([]) == 0@
 
 * Test that meaningful error messages are raised upon corrupt input
-** Relevant when writing scientific libraries
-
-(There will be some more concrete example in the second part.)
+** @my\_sum(['1', 'a'])@ 
+** --> @TypeError: unsupported operand type(s) for +: 'int' and 'str'@
 
 ==== What Makes a Good Test? ====
 
