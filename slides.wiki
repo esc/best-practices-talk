@@ -476,18 +476,12 @@ A tool to measure and provide statistics on the execution time of code.
 
 ==== The Last Slide ====
 
-* Open Source Tools used to make this presentation: wiki2beamer, \LaTeX beamer and dia.
+* Open source tools used to make this presentation:
+** wiki2beamer
+** \LaTeX beamer
+** dia
 
 \hspace{10cm}
 
 Questions ?
-
-==== Distributed version control ====
-
-<[figure][ht]
-    <<<distributed.pdf, scale=0.19>>>
-[figure]>
-
-* Support any workflow ?!
-
 
