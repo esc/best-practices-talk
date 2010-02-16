@@ -271,7 +271,7 @@ OK
 
 * self-contained
 
-==== Stuff Thats Harder to Test ====
+==== Stuff That's Harder to Test ====
 
 Probabilistic code
 * Use toy examples as validation
@@ -293,9 +293,9 @@ Plots
 
 ==== Refactoring ====
 
-This is what its called when you write a ''better'' version of your code.
+This is what it's called when you write a ''better'' version of your code.
 
-* Re-organisation of your code without changing its function:
+* Re-organisation of your code without changing it's function:
 ** remove duplicates by creating functions and methods
 ** increase modularity by breaking large code blocks into units
 ** rename and restructure code to increase readability and reveal intention
@@ -315,7 +315,7 @@ This is what its called when you write a ''better'' version of your code.
 * Use the test to catch the bug should it reappear
 
 <[block]{Debugger}
-A program to run your code one step at a time, and giving you the ability to inspect its current state. 
+A program to run your code one step at a time, and giving you the ability to inspect it's current state. 
 [block]>
 
 ==== Dealing with Bugs ====
@@ -406,7 +406,7 @@ A program to run your code one step at a time, and giving you the ability to ins
 
 ==== Some Last Thoughts ====
 
-* Use version control for anything thats text
+* Use version control for anything that's text
 ** Code
 ** Thesis
 ** Letters
@@ -433,7 +433,7 @@ A program to run your code one step at a time, and giving you the ability to ins
 ==== Optimization for Speed ====
 
 * Readable code is usually better than fast code
-* Only optimize if its absolutely necessary
+* Only optimize if it's absolutely necessary
 * Only optimize your bottlenecks
 * ...and identify these using a profiler, for example '''cprofile'''
 
