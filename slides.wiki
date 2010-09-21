@@ -12,20 +12,6 @@
 * We can learn a lot from them to improve our coding skills
 * Always bear in mind the Zen of Python
 
-==== Scenarios ====
-
-*  Lone student/scientist
-
-<[center]
-    <<<images/lucky_luke.jpg, scale=0.30>>>
-[center]>
-
-*  Small team of scientists, working on a common library
-*  Speed of development more important than execution speed
-
-*  Often need to try out different ideas quickly:
-** rapid prototyping of a proposed algorithm
-** re-use/modify existing code
 
 == Best Practices ==
 
@@ -66,6 +52,21 @@ This is what it's called when you write a ''better'' version of your code.
 ==== Write and Run Unit Tests ====
 
 == Agile methods ==
+
+==== Scenarios ====
+
+*  Lone student/scientist
+
+<[center]
+    <<<images/lucky_luke.jpg, scale=0.30>>>
+[center]>
+
+*  Small team of scientists, working on a common library
+*  Speed of development more important than execution speed
+
+*  Often need to try out different ideas quickly:
+** rapid prototyping of a proposed algorithm
+** re-use/modify existing code
 
 ==== What is a Development Methodology ====
 
