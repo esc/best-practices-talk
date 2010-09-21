@@ -444,8 +444,11 @@ A tool to measure and provide statistics on the execution time of code.
 ==== Documentation ====
 
 * Minimum requirement: at least a docstring
-* For a library document arguments and return objects
-* Use tools to automatically generated website from code: '''pydoc'''
+* These serve as help in the interpreter
+* For a library, document arguments and return objects including types
+* Use the numpy docstring conventions
+* Use tools to automatically generated website from code: '''pydoc''' or '''sphinx'''
+* For complicated algorithms, document every line
 
 ==== Results ====
 
