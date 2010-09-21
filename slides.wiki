@@ -213,65 +213,6 @@ Help answer the following questions:
     <<<images/basic_agile_workflow.pdf, scale=0.25>>>
 [figure]>
 
-==== Example ====
-
-<[center]
-<<<images/define_test.pdf, scale=0.25>>>
-
-\hspace{10cm}
-
-function @my\_sum@ should return the sum of a list.
-
-[center]>
-
-==== Example ====
-
-<[center]
-<<<images/simplest_version.pdf, scale=0.25>>>
-
-
-\hspace{10cm}
-
-<[code][style=basic, language=Python]
-def my_sum(my_list):
-    """ Compute sum of list elements. """
-    answer = 0
-    for item in my_list:
-        answer = answer + item
-    return answer
-[code]>
-
-[center]>
-
-==== Example ====
-
-<[center]
-<<<images/ensure_test.pdf, scale=0.25>>>
-
-\hspace{10cm}
-
-<[code][style=basic, language=Python]
->>> my_sum(\[1,2,3\]) 
-6 
-[code]>
-
-[center]>
-
-==== Example ====
-
-<[center]
-<<<images/better_version.pdf, scale=0.25>>>
-
-\hspace{10cm}
-
-<[code][style=basic, language=Python]
-def my_sum(my_list):
-    """ Compute sum of list elements. """
-    return sum(my_list)
-[code]>
-
-[center]>
-
 ==== Agile methods ====
 
 <[figure][ht]
