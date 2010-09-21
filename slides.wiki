@@ -20,6 +20,7 @@
 * Document your code
 * Refactor Continuously
 * Do not repeat Yourself (DRY Principle)
+* Keep it simple (stupid) (KIS(S) Principle)
 * Use Version Control
 * Write and run Unit Tests
 
