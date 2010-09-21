@@ -507,6 +507,12 @@ A tool to measure and provide statistics on the execution time of code.
 
 * Using version control allows you to share and collaborate easily
 
+==== Links ====
+
+* unittest, nosetest, pytest
+* pdb, pylint, rope and ropeide
+* sphinx, epydoc
+
 ==== The Last Slide ====
 
 * Open source tools used to make this presentation:
