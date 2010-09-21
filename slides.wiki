@@ -50,7 +50,42 @@ This is what it's called when you write a ''better'' version of your code.
 * Always refactor one step at a time, and use the unit tests to check code still works
 * Learn how to use automatic refactoring tools to make your life easier, for example '''ropeide'''
 
-==== Do not repeat yourself ====
+==== Do not repeat yourself (DRY Principle) ====
+
+* When writing code, avoid duplication
+
+* Categories of Duplication:
+** Imposed Duplication
+** Inadvertent Duplication
+** Impatient Duplication
+** Interdeveloper Duplication
+
+* If you detect duplication in code thats already written, refactor mercilessly
+
+==== Imposed Duplication ====
+
+* When duplication seems to be forced on us
+
+==== Inadvertent Duplication ====
+
+* Accidental duplication
+* Example: a line class that stores start, end ''and'' length
+
+==== Impatient Duplication ====
+
+* Quick copy-and-paste, instead of clean refactor
+* Example: Using a literal instead of a variable for the program version number
+* What happens if the original code contains a bug?
+* What happens if the  original code needs to be changed?
+* Be patient, invest time now to save time later!
+
+==== Interdeveloper Duplication ====
+
+* Repeated implementation by more than one developer
+* Usually concerns utility methods
+* Often caused by lack of communication
+* Or lack of a module to contain utilities
+* Example: Manhattan distance between two points
 
 ==== Use Version Control ====
 
