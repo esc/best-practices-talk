@@ -156,7 +156,7 @@
 * Can be used to provide reports and statistics
 
 
-== Agile methods ==
+== Development Methodologies ==
 
 ==== Scenarios ====
 
@@ -192,6 +192,8 @@ Help answer the following questions:
     <<<images/waterfall.pdf, scale=0.25>>>
 [figure]>
 
+=== Agile Methods ===
+
 ==== Agile Methods ====
 
 * Agile methods emerged during the late 90's
@@ -214,19 +216,19 @@ Help answer the following questions:
 
 * Very adaptive
 
-==== The Basic Agile Workflow ====
-
-
-<[figure]
-    <<<images/basic_agile_workflow.pdf, scale=0.25>>>
-[figure]>
-
 ==== Agile methods ====
 
 <[figure][ht]
     <<<images/dilbert-agile_programming.jpg, scale=0.45>>>
 [figure]>
 
+=== Test Driven Development ===
+
+==== The Basic Agile Workflow ====
+
+<[figure]
+    <<<images/basic_agile_workflow.pdf, scale=0.25>>>
+[figure]>
 
 ==== Whats Next ====
 
