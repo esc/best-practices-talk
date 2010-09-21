@@ -31,7 +31,7 @@
 * For a library, document arguments and return objects including types
 * Use the numpy docstring conventions
 * Use tools to automatically generated website from code: '''pydoc''' or '''sphinx'''
-* For complicated algorithms, document every line
+* For complicated algorithms, document every line, and include equations in docstring
 * When your project gets bigger: provide a how-to or quickstart on your website
 
 ==== Example Docstring ====
