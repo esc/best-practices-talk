@@ -36,6 +36,16 @@
 
 ==== Refactor Continuously ====
 
+This is what it's called when you write a ''better'' version of your code.
+
+* Re-organisation of your code without changing it's function:
+** remove duplicates by creating functions and methods
+** increase modularity by breaking large code blocks apart
+** rename and restructure code to increase readability and reveal intention
+
+* Always refactor one step at a time, and use the unit tests to check code still works
+* Learn how to use automatic refactoring tools to make your life easier, for example '''ropeide'''
+
 ==== Do not repeat yourself ====
 
 ==== Use Version Control ====
@@ -278,17 +288,6 @@ Plots
 * Can be used to provide reports and statistics
 
 ==== Refactoring ====
-
-This is what it's called when you write a ''better'' version of your code.
-
-* Re-organisation of your code without changing it's function:
-** remove duplicates by creating functions and methods
-** increase modularity by breaking large code blocks into units
-** rename and restructure code to increase readability and reveal intention
-
-* Always refactor one step at a time, and use the unit tests to check code still works
-* Learn how to use automatic refactoring tools to make your life easier
-
 
 ==== Dealing with Bugs ====
 
