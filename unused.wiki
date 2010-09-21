@@ -1,0 +1,26 @@
+<!-- unused slides -->
+
+==== How to Test ? ====
+
+* Test with simple cases, using hard coded solutions
+** @my\_sum([1,2,3]) == 6@
+
+* Test special or boundary cases
+** @my\_sum([]) == 0@
+
+* Test that meaningful error messages are raised upon corrupt input
+** @my\_sum(['1', 'a'])@ 
+** --> @TypeError: unsupported operand type(s) for +: 'int' and 'str'@
+
+==== Stuff That's Harder to Test ====
+
+Probabilistic code
+* Use toy examples as validation
+* Consider fixing the seed for your pseudo random number generator
+
+Hardware
+* use mock up software that behaves like the hardware should
+
+Plots
+* (any creative ideas welcome)
+

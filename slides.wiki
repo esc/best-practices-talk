@@ -101,40 +101,19 @@ This is what it's called when you write a ''better'' version of your code.
 
 <[block]{Definition of a ''Unit''}
 * The smallest testable piece of code
-* Example: @my\_sum@
+* Example: @my\_product@
 [block]>
 
 * We wish to automate testing of our units
-* In python we use the package @unittest@
+* In python we have several package available
+** '''unittest''', '''nosetest''', '''pytest'''
+* Simple overview today, hands on exercise tomorrow
 
 ==== Example ====
 
-<[code][style=basic, language=Python, frame=none]
-import unittest
+\lstinputlisting[style=basic,language=python]{my_product_test.py}
 
-def my_sum(my_list):
-    """ Compute sum of list elements. """
-    return sum(my_list)
-
-class Test(unittest.TestCase):
-    def test_my_sum(self):
-        self.assertEqual(my_sum(\[1,2,3\]),6)
-
-if __name__ == "__main__":
-    unittest.main()
-
-[code]>
-
-==== Running the Example ====
-
-<[code][style=basic,  frame=none]
-% python example-test2.py
-.
---------------------------------------------------------
-Ran 1 test in 0.000s
-
-OK
-[code]>
+\lstinputlisting[style=basic,frame=none]{test-output}
 
 ==== Goals ====
 
@@ -152,18 +131,6 @@ OK
 
 * Provide examples of how to use code
 
-==== How to Test ? ====
-
-* Test with simple cases, using hard coded solutions
-** @my\_sum([1,2,3]) == 6@
-
-* Test special or boundary cases
-** @my\_sum([]) == 0@
-
-* Test that meaningful error messages are raised upon corrupt input
-** @my\_sum(['1', 'a'])@ 
-** --> @TypeError: unsupported operand type(s) for +: 'int' and 'str'@
-
 ==== What Makes a Good Test? ====
 
 * independent (of each other, and of user input)
@@ -172,18 +139,6 @@ OK
 
 * self-contained
 
-==== Stuff That's Harder to Test ====
-
-Probabilistic code
-* Use toy examples as validation
-* Consider fixing the seed for your pseudo random number generator
-
-Hardware
-* use mock up software that behaves like the hardware should
-
-Plots
-* (any creative ideas welcome)
-
 ==== Test Suits ====
 
 * All unit tests are collected into a test suite
@@ -191,7 +146,6 @@ Plots
 * Execute the entire test suite with a single command
 
 * Can be used to provide reports and statistics
-
 
 
 == Agile methods ==
