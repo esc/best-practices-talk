@@ -335,7 +335,6 @@ def my_sum(my_list):
 
 * Additional techniques
 
-== Unit Testing ==
 
 ==== Outline ====
 
@@ -348,9 +347,6 @@ def my_sum(my_list):
     <<<images/agile_reloaded.pdf, scale=0.25>>>
 [figure]>
 
-
-
-==== Refactoring ====
 
 ==== Dealing with Bugs ====
 
