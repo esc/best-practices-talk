@@ -44,15 +44,23 @@
 
 ==== Refactor Continuously ====
 
-This is what it's called when you write a ''better'' version of your code.
+* As a program evolves it will become necessary to rethink earlier decisions and adapt the code accordingly
 
-* Re-organisation of your code without changing it's function:
-** remove duplicates by creating functions and methods
-** increase modularity by breaking large code blocks apart
-** rename and restructure code to increase readability and reveal intention
+* Re-organisation of your code without changing it's function
+* Increase modularity by breaking large code blocks apart
+* Rename and restructure code to increase readability and reveal intention
 
-* Always refactor one step at a time, and use the unit tests to check code still works
-* Learn how to use automatic refactoring tools to make your life easier, for example '''ropeide'''
+* Always refactor one step at a time, and use the tests to check code still works
+* Learn how to use automatic refactoring tools to make your life easier
+** For example: '''ropeide'''
+
+==== Example Refactoring Operations ====
+
+* Rename class/method/module/package/function
+* Move class/method/module/package/function
+* Encapsulate code in method/function
+* Change method/function signature
+* Organize imports (remove unused and sort)
 
 === DRY ===
 
