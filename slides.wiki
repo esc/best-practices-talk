@@ -34,6 +34,10 @@
 * For complicated algorithms, document every line
 * When your project gets bigger: provide a how-to or quickstart on your website
 
+==== Example Docstring ====
+
+\lstinputlisting[style=basic,language=python]{my_product_docstring.py}
+
 ==== Refactor Continuously ====
 
 This is what it's called when you write a ''better'' version of your code.
