@@ -24,6 +24,8 @@
 * Use Version Control
 * Write and run Unit Tests
 
+=== Documentation ===
+
 ==== Documenting Code ====
 
 * Minimum requirement: at least a docstring
@@ -38,6 +40,8 @@
 
 \lstinputlisting[style=basic,language=python]{my_product_docstring.py}
 
+=== Refactoring ===
+
 ==== Refactor Continuously ====
 
 This is what it's called when you write a ''better'' version of your code.
@@ -49,6 +53,8 @@ This is what it's called when you write a ''better'' version of your code.
 
 * Always refactor one step at a time, and use the unit tests to check code still works
 * Learn how to use automatic refactoring tools to make your life easier, for example '''ropeide'''
+
+=== DRY ===
 
 ==== Do not repeat yourself (DRY Principle) ====
 
