@@ -4,8 +4,9 @@
 
 * Many scientists write code regularly but few have formally been trained to do so
 * Best practices can make a lot of difference
-* Development methodologies are established in the software engineering industry
+* Development methodologies, such as Agile Programming and Test Driven Development, are established in the software engineering industry
 * We can learn a lot from them to improve our coding skills
+* Always bear in mind the Zen of Python
 
 ==== Scenarios ====
 
