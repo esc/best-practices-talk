@@ -1,35 +1,5 @@
 == Introduction ==
 
-==== Todays Schedule ====
-
-<[block]{Morning}
-
-* Valentin
-** Agile Methods
-** Unit Testing
-** Version Control
-
-* Rike
-** Unit Testing Examples
-** Subversion
-** Debugging
-** Profiling
-
-[block]>
-
-==== Todays Schedule ====
-
-<[block]{Afternoon}
-
-Niko
-* General Design Principles
-* Object Oriented Programming in Python
-* Object Oriented Design Principles
-* Design Patterns
-
-
-[block]>
-
 ==== Motivation ====
 
 * Many scientists write code regularly but few have formally been trained to do so
