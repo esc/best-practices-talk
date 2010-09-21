@@ -29,10 +29,23 @@
 
 == Best Practices ==
 
+==== Best Practices ====
+
+* Document your code
 * Refactor Continuously
-* Do not repeat Yourself (DRY)
+* Do not repeat Yourself (DRY Principle)
 * Use Version Control
 * Write and run Unit Tests
+
+==== Documenting Code ====
+
+* Minimum requirement: at least a docstring
+* These serve as help in the interpreter
+* For a library, document arguments and return objects including types
+* Use the numpy docstring conventions
+* Use tools to automatically generated website from code: '''pydoc''' or '''sphinx'''
+* For complicated algorithms, document every line
+* When your project gets bigger: provide a how-to or quickstart on your website
 
 ==== Refactor Continuously ====
 
@@ -440,15 +453,6 @@ A tool to measure and provide statistics on the execution time of code.
 * Adhere to coding conventions
 * OR use a consistent style
 * Use automated tools to ensure adherence: '''pylint'''
-
-==== Documentation ====
-
-* Minimum requirement: at least a docstring
-* These serve as help in the interpreter
-* For a library, document arguments and return objects including types
-* Use the numpy docstring conventions
-* Use tools to automatically generated website from code: '''pydoc''' or '''sphinx'''
-* For complicated algorithms, document every line
 
 ==== Results ====
 
