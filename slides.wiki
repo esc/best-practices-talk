@@ -17,7 +17,7 @@
 *  Lone student/scientist
 
 <[center]
-    <<<lucky_luke.jpg, scale=0.30>>>
+    <<<images/lucky_luke.jpg, scale=0.30>>>
 [center]>
 
 *  Small team of scientists, working on a common library
@@ -60,7 +60,7 @@ Help answer the following questions:
 ==== The Waterfall Model, Royce 1970 ====
 
 <[figure][ht]
-    <<<waterfall.pdf, scale=0.25>>>
+    <<<images/waterfall.pdf, scale=0.25>>>
 [figure]>
 
 ==== Agile Methods ====
@@ -89,13 +89,13 @@ Help answer the following questions:
 
 
 <[figure]
-    <<<basic_agile_workflow.pdf, scale=0.25>>>
+    <<<images/basic_agile_workflow.pdf, scale=0.25>>>
 [figure]>
 
 ==== Example ====
 
 <[center]
-<<<define_test.pdf, scale=0.25>>>
+<<<images/define_test.pdf, scale=0.25>>>
 
 \hspace{10cm}
 
@@ -106,7 +106,7 @@ function @my\_sum@ should return the sum of a list.
 ==== Example ====
 
 <[center]
-<<<simplest_version.pdf, scale=0.25>>>
+<<<images/simplest_version.pdf, scale=0.25>>>
 
 
 \hspace{10cm}
@@ -125,7 +125,7 @@ def my_sum(my_list):
 ==== Example ====
 
 <[center]
-<<<ensure_test.pdf, scale=0.25>>>
+<<<images/ensure_test.pdf, scale=0.25>>>
 
 \hspace{10cm}
 
@@ -139,7 +139,7 @@ def my_sum(my_list):
 ==== Example ====
 
 <[center]
-<<<better_version.pdf, scale=0.25>>>
+<<<images/better_version.pdf, scale=0.25>>>
 
 \hspace{10cm}
 
@@ -154,7 +154,7 @@ def my_sum(my_list):
 ==== Agile methods ====
 
 <[figure][ht]
-    <<<dilbert-agile_programming.jpg, scale=0.45>>>
+    <<<images/dilbert-agile_programming.jpg, scale=0.45>>>
 [figure]>
 
 
@@ -217,7 +217,7 @@ OK
 ==== The Basic Agile Workflow - Reloaded ====
 
 <[figure]
-    <<<agile_reloaded.pdf, scale=0.25>>>
+    <<<images/agile_reloaded.pdf, scale=0.25>>>
 [figure]>
 
 
@@ -307,7 +307,7 @@ A program to run your code one step at a time, and giving you the ability to ins
 ==== Dealing with Bugs ====
 
 <[figure][ht]
-    <<<phd_bug.jpg, scale=0.45>>>
+    <<<images/phd_bug.jpg, scale=0.45>>>
 [figure]>
 
 ==== Introducing New Features ====
@@ -362,7 +362,7 @@ A program to run your code one step at a time, and giving you the ability to ins
 ==== Where the Versions are Stored? ====
 
 <[figure][ht]
-    <<<central.pdf, scale=0.25>>>
+    <<<images/central.pdf, scale=0.25>>>
 [figure]>
 
 * '''repository''' is located on a server
@@ -371,13 +371,13 @@ A program to run your code one step at a time, and giving you the ability to ins
 ==== Contents of the Repository ====
 
 <[figure]
-    <<<repository.pdf, scale=0.25>>>
+    <<<images/repository.pdf, scale=0.25>>>
 [figure]>
 
 ==== Basic Version Control Workflow ====
 
 <[figure]
-    <<<vc_workflow.pdf, scale=0.25>>>
+    <<<images/vc_workflow.pdf, scale=0.25>>>
 [figure]>
 
 ==== What Will We Use ? ====
@@ -387,7 +387,7 @@ A program to run your code one step at a time, and giving you the ability to ins
 * We will use the de-facto standard:
 
 <[figure][ht]
-    <<<Subversion_logo.pdf, scale=0.3>>>
+    <<<images/Subversion_logo.pdf, scale=0.3>>>
 [figure]>
 
 ==== Some Last Thoughts ====
