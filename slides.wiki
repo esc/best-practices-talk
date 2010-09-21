@@ -1,5 +1,9 @@
 == Introduction ==
 
+==== Outline ====
+
+\tableofcontents[currentsection]
+
 ==== Motivation ====
 
 * Many scientists write code regularly but few have formally been trained to do so
@@ -23,11 +27,22 @@
 ** rapid prototyping of a proposed algorithm
 ** re-use/modify existing code
 
+== Best Practices ==
+
+* Refactor Continuously
+* Do not repeat Yourself (DRY)
+* Use Version Control
+* Write and run Unit Tests
+
+==== Refactor Continuously ====
+
+==== Do not repeat yourself ====
+
+==== Use Version Control ====
+
+==== Write and Run Unit Tests ====
+
 == Agile methods ==
-
-==== Outline ====
-
-\tableofcontents[currentsection]
 
 ==== What is a Development Methodology ====
 
