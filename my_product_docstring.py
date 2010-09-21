@@ -9,4 +9,10 @@ def my_product(li):
     -------
     product : number
 
+    Raises
+    ------
+    TypeError
+        if argument is not list or list contains
+        types that can't be multiplied
+
     """
