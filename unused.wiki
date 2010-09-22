@@ -124,3 +124,13 @@ def my_sum(my_list):
 * Keeping track of changes and collaborating with '''Version Control'''
 
 * Additional techniques
+
+==== Introducing New Features ====
+
+* Split feature into units
+
+* Use the agile workflow 
+
+* Tests drive the development
+
+* Keep the iterations small 

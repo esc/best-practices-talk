@@ -312,8 +312,6 @@ Help answer the following questions:
     <<<images/agile_reloaded.pdf, scale=0.25>>>
 [figure]>
 
-
-
 ==== Outline ====
 
 \tableofcontents[currentsection]
@@ -339,17 +337,6 @@ A program to run your code one step at a time, and giving you the ability to ins
 <[figure][ht]
     <<<images/phd_bug.jpg, scale=0.45>>>
 [figure]>
-
-==== Introducing New Features ====
-
-* Split feature into units
-
-* Use the agile workflow 
-
-* Tests drive the development
-
-* Keep the iterations small 
-
 
 ==== Pair Programming ====
 
