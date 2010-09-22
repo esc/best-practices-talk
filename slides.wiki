@@ -357,10 +357,10 @@ A program to run your code one step at a time, and giving you the ability to ins
 * Navigator observes and instructs
 * Switch roles every so often
 
-==== Optimization for Speed ====
+==== Optimization for Speed  --- My Point of View ====
 
 * Readable code is usually better than fast code
-* Only optimize if it's absolutely necessary
+* Only optimize if it is absolutely necessary
 * Only optimize your bottlenecks
 * ...and identify these using a profiler, for example '''cprofile'''
 
