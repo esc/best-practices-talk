@@ -267,15 +267,22 @@ Help answer the following questions:
 
 ==== Prominent Features of Agile methods ====
 
-* Minimal planning
+* Minimal planning, small development iterations
 
-* Small development iterations
+* design/implement/test on a modular level
 
 * Rely heavily on testing
 
 * Promote collaboration and teamwork
 
-* Very adaptive
+* Very adaptive, since nothing is set in stone
+
+==== The Agile Spiral ====
+
+
+<[figure]
+    <<<images/agile.pdf, scale=0.2>>>
+[figure]>
 
 ==== Agile methods ====
 
@@ -285,11 +292,13 @@ Help answer the following questions:
 
 === Test Driven Development ===
 
-==== The Basic Agile Workflow ====
+==== Test Driven Development (TDD) ====
 
 <[figure]
-    <<<images/basic_agile_workflow.pdf, scale=0.25>>>
+    <<<images/testdriven.pdf, scale=0.2>>>
 [figure]>
+
+* Define unit tests first!
 
 ==== Whats Next ====
 
@@ -305,7 +314,6 @@ Help answer the following questions:
 ==== Outline ====
 
 \tableofcontents[currentsection]
-
 
 ==== The Basic Agile Workflow - Reloaded ====
 
