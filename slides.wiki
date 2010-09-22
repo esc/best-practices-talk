@@ -17,14 +17,22 @@
 
 ==== Best Practices ====
 
-* Document your code
+* Use a consisten style and document your code
 * Refactor Continuously
 * Do not repeat Yourself (DRY Principle)
 * Keep it simple (stupid) (KIS(S) Principle)
 * Use Version Control
 * Write and run Unit Tests
 
-=== Documentation ===
+=== Style and Documentation ===
+
+==== Coding Style ====
+
+* Give your variables meaningful names
+* Adhere to coding conventions
+* OR use a consistent style
+* Use automated tools to ensure adherence: '''pylint'''
+* Readability counts
 
 ==== Documenting Code ====
 
@@ -365,12 +373,28 @@ A tool to measure and provide statistics on the execution time of code.
 * Use this to explore the feasability of your idea
 * When you are ready, scrap the prototype and start with the unit tests
 
-==== Coding Style ====
+== Zen of Python ==
 
-* Give your variables meaningful names
-* Adhere to coding conventions
-* OR use a consistent style
-* Use automated tools to ensure adherence: '''pylint'''
+==== The Zen of Python, an Excerpt====[containsverbatim]
+
+<[verbatim]
+>>>import this
+The Zen of Python, by Tim Peters
+
+Explicit is better than implicit.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+In the face of ambiguity, refuse the temptation to guess.
+Now is better than never.
+Although never is often better than *right* now.
+[verbatim]>
+
+== Conclusion ==
+
+==== Outline ====
+
+\tableofcontents[currentsection]
 
 ==== Results ====
 
