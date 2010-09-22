@@ -333,7 +333,7 @@ Help answer the following questions:
 * Use the test to catch the bug should it reappear
 
 <[block]{Debugger}
-A program to run your code one step at a time, and giving you the ability to inspect it's current state. 
+A program to run your code one step at a time, and giving you the ability to inspect the current state, for example: '''pdb'''
 [block]>
 
 ==== Dealing with Bugs ====
