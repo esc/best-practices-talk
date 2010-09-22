@@ -240,7 +240,7 @@
 ** rapid prototyping of a proposed algorithm
 ** re-use/modify existing code
 
-==== What is a Development Methodology ====
+==== What is a Development Methodology? ====
 
 Consist of:
 
