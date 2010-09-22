@@ -87,3 +87,30 @@ def my_sum(my_list):
 
 [center]>
 
+== Version Control ==
+
+==== Where the Versions are Stored? ====
+
+<[figure][ht]
+    <<<images/central.pdf, scale=0.25>>>
+[figure]>
+
+* '''repository''' is located on a server
+* Developers must connect to this server
+
+==== Contents of the Repository ====
+
+<[figure]
+    <<<images/repository.pdf, scale=0.25>>>
+[figure]>
+
+
+==== What Will We Use ? ====
+
+* Many different systems available
+
+* We will use the de-facto standard:
+
+<[figure][ht]
+    <<<images/Subversion_logo.pdf, scale=0.3>>>
+[figure]>
