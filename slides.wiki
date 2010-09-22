@@ -320,14 +320,7 @@ Help answer the following questions:
 
 \tableofcontents[currentsection]
 
-==== The Basic Agile Workflow - Reloaded ====
-
-<[figure]
-    <<<images/agile_reloaded.pdf, scale=0.25>>>
-[figure]>
-
 ===  Additional techniques ===
-
 
 ==== Dealing with Bugs ====
 

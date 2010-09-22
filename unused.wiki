@@ -134,3 +134,10 @@ def my_sum(my_list):
 * Tests drive the development
 
 * Keep the iterations small 
+
+
+==== The Basic Agile Workflow - Reloaded ====
+
+<[figure]
+    <<<images/agile_reloaded.pdf, scale=0.25>>>
+[figure]>
