@@ -300,15 +300,6 @@ Help answer the following questions:
 
 * Define unit tests first!
 
-==== Whats Next ====
-
-* Look at tools to support the agile workflow
-
-* Better testing with '''Unit Tests'''
-
-* Keeping track of changes and collaborating with '''Version Control'''
-
-* Additional techniques
 
 
 ==== Outline ====

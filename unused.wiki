@@ -114,3 +114,13 @@ def my_sum(my_list):
 <[figure][ht]
     <<<images/Subversion_logo.pdf, scale=0.3>>>
 [figure]>
+
+==== Whats Next ====
+
+* Look at tools to support the agile workflow
+
+* Better testing with '''Unit Tests'''
+
+* Keeping track of changes and collaborating with '''Version Control'''
+
+* Additional techniques
