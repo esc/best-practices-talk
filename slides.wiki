@@ -326,11 +326,8 @@ Help answer the following questions:
     <<<images/agile_reloaded.pdf, scale=0.25>>>
 [figure]>
 
-==== Outline ====
+===  Additional techniques ===
 
-\tableofcontents[currentsection]
-
-==  Additional techniques ==
 
 ==== Dealing with Bugs ====
 
