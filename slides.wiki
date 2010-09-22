@@ -130,6 +130,8 @@
 
 * Revert to previous versions
 
+* Checkpoint significant improvements
+
 * Document developer effort
 ** Who changed what, when and why?
 
