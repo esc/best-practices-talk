@@ -1,11 +1,12 @@
 base = slides
+slidefilename = heanel-best-practices.pdf
 
 all: $(base).pdf
 
 $(base).pdf: $(base).tex $(base).wiki.tex
 	pdflatex $(base).tex
 	pdflatex $(base).tex
-	cp slides.pdf day1-part-1-1-slides.pdf
+	cp slides.pdf $(slidefilename)
 
 #$(base)-0?.tex: $(base)-0?.txt wiki2beamer/wiki2beamer.py
 #	python wiki2beamer/wiki2beamer.py $(wildcard $(base)-0?.txt) > $(wildcard $(base)-0?.tex)
@@ -22,4 +23,4 @@ clean:
 	-rm -vf $(base).{toc,snm,log,aux,out,nav}
 
 distclean: clean
-	-rm -vf $(base).pdf $(base).wiki.tex day1-part-1-1-slides.pdf
+	-rm -vf $(base).pdf $(base).wiki.tex $(slidefilename)
