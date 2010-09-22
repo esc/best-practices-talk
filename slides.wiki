@@ -101,8 +101,50 @@
 * Or lack of a module to contain utilities
 * Example: Manhattan distance between two points
 
+=== Version Control ===
+
 ==== Use Version Control ====
 
+<[block]{Problem 1}
+"Help my code worked yesterday, but I can't recall what I changed!"
+[block]>
+
+<[block]{Problem 2}
+"We would like to work together, but we don't know how!"
+[block]>
+
+\hspace{6cm}
+
+* Version control is a method to track changes in source code
+* Concurrent editing is possible via merging
+
+==== Features ====
+
+* Revert to previous versions
+
+* Document developer effort
+** Who changed what, when and why?
+
+* Easy collaboration across the globe
+
+==== Basic Version Control Workflow ====
+
+<[figure]
+    <<<images/vc_workflow.pdf, scale=0.25>>>
+[figure]>
+
+
+==== Some Last Thoughts ====
+
+* Use version control for anything that's text
+** Code
+** Thesis
+** Letters
+* We will be using '''centralised''' version control, note there exists also '''decentralised''' version control
+* Again, it might take a while to get used to the idea, but it will pay off rapidly.
+
+
+* Questions
 === Unit Tests ===
 
 ==== Write and Run Unit Tests ====
@@ -293,53 +335,10 @@ A program to run your code one step at a time, and giving you the ability to ins
 
 * Questions?
 
-== Version Control ==
-
 ==== Outline ====
 
 \tableofcontents[currentsection]
 
-==== What is Version Control? ====
-<[block]{Problem 1}
-"Help my code worked yesterday, but I can't recall what I changed!"
-[block]>
-
-<[block]{Problem 2}
-"We would like to work together, but we don't know how!"
-[block]>
-
-\hspace{6cm}
-
-* Version control is a method to track changes in source code
-* Concurrent editing is possible via merging
-
-==== Features ====
-
-* Revert to previous versions
-
-* Document developer effort
-** Who changed what, when and why?
-
-* Easy collaboration across the globe
-
-==== Basic Version Control Workflow ====
-
-<[figure]
-    <<<images/vc_workflow.pdf, scale=0.25>>>
-[figure]>
-
-
-==== Some Last Thoughts ====
-
-* Use version control for anything that's text
-** Code
-** Thesis
-** Letters
-* We will be using '''centralised''' version control, note there exists also '''decentralised''' version control
-* Again, it might take a while to get used to the idea, but it will pay off rapidly.
-
-
-* Questions
 
 ==  Additional techniques ==
 
