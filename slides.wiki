@@ -246,8 +246,12 @@ Help answer the following questions:
 ==== The Waterfall Model, Royce 1970 ====
 
 <[figure][ht]
-    <<<images/waterfall.pdf, scale=0.25>>>
+    <<<images/waterfall.pdf, scale=0.2>>>
 [figure]>
+
+* Sequential software development process
+* Originates in the manufacturing and construction industries
+* Rigid, inflexible model --- focusing on one stage at a time
 
 === Agile Methods ===
 
