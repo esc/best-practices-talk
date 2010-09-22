@@ -197,8 +197,23 @@
 
 * Can be used to provide reports and statistics
 
+==== Some Last Thoughts ====
+
+* Tests increase the confidence that your code works correctly, not only for yourself but also for your reviewers
+* Tests are the only way to trust your code
+* It might take you a while to get used to the idea, but it will pay off quite rapidly
+
+\hspace{4cm}
+
+* Questions?
 
 == Development Methodologies ==
+
+=== Definition ===
+
+==== Outline ====
+
+\tableofcontents[currentsection]
 
 ==== Scenarios ====
 
@@ -295,6 +310,13 @@ Help answer the following questions:
 [figure]>
 
 
+
+==== Outline ====
+
+\tableofcontents[currentsection]
+
+==  Additional techniques ==
+
 ==== Dealing with Bugs ====
 
 * Isolate the bug (using a debugger)
@@ -325,26 +347,6 @@ A program to run your code one step at a time, and giving you the ability to ins
 
 * Keep the iterations small 
 
-==== Some Last Thoughts ====
-
-* Tests increase the confidence that your code works correctly, not only for yourself but also for your reviewers
-* Tests are the only way to trust your code
-* It might take you a while to get used to the idea, but it will pay off quite rapidly
-
-\hspace{4cm}
-
-* Questions?
-
-==== Outline ====
-
-\tableofcontents[currentsection]
-
-
-==  Additional techniques ==
-
-==== Outline ====
-
-\tableofcontents[currentsection]
 
 ==== Pair Programming ====
 
