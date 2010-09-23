@@ -450,6 +450,8 @@ Although never is often better than *right* now.
 
 * Using version control allows you to share and collaborate easily
 
+* In this day and age there is '''absolutely no excuse''' to not use them
+
 ==== Links ====
 
 * unittest, nosetest, pytest
