@@ -128,19 +128,24 @@
 ==== Imposed Duplication ====
 
 * When duplication seems to be forced on us
+* Example: ???
 
 ==== Inadvertent Duplication ====
 
-* Accidental duplication
-* Example: a line class that stores start, end ''and'' length
+* When duplication happens by accident
+* Example: duplication of knowledge
+** Variable name: @list\_of\_numbers@ instead of just @numbers@
+** Type information duplicated in variable name
+** Type information incorrect, function may operate on any sequence such as tuples
 
 ==== Impatient Duplication ====
 
 * Quick copy-and-paste, instead of clean refactor
-* Example: Using a literal instead of a variable for the program version number
 * What happens if the original code contains a bug?
 * What happens if the  original code needs to be changed?
 * Be patient, invest time now to save time later!
+
+* Example: Using a literal instead of a variable for the program version number
 
 ==== Interdeveloper Duplication ====
 
@@ -148,7 +153,7 @@
 * Usually concerns utility methods
 * Often caused by lack of communication
 * Or lack of a module to contain utilities
-* Example: Manhattan distance between two points
+* Example: product function may already exist in some library
 
 === Version Control ===
 
