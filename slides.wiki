@@ -33,8 +33,8 @@
 
 ==== Coding Style ====
 
-* Readability counts!
-* Explicit is better than implicit!
+* Readability counts.
+* Explicit is better than implicit.
 
 * Give your variables ''intention revealing'' names
 ** For example: @numbers@ instead of @nu@
@@ -454,6 +454,8 @@ The Zen of Python, by Tim Peters
 
 Explicit is better than implicit.
 Readability counts.
+Simple is better than complex.
+Complex is better than complicated.
 Special cases aren't special enough to break the rules.
 Although practicality beats purity.
 In the face of ambiguity, refuse the temptation to guess.
