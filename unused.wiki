@@ -157,3 +157,18 @@ sic Version Control Workflow ====
 * Questions
 
 
+==== What Makes a Good Test? ====
+
+* independent (of each other, and of user input)
+
+* repeatable (i.e. deterministic)
+
+* self-contained
+
+==== Test Suits ====
+
+* All unit tests are collected into a test suite
+
+* Execute the entire test suite with a single command
+
+* Can be used to provide reports and statistics

@@ -234,9 +234,12 @@
 [block]>
 
 * We wish to automate testing of our units
-* In python we have several package available
-** '''unittest''', '''nosetest''', '''pytest'''
-* Simple overview today, hands on exercise tomorrow
+* In python we have several package available:
+** \href{http://docs.python.org/library/unittest.html}{unittest}, \href{http://somethingaboutorange.com/mrl/projects/nose/0.11.2/}{nosetest}, \href{http://codespeak.net/py/dist/test/}{pytest}
+
+* Tests increase the confidence that your code works correctly, not only for yourself but also for your reviewers
+* Tests are the only way to trust your code
+* It might take you a while to get used to writing them, but it will pay off quite rapidly
 
 ==== Example ====
 
@@ -244,47 +247,21 @@
 
 \lstinputlisting[style=basic,frame=none]{test-output}
 
-==== Goals ====
+==== Goals and Benefits ====
 
+<[block]{Goals}
 * check code works
-
 * check design works
-
 * catch regression
+[block]>
 
-==== Benefits ====
-
+<[block]{Benefits}
 * Easier to test the whole, if the units work
-
 * Can modify parts, and be sure the rest still works
-
 * Provide examples of how to use code
+[block]>
 
-==== What Makes a Good Test? ====
-
-* independent (of each other, and of user input)
-
-* repeatable (i.e. deterministic)
-
-* self-contained
-
-==== Test Suits ====
-
-* All unit tests are collected into a test suite
-
-* Execute the entire test suite with a single command
-
-* Can be used to provide reports and statistics
-
-==== Some Last Thoughts ====
-
-* Tests increase the confidence that your code works correctly, not only for yourself but also for your reviewers
-* Tests are the only way to trust your code
-* It might take you a while to get used to the idea, but it will pay off quite rapidly
-
-\hspace{4cm}
-
-* Questions?
+* Hand-on exercise tomorrow!
 
 == Development Methodologies ==
 
