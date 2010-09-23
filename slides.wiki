@@ -1,19 +1,27 @@
 == Introduction ==
 
+==== Introduction ====
+
+* Many scientists write code regularly but few have formally been trained to do so
+
+% you know about variables and loops
+% good programs consists of so much more
+
+* '''Best practices''' evolved from programmers folk wisdom
+* They increase productivity and decrease stress
+
+* '''Development methodologies''', such as Agile Programming and Test Driven Development, are established in the software engineering industry
+* We can learn a lot from them to improve our coding skills
+
+* When programming in Python: Always bear in mind the '''Zen of Python'''
+
+% this means stuff that is unique  to python
+
+== Best Practices ==
+
 ==== Outline ====
 
 \tableofcontents[currentsection]
-
-==== Motivation ====
-
-* Many scientists write code regularly but few have formally been trained to do so
-* Best practices can make a lot of difference
-* Development methodologies, such as Agile Programming and Test Driven Development, are established in the software engineering industry
-* We can learn a lot from them to improve our coding skills
-* Always bear in mind the Zen of Python
-
-
-== Best Practices ==
 
 ==== Best Practices ====
 
