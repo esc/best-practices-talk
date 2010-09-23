@@ -344,6 +344,10 @@
 
 === Agile Methods ===
 
+==== Outline ====
+
+\tableofcontents[currentsection,currentsubsection]
+
 ==== Agile Methods ====
 
 * Agile methods emerged during the late 90's
@@ -368,7 +372,6 @@
 
 ==== The Agile Spiral ====
 
-
 <[figure]
     <<<images/agile.pdf, scale=0.2>>>
 [figure]>
@@ -380,6 +383,10 @@
 [figure]>
 
 === Test Driven Development ===
+
+==== Outline ====
+
+\tableofcontents[currentsection,currentsubsection]
 
 ==== Test Driven Development (TDD) ====
 
@@ -400,6 +407,10 @@
 \tableofcontents[currentsection]
 
 ===  Additional techniques ===
+
+==== Outline ====
+
+\tableofcontents[currentsection,currentsubsection]
 
 ==== Dealing with Bugs ====
 
@@ -449,6 +460,10 @@ A tool to measure and provide statistics on the execution time of code.
 * When you are ready, scrap the prototype and start with the unit tests
 
 == Zen of Python ==
+
+==== Outline ====
+
+\tableofcontents[currentsection]
 
 ==== The Zen of Python, an Excerpt====[containsverbatim]
 
