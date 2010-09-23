@@ -83,7 +83,7 @@
 
 ==== Refactor Continuously ====
 
-* As a program evolves it will become necessary to rethink earlier decisions and adapt the code accordingly
+* As a program evolves it may become necessary to rethink earlier decisions and adapt the code accordingly
 
 * Re-organisation of your code without changing it's function
 * Increase modularity by breaking large code blocks apart
@@ -91,7 +91,7 @@
 
 * Always refactor one step at a time, and use the tests to check code still works
 * Learn how to use automatic refactoring tools to make your life easier
-** For example: '''ropeide'''
+** For example: \href{http://rope.sourceforge.net/ropeide.html}{ropeide}
 
 ==== Example Refactoring Operations ====
 
@@ -100,6 +100,13 @@
 * Encapsulate code in method/function
 * Change method/function signature
 * Organize imports (remove unused and sort)
+
+* Generally you will improve the readability and modularity of your code
+* Usually refactoring will reduce the lines of code
+
+==== Refactoring Example ====
+
+\lstinputlisting[style=basic,language=python]{my_product_refactor.py}
 
 === DRY ===
 
