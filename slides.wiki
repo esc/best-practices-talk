@@ -398,13 +398,15 @@
 
 ==== Benefits of TDD ====
 
-* Encourages simple designes and inspires confidence
+* Encourages simple designs and inspires confidence
+
 * No one ever ''forgets'' to write the unit tests
+
 * Thinking about how to test code, means you are already thinking about how to write it
 
-==== Outline ====
+--2em--
 
-\tableofcontents[currentsection]
+* Perhaps you may want to even write the documentation first?
 
 ===  Additional techniques ===
 
