@@ -1,18 +1,20 @@
-def my_product(li):
-    """ Compute the product of a list of numbers.
+__docformat__ = "restructuredtext"
+def my_product(numbers):
+    """ Compute the product of a sequence of numbers.
 
     Parameters
     ----------
-    li : list
+    numbers : sequence
+        list of numbers to multiply
 
     Returns
     -------
     product : number
+        the final product
 
     Raises
     ------
     TypeError
-        if argument is not list or list contains
+        if argument is not a sequence or sequence contains
         types that can't be multiplied
-
     """
