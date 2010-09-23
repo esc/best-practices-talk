@@ -93,6 +93,9 @@
 * Learn how to use automatic refactoring tools to make your life easier
 ** For example: \href{http://rope.sourceforge.net/ropeide.html}{ropeide}
 
+* Now is better than never.
+* Although never is often better than ''right'' now.
+
 ==== Example Refactoring Operations ====
 
 * Rename class/method/module/package/function
