@@ -25,12 +25,12 @@
 
 ==== Best Practices ====
 
-* Use a consisten style and document your code
-* Refactor Continuously
-* Do not repeat Yourself (DRY Principle)
+* Style and documentation
+* Refactor continuously
+* Do not repeat yourself (DRY Principle)
 * Keep it simple (stupid) (KIS(S) Principle)
-* Use Version Control
-* Write and run Unit Tests
+* Version control
+* Unit tests
 
 === Style and Documentation ===
 
