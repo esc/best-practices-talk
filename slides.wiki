@@ -16,6 +16,7 @@
 * When programming in Python: Always bear in mind the '''Zen of Python'''
 
 % this means stuff that is unique  to python
+% these are like mantras, repet them over and over again
 
 == Best Practices ==
 
