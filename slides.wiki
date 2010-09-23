@@ -63,7 +63,7 @@
 * Use the \href{http://projects.scipy.org/numpy/wiki/CodingStyleGuidelines}{numpy docstring conventions}
 
 * Use tools to automatically generate website from docstrings
-* For example: \href{http://epydoc.sourceforge.net/}{pydoc} or \href{http://sphinx.pocoo.org/}{sphinx}
+* For example: \href{http://epydoc.sourceforge.net/}{epydoc} or \href{http://sphinx.pocoo.org/}{sphinx}
 
 * For complicated algorithms, document every line, and include equations in docstring
 
