@@ -24,16 +24,12 @@
 
 \tableofcontents[currentsection]
 
-==== Best Practices ====
-
-* Style and documentation
-* Refactor continuously
-* Do not repeat yourself (DRY Principle)
-* Keep it simple (stupid) (KIS(S) Principle)
-* Version control
-* Unit tests
 
 === Style and Documentation ===
+
+==== Outline ====
+
+\tableofcontents[currentsection,currentsubsection]
 
 ==== Coding Style ====
 
@@ -65,7 +61,7 @@
 * Use tools to automatically generate website from docstrings
 * For example: \href{http://epydoc.sourceforge.net/}{epydoc} or \href{http://sphinx.pocoo.org/}{sphinx}
 
-* For complicated algorithms, document every line, and include equations in docstring
+* For complex algorithms, document every line, and include equations in docstring
 
 * When your project gets bigger: provide a ''how-to'' or ''quickstart'' on your website
 
@@ -79,83 +75,54 @@
     <<<images/epydoc.pdf, scale=0.3>>>
 [figure]>
 
-=== Refactoring ===
+=== Unit Tests ===
 
-==== Refactor Continuously ====
+==== Outline ====
 
-* As a program evolves it may become necessary to rethink earlier decisions and adapt the code accordingly
+\tableofcontents[currentsection,currentsubsection]
 
-* Re-organisation of your code without changing it's function
-* Increase modularity by breaking large code blocks apart
-* Rename and restructure code to increase readability and reveal intention
+==== Write and Run Unit Tests ====
 
-* Always refactor one step at a time, and use the tests to check code still works
-* Learn how to use automatic refactoring tools to make your life easier
-** For example: \href{http://rope.sourceforge.net/ropeide.html}{ropeide}
+<[block]{Definition of a ''Unit''}
+* The smallest testable piece of code
+* Example: @my\_product@
+[block]>
 
-* Now is better than never.
-* Although never is often better than ''right'' now.
+* We wish to automate testing of our units
+* In python we have several package available:
+** \href{http://docs.python.org/library/unittest.html}{unittest}, \href{http://somethingaboutorange.com/mrl/projects/nose/0.11.2/}{nosetest}, \href{http://codespeak.net/py/dist/test/}{pytest}
 
-==== Example Refactoring Operations ====
+* Tests increase the confidence that your code works correctly, not only for yourself but also for your reviewers
+* Tests are the only way to trust your code
+* It might take you a while to get used to writing them, but it will pay off quite rapidly
 
-* Rename class/method/module/package/function
-* Move class/method/module/package/function
-* Encapsulate code in method/function
-* Change method/function signature
-* Organize imports (remove unused and sort)
+==== Example ====
 
-* Generally you will improve the readability and modularity of your code
-* Usually refactoring will reduce the lines of code
+\lstinputlisting[style=basic,language=python]{my_product_test.py}
 
-==== Refactoring Example ====
+\lstinputlisting[style=basic,frame=none]{test-output}
 
-\lstinputlisting[style=basic,language=python]{my_product_refactor.py}
+==== Goals and Benefits ====
 
-=== DRY ===
+<[block]{Goals}
+* check code works
+* check design works
+* catch regression
+[block]>
 
-==== Do not repeat yourself (DRY Principle) ====
+<[block]{Benefits}
+* Easier to test the whole, if the units work
+* Can modify parts, and be sure the rest still works
+* Provide examples of how to use code
+[block]>
 
-* When writing code, avoid duplication
-
-* Categories of Duplication:
-** Imposed Duplication
-** Inadvertent Duplication
-** Impatient Duplication
-** Interdeveloper Duplication
-
-* If you detect duplication in code thats already written, refactor mercilessly
-
-==== Imposed Duplication ====
-
-* When duplication seems to be forced on us
-* Example: ???
-
-==== Inadvertent Duplication ====
-
-* When duplication happens by accident
-* Example: duplication of knowledge
-** Variable name: @list\_of\_numbers@ instead of just @numbers@
-** Type information duplicated in variable name
-** Type information incorrect, function may operate on any sequence such as tuples
-
-==== Impatient Duplication ====
-
-* Quick copy-and-paste, instead of clean refactor
-* What happens if the original code contains a bug?
-* What happens if the  original code needs to be changed?
-* Be patient, invest time now to save time later!
-
-* Example: Using a literal instead of a variable for the program version number
-
-==== Interdeveloper Duplication ====
-
-* Repeated implementation by more than one developer
-* Usually concerns utility methods
-* Often caused by lack of communication
-* Or lack of a module to contain utilities
-* Example: product function may already exist in some library
+* Hand-on exercise tomorrow!
 
 === Version Control ===
+
+==== Outline ====
+
+\tableofcontents[currentsection,currentsubsection]
 
 ==== Motivation to Use Version Control ====
 
@@ -224,44 +191,106 @@
 
 * More tomorrow...
 
-=== Unit Tests ===
+=== Refactoring ===
 
-==== Write and Run Unit Tests ====
+==== Outline ====
 
-<[block]{Definition of a ''Unit''}
-* The smallest testable piece of code
-* Example: @my\_product@
-[block]>
+\tableofcontents[currentsection,currentsubsection]
 
-* We wish to automate testing of our units
-* In python we have several package available:
-** \href{http://docs.python.org/library/unittest.html}{unittest}, \href{http://somethingaboutorange.com/mrl/projects/nose/0.11.2/}{nosetest}, \href{http://codespeak.net/py/dist/test/}{pytest}
+==== Refactor Continuously ====
 
-* Tests increase the confidence that your code works correctly, not only for yourself but also for your reviewers
-* Tests are the only way to trust your code
-* It might take you a while to get used to writing them, but it will pay off quite rapidly
+* As a program evolves it may become necessary to rethink earlier decisions and adapt the code accordingly
 
-==== Example ====
+* Re-organisation of your code without changing it's function
+* Increase modularity by breaking large code blocks apart
+* Rename and restructure code to increase readability and reveal intention
 
-\lstinputlisting[style=basic,language=python]{my_product_test.py}
+* Always refactor one step at a time, and use the tests to check code still works
+* Learn how to use automatic refactoring tools to make your life easier
+** For example: \href{http://rope.sourceforge.net/ropeide.html}{ropeide}
 
-\lstinputlisting[style=basic,frame=none]{test-output}
+* Now is better than never.
+* Although never is often better than ''right'' now.
 
-==== Goals and Benefits ====
+==== Example Refactoring Operations ====
 
-<[block]{Goals}
-* check code works
-* check design works
-* catch regression
-[block]>
+* Rename class/method/module/package/function
+* Move class/method/module/package/function
+* Encapsulate code in method/function
+* Change method/function signature
+* Organize imports (remove unused and sort)
 
-<[block]{Benefits}
-* Easier to test the whole, if the units work
-* Can modify parts, and be sure the rest still works
-* Provide examples of how to use code
-[block]>
+* Generally you will improve the readability and modularity of your code
+* Usually refactoring will reduce the lines of code
 
-* Hand-on exercise tomorrow!
+==== Refactoring Example ====
+
+\lstinputlisting[style=basic,language=python]{my_product_refactor.py}
+
+=== Do not Repeat Yourself ===
+
+==== Outline ====
+
+\tableofcontents[currentsection,currentsubsection]
+
+==== Do not repeat yourself (DRY Principle) ====
+
+* When writing code, avoid duplication
+
+* Categories of Duplication:
+** Imposed Duplication
+** Inadvertent Duplication
+** Impatient Duplication
+** Interdeveloper Duplication
+
+* If you detect duplication in code thats already written, refactor mercilessly
+
+==== Imposed Duplication ====
+
+* When duplication seems to be forced on us
+* Example: ???
+
+==== Inadvertent Duplication ====
+
+* When duplication happens by accident
+* Example: duplication of knowledge
+** Variable name: @list\_of\_numbers@ instead of just @numbers@
+** Type information duplicated in variable name
+** Type information incorrect, function may operate on any sequence such as tuples
+
+==== Impatient Duplication ====
+
+* Quick copy-and-paste, instead of clean refactor
+* What happens if the original code contains a bug?
+* What happens if the  original code needs to be changed?
+* Be patient, invest time now to save time later!
+
+* Example: Using a literal instead of a variable for the program version number
+
+==== Interdeveloper Duplication ====
+
+* Repeated implementation by more than one developer
+* Usually concerns utility methods
+* Often caused by lack of communication
+* Or lack of a module to contain utilities
+* Example: product function may already exist in some library
+
+=== Keep it Simple ===
+
+==== Outline ====
+
+\tableofcontents[currentsection,currentsubsection]
+
+==== Keep it simple (stupid) (KIS(S) Principle) ====
+
+* Resist the urge to overengineer
+* Write only what you need now
+
+* Simple is better than complex.
+* Complex is better than complicated.
+
+* Special cases aren't special enough to break the rules.
+* Although practicality beats purity.
 
 == Development Methodologies ==
 
