@@ -124,7 +124,7 @@
 
 \tableofcontents[currentsection,currentsubsection]
 
-==== Motivation to Use Version Control ====
+==== Motivation to use Version Control ====
 
 <[block]{Problem 1}
 "Help my code worked yesterday, but I can't recall what I changed!"
@@ -212,7 +212,7 @@
 * Now is better than never.
 * Although never is often better than ''right'' now.
 
-==== Example Refactoring Operations ====
+==== Common Refactoring Operations ====
 
 * Rename class/method/module/package/function
 * Move class/method/module/package/function
@@ -233,7 +233,7 @@
 
 \tableofcontents[currentsection,currentsubsection]
 
-==== Do not repeat yourself (DRY Principle) ====
+==== Do not Repeat Yourself (DRY Principle) ====
 
 * When writing code, avoid duplication
 
@@ -281,7 +281,7 @@
 
 \tableofcontents[currentsection,currentsubsection]
 
-==== Keep it simple (stupid) (KIS(S) Principle) ====
+==== Keep it Simple (Stupid) (KIS(S) Principle) ====
 
 * Resist the urge to over-engineer
 * Write only what you need now
