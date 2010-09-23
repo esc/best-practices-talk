@@ -294,11 +294,28 @@
 
 == Development Methodologies ==
 
-=== Definition ===
-
 ==== Outline ====
 
 \tableofcontents[currentsection]
+
+=== Definition and Motivation===
+
+==== Outline ====
+
+\tableofcontents[currentsection, currentsubsection]
+
+==== What is a Development Methodology? ====
+
+<[block]{Consist of}
+* A philosophy that governs the style and approach towards development
+* A set of tools and models to support the particular approach
+[block]>
+
+<[block]{Help answer the following questions}
+* How far ahead should I plan?
+* What should I prioritize?
+* When do I write tests and documentation?
+[block]>
 
 ==== Scenarios ====
 
@@ -315,20 +332,7 @@
 ** rapid prototyping of a proposed algorithm
 ** re-use/modify existing code
 
-==== What is a Development Methodology? ====
-
-Consist of:
-
-* A philosophy that governs the style and approach towards development
-* A set of tools and models to support the particular approach
-
-Help answer the following questions:
-
-* How far ahead should I plan?
-* What should I prioritize?
-* When do I write tests and documentation?
-
-==== The Waterfall Model, Royce 1970 ====
+==== An Example: The Waterfall Model, Royce 1970 ====
 
 <[figure][ht]
     <<<images/waterfall.pdf, scale=0.2>>>
