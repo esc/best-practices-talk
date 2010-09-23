@@ -9,5 +9,6 @@ def my_product(numbers):
 
 
 def my_product_refactor(numbers):
+    """ Compute the product of a list of numbers. """
     return numpy.prod(numbers)
 
