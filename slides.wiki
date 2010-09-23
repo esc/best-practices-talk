@@ -416,7 +416,7 @@
 
 ==== Dealing with Bugs ====
 
-* Isolate the bug (using a debugger)
+* Isolate the bug using a debugger
 
 * Write a unit test to expose the bug
 
@@ -425,7 +425,8 @@
 * Use the test to catch the bug should it reappear
 
 <[block]{Debugger}
-A program to run your code one step at a time, and giving you the ability to inspect the current state, for example: '''pdb'''
+* A program to run your code one step at a time, and giving you the ability to inspect the current state
+* For example: \href{http://docs.python.org/library/pdb.html}{pdb}
 [block]>
 
 ==== Dealing with Bugs ====
@@ -445,19 +446,21 @@ A program to run your code one step at a time, and giving you the ability to ins
 ==== Optimization for Speed  --- My Point of View ====
 
 * Readable code is usually better than fast code
+* Programmer/Scientist time is
 * Only optimize if it is absolutely necessary
 * Only optimize your bottlenecks
-* ...and identify these using a profiler, for example '''cprofile'''
+* ...and identify these using a profiler
 
 <[block]{Profiler}
-A tool to measure and provide statistics on the execution time of code.
+* A tool to measure and provide statistics on the execution time of code.
+* For example: \href{http://docs.python.org/library/profile.html}{cProfile}
 [block]>
 
 ==== Prototyping ====
 
 * If you are unsure how to implement something, write a prototype
 * Hack together a proof of concept quickly
-* No tests, no documentation
+* No tests, no documentation, keep it simple
 * Use this to explore the feasibility of your idea
 * When you are ready, scrap the prototype and start with the unit tests
 
@@ -503,6 +506,10 @@ Although never is often better than *right* now.
 * Using version control allows you to share and collaborate easily
 
 * In this day and age there is '''absolutely no excuse''' to not use them
+
+--2em--
+
+* If you can afford it, hire a developer :-)
 
 ==== Links ====
 
