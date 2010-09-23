@@ -511,18 +511,12 @@ Although never is often better than *right* now.
 
 * If you can afford it, hire a developer :-)
 
-==== Links ====
-
-* unittest, nosetest, pytest
-* pdb, pylint, rope and ropeide
-* sphinx, epydoc
-
 ==== The Last Slide ====
 
 * Open source tools used to make this presentation:
-** wiki2beamer
-** \LaTeX beamer
-** dia
+** \href{http://www-user.tu-chemnitz.de/~mren/wiki2beamer/doku.php}{wiki2beamer}
+** \href{http://latex-beamer.sourceforge.net/}{\LaTeX beamer}
+** \href{http://projects.gnome.org/dia/}{dia}
 
 \hspace{10cm}
 
