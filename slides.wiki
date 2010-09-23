@@ -13,7 +13,7 @@
 * '''Development methodologies''', such as Agile Programming and Test Driven Development, are established in the software engineering industry
 * We can learn a lot from them to improve our coding skills
 
-* When programming in Python: Always bear in mind the '''Zen of Python'''
+* When programming in Python: Always bear in mind the \\'''Zen of Python'''
 
 % this means stuff that is unique  to python
 % these are like mantras, repeat them over and over again
