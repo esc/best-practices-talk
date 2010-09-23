@@ -36,11 +36,21 @@
 
 ==== Coding Style ====
 
-* Give your variables meaningful names
-* Adhere to coding conventions
-* OR use a consistent style
-* Use automated tools to ensure adherence: '''pylint'''
-* Readability counts
+* Readability counts!
+* Explicit is better than implicit!
+
+* Give your variables ''intention revealing'' names
+** For example: @numbers@ instead of @nu@
+** For example: @numbers@ instead of @list\_of\_float\_numbers@
+** See also: \href{ihttp://tottinge.blogsome.com/meaningfulnames/}{Ottingers Rules for Naming}
+
+* Format code to coding conventions
+* for example : \href{http://www.python.org/dev/peps/pep-0008/}{PEP-8}
+* OR use a consistent style (especially when collaborating)
+* Conventions Specify:
+** Indentation, maximum line length, blank lines, import, whitespace, comments and variable naming convention
+
+* Use automated tools (aka static checking): \href{http://www.logilab.org/857}{pylint}
 
 ==== Documenting Code ====
 
