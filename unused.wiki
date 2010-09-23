@@ -141,3 +141,19 @@ def my_sum(my_list):
 <[figure]
     <<<images/agile_reloaded.pdf, scale=0.25>>>
 [figure]>
+sic Version Control Workflow ====
+
+<[figure]
+    <<<images/vc_workflow.pdf, scale=0.25>>>
+    [figure]>
+
+
+==== Some Last Thoughts ====
+
+* We will be using '''centralised''' version control, note there exists also '''decentralised''' version control
+* Again, it might take a while to get used to the idea, but it will pay off rapidly.
+
+
+* Questions
+
+

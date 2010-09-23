@@ -157,50 +157,73 @@
 
 === Version Control ===
 
-==== Use Version Control ====
+==== Motivation to Use Version Control ====
 
 <[block]{Problem 1}
 "Help my code worked yesterday, but I can't recall what I changed!"
 [block]>
 
+* Version control is a method to track and retrieve modifications in source code
+
 <[block]{Problem 2}
 "We would like to work together, but we don't know how!"
 [block]>
 
-\hspace{6cm}
-
-* Version control is a method to track changes in source code
-* Concurrent editing is possible via merging
+* Concurrent editing by several developers is possible via merging
 
 ==== Features ====
 
-* Revert to previous versions
-
-* Checkpoint significant improvements
+* Checkpoint significant improvements, for example releases
 
 * Document developer effort
 ** Who changed what, when and why?
 
+* Use version control for anything that's text
+** Code
+** Thesis/Papers
+** Letters
+
 * Easy collaboration across the globe
 
-==== Basic Version Control Workflow ====
+==== Vocabulary ====
+
+* Modifications to code are called ''commits''
+* Commits are stored in a ''repository''
+
+==== Centralised Version Control ====
+
+* All developers connect to a single resource over the network
+* Any interaction (history, previous versions, commiting) require network access
 
 <[figure]
-    <<<images/vc_workflow.pdf, scale=0.25>>>
+    <<<images/centralised.pdf, scale=0.25>>>
+[figure]>
+
+* Example systems: \href{http://subversion.tigris.org/}{Subversion (svn)}, \href{http://www.cvshome.org/}{Concurrent Version System (cvs)}
+
+==== Distributed Version Control ====
+
+* Several copies of the repository may exist all over the place
+* Network access only required when synchornising repositories
+* Much more flexible than centralised
+* Widely regarded as state-of-the-art
+* Example systems: \href{http://git-scm.com/}{git}, \href{http://mercurial.selenic.com/}{Mercurial (hg)}, \href{http://wiki.bazaar.canonical.com/DataStructures}{Bazaar (bzr)}
+
+==== Distributed Supports any Workflow :-) ====
+
+<[figure]
+    <<<images/distributed.pdf, scale=0.2>>>
 [figure]>
 
 
-==== Some Last Thoughts ====
+==== What we will use... ====
 
-* Use version control for anything that's text
-** Code
-** Thesis
-** Letters
-* We will be using '''centralised''' version control, note there exists also '''decentralised''' version control
-* Again, it might take a while to get used to the idea, but it will pay off rapidly.
+<[figure]
+    <<<images/git.pdf, scale=0.8>>>
+[figure]>
 
+* More tomorrow...
 
-* Questions
 === Unit Tests ===
 
 ==== Write and Run Unit Tests ====
