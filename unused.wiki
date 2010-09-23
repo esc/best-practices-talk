@@ -11,7 +11,7 @@
 ** @my\_sum([]) == 0@
 
 * Test that meaningful error messages are raised upon corrupt input
-** @my\_sum(['1', 'a'])@ 
+** @my\_sum(['1', 'a'])@
 ** --> @TypeError: unsupported operand type(s) for +: 'int' and 'str'@
 
 ==== Stuff That's Harder to Test ====
@@ -66,8 +66,8 @@ def my_sum(my_list):
 \hspace{10cm}
 
 <[code][style=basic, language=Python]
->>> my_sum(\[1,2,3\]) 
-6 
+>>> my_sum(\[1,2,3\])
+6
 [code]>
 
 [center]>
@@ -129,11 +129,11 @@ def my_sum(my_list):
 
 * Split feature into units
 
-* Use the agile workflow 
+* Use the agile workflow
 
 * Tests drive the development
 
-* Keep the iterations small 
+* Keep the iterations small
 
 
 ==== The Basic Agile Workflow - Reloaded ====
