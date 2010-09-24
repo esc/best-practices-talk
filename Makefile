@@ -1,5 +1,5 @@
 base = slides
-slidefilename = heanel-best-practices.pdf
+slidefilename = haenel-best-practices.pdf
 
 all: $(base).pdf
 
