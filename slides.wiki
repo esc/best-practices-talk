@@ -498,7 +498,7 @@ Although never is often better than *right* now.
 
 * Every scientific result (especially if important) should be independently reproduced at least internally before publication. (German Research Council 1999)
 
-* Increasing pressure to make the source used in publications available
+* Increasing pressure to make the source code (and data?) used in publications available
 
 \hspace{10cm}
 
