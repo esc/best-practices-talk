@@ -366,7 +366,7 @@
 
 * Rely heavily on testing
 
-* Promote collaboration and teamwork
+* Promote collaboration and teamwork, including frequent input from customer/boss/professor
 
 * Very adaptive, since nothing is set in stone
 
