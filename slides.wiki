@@ -395,6 +395,7 @@
 [figure]>
 
 * Define unit tests first!
+* Develop one unit at a time!
 
 ==== Benefits of TDD ====
 
