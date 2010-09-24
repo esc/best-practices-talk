@@ -402,7 +402,7 @@
 
 * No one ever ''forgets'' to write the unit tests
 
-* Thinking about how to test code, means you are already thinking about how to write it
+* Helps you design a good API, since you are forced to use it when testing
 
 --2em--
 
