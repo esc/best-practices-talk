@@ -156,6 +156,12 @@
 
 * Modifications to code are called ''commits''
 * Commits are stored in a ''repository''
+* Adding commits is called ''commiting''
+
+<[figure]
+    <<<images/repository.pdf, scale=0.2>>>
+[figure]>
+
 
 ==== Centralised Version Control ====
 
