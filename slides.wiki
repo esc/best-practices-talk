@@ -176,6 +176,14 @@
 * Widely regarded as state-of-the-art
 * Example systems: \href{http://git-scm.com/}{git}, \href{http://mercurial.selenic.com/}{Mercurial (hg)}, \href{http://wiki.bazaar.canonical.com/DataStructures}{Bazaar (bzr)}
 
+==== Distributed like Centralised ====
+
+* ... except that each developer has a ''complete'' copy of the entire repository
+
+<[figure]
+    <<<images/distributed_basic.pdf, scale=0.25>>>
+[figure]>
+
 ==== Distributed Supports any Workflow :-) ====
 
 <[figure]
