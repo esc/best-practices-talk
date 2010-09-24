@@ -223,10 +223,6 @@
 * Generally you will improve the readability and modularity of your code
 * Usually refactoring will reduce the lines of code
 
-==== Refactoring Example ====
-
-\lstinputlisting[style=basic,language=python]{code/my_product_refactor.py}
-
 === Do not Repeat Yourself ===
 
 ==== Outline ====
@@ -274,6 +270,11 @@
 * Often caused by lack of communication
 * Or lack of a module to contain utilities
 * Example: product function may already exist in some library
+
+==== Duplication Example ====
+
+\lstinputlisting[style=basic,language=python]{code/my_product_duplication.py}
+
 
 === Keep it Simple ===
 
