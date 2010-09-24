@@ -116,7 +116,7 @@
 * Provide examples of how to use code
 [block]>
 
-* Hand-on exercise tomorrow!
+* Hands-on exercise tomorrow!
 
 === Version Control ===
 
@@ -127,7 +127,7 @@
 ==== Motivation to use Version Control ====
 
 <[block]{Problem 1}
-"Help my code worked yesterday, but I can't recall what I changed!"
+"Help!  my code worked yesterday, but I can't recall what I changed."
 [block]>
 
 * Version control is a method to track and retrieve modifications in source code
@@ -201,7 +201,7 @@
 
 * As a program evolves it may become necessary to rethink earlier decisions and adapt the code accordingly
 
-* Re-organisation of your code without changing it's function
+* Re-organisation of your code without changing its function
 * Increase modularity by breaking large code blocks apart
 * Rename and restructure code to increase readability and reveal intention
 
@@ -355,14 +355,14 @@
 * Set of ''best practices''
 
 * Particularly suited for:
-** small teams ( less than 10 people)
-** unpredictable or rapidly changing requirements
+** Small teams (Fewer than 10 people)
+** Unpredictable or rapidly changing requirements
 
 ==== Prominent Features of Agile methods ====
 
 * Minimal planning, small development iterations
 
-* design/implement/test on a modular level
+* Design/implement/test on a modular level
 
 * Rely heavily on testing
 
