@@ -223,6 +223,14 @@
 * Generally you will improve the readability and modularity of your code
 * Usually refactoring will reduce the lines of code
 
+==== Refactoring Example ====
+
+\lstinputlisting[style=basic,language=python]{code/my_product_refactor.py}
+
+==== Split into functions, and use built-ins ====
+
+\lstinputlisting[style=basic,language=python]{code/my_product_done.py}
+
 === Do not Repeat Yourself ===
 
 ==== Outline ====
