@@ -464,7 +464,7 @@ Exception
 
 \tableofcontents[currentsection,currentsubsection]
 
-==== Dealing with Bugs ====
+==== Dealing with Bugs -- The Agile Way ====
 
 * Isolate the bug using a debugger
 
@@ -479,7 +479,7 @@ Exception
 * For example: \href{http://docs.python.org/library/pdb.html}{pdb}
 [block]>
 
-==== Dealing with Bugs ====
+==== Dealing with Bugs? ====
 
 <[figure][ht]
     <<<images/phd_bug.jpg, scale=0.45>>>
