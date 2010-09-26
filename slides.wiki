@@ -485,6 +485,33 @@ Exception
     <<<images/phd_bug.jpg, scale=0.45>>>
 [figure]>
 
+==== Design by Contract ====
+
+* Functions carry their specifications around with them:
+** Keeping specification and implementation together makes both easier to understand
+** ... and improves the odds that programmers will keep them in  sync
+* A function is defined by:
+** pre-conditions: what must be true in order for it to work correctly
+** post-conditions: what it guarantees will be true if its pre-conditions are met
+* Pre- and post-conditions constrain how the function can evolve:
+** can only ever relax pre-conditions (i.e., take a wider range of input)...
+** ...or tighten post-conditions (i.e., produce a narrower range of output)
+** tightening pre-conditions, or relaxing post-conditions, would violate the function's contract with its callers
+
+==== Defensive Programming ====
+
+* specify pre- and post-conditions using assertion:
+** assert(len(input) > 0)
+** raise an AssertionError
+* use assertions liberally
+* program as if the rest of the world is out to get you!
+* fail early, fail often
+* the less distance there is between the error and you detecting it, the easier it will be to find and fix
+* it's never too late to do it right
+** every time you fix a bug, put in an assertion and a comment
+** if you made the error, the right code can't be obvious
+** you should protect yourself against someone "simplifying" the bug back in
+
 ==== Pair Programming ====
 
 * Two developers, one computer
