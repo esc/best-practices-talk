@@ -466,9 +466,9 @@ Exception
 
 ==== Dealing with Bugs -- The Agile Way ====
 
-* Isolate the bug using a debugger
-
 * Write a unit test to expose the bug
+
+* Isolate the bug using a debugger
 
 * Fix the code, and ensure the test passes
 
