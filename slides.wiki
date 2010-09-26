@@ -48,7 +48,32 @@
 * Conventions Specify:
 ** Indentation, maximum line length, blank lines, import, whitespace, comments and variable naming convention
 
-* Use automated tools (aka static checking): \href{http://www.logilab.org/857}{pylint}
+* Use automated tools to check aderence (aka static checking): \href{http://www.logilab.org/857}{pylint}
+
+==== Using Exceptions ====
+
+* Usage of @try/except/else/finally@ was discussed earlier!
+
+* Python has a \href{http://docs.python.org/library/exceptions.html}{built-in Exception hierarchy}
+* These will suit your needs most of the time, If not, subclass them
+
+<[code][style=basic,  language=Python, frame=none]
+Exception
+ +-- StandardError
+      +-- ArithmeticError
+           +-- FloatingPointError
+           +-- OverflowError
+           +-- ZeroDivision
+      +-- AssertionError
+      +-- IndexError
+      +-- TypeError
+      +-- ValueError
+[code]>
+
+* Resist the tempation to use ''special'' return values (@-1, False, None@)
+
+* Errors should never pass silently.
+* Unless explicitly silenced.
 
 ==== Documenting Code ====
 
