@@ -560,9 +560,13 @@ Simple is better than complex.
 Complex is better than complicated.
 Special cases aren't special enough to break the rules.
 Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
 In the face of ambiguity, refuse the temptation to guess.
 Now is better than never.
 Although never is often better than *right* now.
+
+Beautiful is better than ugly.
 [verbatim]>
 
 == Conclusion ==
