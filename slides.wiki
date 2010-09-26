@@ -535,6 +535,7 @@ Exception
 
 ==== Prototyping ====
 
+* Ever tried to hit a moving target?
 * If you are unsure how to implement something, write a prototype
 * Hack together a proof of concept quickly
 * No tests, no documentation, keep it simple
