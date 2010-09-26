@@ -35,6 +35,7 @@
 
 * Readability counts.
 * Explicit is better than implicit.
+* Beautiful is better than ugly.
 
 * Give your variables ''intention revealing'' names
 ** For example: @numbers@ instead of @nu@
