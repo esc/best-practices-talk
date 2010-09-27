@@ -587,7 +587,7 @@ Beautiful is better than ugly.
 
 * Using version control allows you to share and collaborate easily
 
-* In this day and age there is '''absolutely no excuse''' to not use them
+* In this day and age there is '''absolutely no excuse''' to not use them!!
 
 --2em--
 
