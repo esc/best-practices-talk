@@ -517,10 +517,31 @@ Exception
 * Two developers, one computer
 * Two roles: driver and navigator
 * Driver sits at keyboard
+** Can focus on the tactical aspects
+** See only the ''road'' ahead
 * Navigator observes and instructs
-* Switch roles every so often
+** Can concentrate on the ''map''
+** Pay attention to the big picture
+* Switch roles every so often!
 
-==== Pair Programming -- Benefits ====
+* In a team: switch pairs every so often!
+
+==== Pair Programming --- Benefits ====
+
+* Knoweldge is shared:
+** Specifics of the system
+** Tool usage (editor, interpreter, debugger, version control)
+** Coding style, idioms, knowledge of library
+
+* Less likely to:
+** Surf the web, read personal email
+** Be interrupted by others
+** Cheat themselves (being impatient, taking shortcuts)
+
+* Pairs produce code which:\footnote[1]{Cockburn, Alistair; Williams, Laurie (2000). \href{http://collaboration.csc.ncsu.edu/laurie/Papers/XPSardinia.PDF}{"The Costs and Benefits of Pair Programming"}}
+** Is shorter
+** Incoporates better deisgns
+** Contains less defects
 
 ==== Optimization for Speed  --- My Point of View ====
 
