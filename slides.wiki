@@ -389,7 +389,7 @@ Exception
 
 * Sequential software development process
 * Originates in the manufacturing and construction industries
-* Rigid, inflexible model --- focusing on one stage at a time
+* Rigid, inflexible model---focusing on one stage at a time
 
 === Agile Methods ===
 
@@ -464,7 +464,7 @@ Exception
 
 \tableofcontents[currentsection,currentsubsection]
 
-==== Dealing with Bugs -- The Agile Way ====
+==== Dealing with Bugs --- The Agile Way ====
 
 * Write a unit test to expose the bug
 
@@ -489,7 +489,7 @@ Exception
 
 * Functions carry their specifications around with them:
 ** Keeping specification and implementation together makes both easier to understand
-** ... and improves the odds that programmers will keep them in  sync
+** ...and improves the odds that programmers will keep them in  sync
 * A function is defined by:
 ** pre-conditions: what must be true in order for it to work correctly
 ** post-conditions: what it guarantees will be true if its pre-conditions are met
@@ -519,6 +519,8 @@ Exception
 * Driver sits at keyboard
 * Navigator observes and instructs
 * Switch roles every so often
+
+==== Pair Programming -- Benefits ====
 
 ==== Optimization for Speed  --- My Point of View ====
 
