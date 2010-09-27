@@ -75,6 +75,15 @@ Exception
 * Errors should never pass silently
 * Unless explicitly silenced
 
+==== @import@ Pitfalls ====
+
+* Don't use the star import @import *@
+** Code is hard to read
+** Modules may overwrite each other
+** You will import ''everything'' in a module
+** ...unless you are using the interpreter interactively
+
+
 ==== Documenting Code ====
 
 * Minimum requirement: at least a docstring
