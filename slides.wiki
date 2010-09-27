@@ -33,9 +33,9 @@
 
 ==== Coding Style ====
 
-* Readability counts.
-* Explicit is better than implicit.
-* Beautiful is better than ugly.
+* Readability counts
+* Explicit is better than implicit
+* Beautiful is better than ugly
 
 * Give your variables ''intention revealing'' names
 ** For example: @numbers@ instead of @nu@
@@ -72,8 +72,8 @@ Exception
 
 * Resist the tempation to use ''special'' return values (@-1, False, None@)
 
-* Errors should never pass silently.
-* Unless explicitly silenced.
+* Errors should never pass silently
+* Unless explicitly silenced
 
 ==== Documenting Code ====
 
@@ -249,8 +249,8 @@ Exception
 * Learn how to use automatic refactoring tools to make your life easier
 ** For example: \href{http://rope.sourceforge.net/ropeide.html}{ropeide}
 
-* Now is better than never.
-* Although never is often better than ''right'' now.
+* Now is better than never
+* Although never is often better than ''right'' now
 
 ==== Common Refactoring Operations ====
 
@@ -335,11 +335,11 @@ Exception
 * Resist the urge to over-engineer
 * Write only what you need now
 
-* Simple is better than complex.
-* Complex is better than complicated.
+* Simple is better than complex
+* Complex is better than complicated
 
-* Special cases aren't special enough to break the rules.
-* Although practicality beats purity.
+* Special cases aren't special enough to break the rules
+* Although practicality beats purity
 
 == Development Methodologies ==
 
