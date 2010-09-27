@@ -7,7 +7,7 @@
 % you know about variables and loops
 % good programs consists of so much more
 
-* '''Best practices''' evolved from programmers folk wisdom
+* '''Best practices''' evolved from programmer's folk wisdom
 * They increase productivity and decrease stress
 
 * '''Development methodologies''', such as Agile Programming and Test Driven Development, are established in the software engineering industry
