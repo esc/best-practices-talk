@@ -83,6 +83,8 @@ Exception
 ** You will import ''everything'' in a module
 ** ...unless you are using the interpreter interactively
 
+* Put all imports at the beginning of the file, unless you have a very good reason to do otherwise
+
 
 ==== Documenting Code ====
 
