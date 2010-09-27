@@ -501,8 +501,8 @@ Exception
 ==== Defensive Programming ====
 
 * specify pre- and post-conditions using assertion:
-** assert(len(input) > 0)
-** raise an AssertionError
+** @assert(len(input) > 0)@
+** raise an @AssertionError@
 * use assertions liberally
 * program as if the rest of the world is out to get you!
 * fail early, fail often
