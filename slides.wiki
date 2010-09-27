@@ -364,12 +364,12 @@ Exception
 
 ==== What is a Development Methodology? ====
 
-<[block]{Consist of}
+<[block]{Consist of:}
 * A philosophy that governs the style and approach towards development
 * A set of tools and models to support the particular approach
 [block]>
 
-<[block]{Help answer the following questions}
+<[block]{Help answer the following questions:}
 * How far ahead should I plan?
 * What should I prioritize?
 * When do I write tests and documentation?
