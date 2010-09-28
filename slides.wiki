@@ -336,12 +336,20 @@ Exception
 
 ==== Impatient Duplication ====
 
-* Quick copy-and-paste, instead of clean refactor
+* Duplication due to sheer laziness
+* Reasons:
+** End-of-day
+** Deadline
+** Insert @excuse@ here
+
+<[example]
+* Copy-and-paste a snippet, instead of refactoring it into a function
 * What happens if the original code contains a bug?
 * What happens if the  original code needs to be changed?
-* Be patient, invest time now to save time later!
+[example]>
 
-* Example: Using a literal instead of a variable for the program version number
+* By far the easiest category to avoid, but requires discipline and willingness
+* Be patient, invest time now to save time later!
 
 ==== Interdeveloper Duplication ====
 
