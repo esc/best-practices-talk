@@ -470,7 +470,7 @@ Exception
 ==== Agile methods ====
 
 <[figure][ht]
-    <<<images/dilbert-agile_programming.jpg, scale=0.45>>>
+    <<<images/dilbert-agile_programming.jpg, scale=0.55>>>
 [figure]>
 
 === Test Driven Development ===
