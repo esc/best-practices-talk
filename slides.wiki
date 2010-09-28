@@ -357,12 +357,14 @@ Exception
 * Usually concerns utility methods
 * Often caused by lack of communication
 * Or lack of a module to contain utilities
-* Example: product function may already exist in some library
+* Or lack of library knowledge
 
-==== Duplication Example ====
+==== Interdeveloper Duplication Example ====
+
+* Product function may already exist in some library
+* (Though I admit this may also be classified as impatient duplication)
 
 \lstinputlisting[style=basic,language=python]{code/my_product_duplication.py}
-
 
 === Keep it Simple ===
 
