@@ -325,10 +325,14 @@ Exception
 ==== Inadvertent Duplication ====
 
 * When duplication happens by accident
-* Example: duplication of knowledge
-** Variable name: @list\_of\_numbers@ instead of just @numbers@
-** Type information duplicated in variable name
-** Type information incorrect, function may operate on any sequence such as tuples
+* You don't realize that you are repeating yourself
+
+<[example]
+* Variable name: @list\_of\_numbers@ instead of just @numbers@
+* Type information duplicated in variable name
+* What happens if the set of possible types grows or shrinks?
+* Side effect: Type information incorrect, function may operate on any sequence such as tuples
+[example]>
 
 ==== Impatient Duplication ====
 
