@@ -601,11 +601,21 @@ Exception
 ==== Prototyping ====
 
 * Ever tried to hit a moving target?
+
 * If you are unsure how to implement something, write a prototype
 * Hack together a proof of concept quickly
 * No tests, no documentation, keep it simple
 * Use this to explore the feasibility of your idea
 * When you are ready, scrap the prototype and start with the unit tests
+
+
+==== Quality Assurance ====
+
+* The techniques I have mentioned above help to assure high quality of the system
+* Quality is not just testing:
+** Trying to improve the quality of software by doing more testing is like trying to lose weight by weighing yourself more often
+* Quality is designed in (For example, by using the DRY and KISS principles)
+* Quality is monitored and maintained through the whole software lifecycle
 
 == Zen of Python ==
 
