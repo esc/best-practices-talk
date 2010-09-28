@@ -291,6 +291,10 @@ Exception
 ==== Do not Repeat Yourself (DRY Principle) ====
 
 * When writing code, avoid duplication
+* Do not express the same piece of knowledge (not just code) in two places
+
+* If you need to update this knowledge you will have to update it everywhere
+* Its not a question of if this can go wrong, but instead a question of when
 
 * Categories of Duplication:
 ** Imposed Duplication
