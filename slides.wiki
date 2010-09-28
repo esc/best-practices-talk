@@ -303,7 +303,12 @@ Exception
 ==== Imposed Duplication ====
 
 * When duplication seems to be forced on us
-* Example: ???
+* Example: duplication of programm version number in:
+** Source code
+** Website html
+** Licence file
+** README
+* Result: very complicated to increase version number without forgetting about one of these
 
 ==== Inadvertent Duplication ====
 
