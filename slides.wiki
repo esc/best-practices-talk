@@ -397,9 +397,9 @@ Exception
 
 ==== What is a Development Methodology? ====
 
-<[block]{Consist of:}
+<[block]{Consists of:}
 * A philosophy that governs the style and approach towards development
-* A set of tools and models to support the particular approach
+* A set of tools and models to support that particular approach
 [block]>
 
 <[block]{Help answer the following questions:}
