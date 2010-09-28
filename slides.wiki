@@ -308,12 +308,19 @@ Exception
 ==== Imposed Duplication ====
 
 * When duplication seems to be forced on us
-* Example: duplication of programm version number in:
+* We feel like there is no other solution
+* The environment or programming language seems to require duplication
+
+<[example]
+* Duplication of programm version number in:
 ** Source code
-** Website html
-** Licence file
+** Website
+** Licence
 ** README
-* Result: very complicated to increase version number without forgetting about one of these
+** Distribution package
+
+* Result: Increaseing version number consistently becomes difficult
+[example]>
 
 ==== Inadvertent Duplication ====
 
