@@ -40,10 +40,10 @@
 * Give your variables ''intention revealing'' names
 ** For example: @numbers@ instead of @nu@
 ** For example: @numbers@ instead of @list\_of\_float\_numbers@
-** See also: \href{ihttp://tottinge.blogsome.com/meaningfulnames/}{Ottingers Rules for Naming}
+** See also: \href{http://tottinge.blogsome.com/meaningfulnames/}{Ottingers Rules for Naming}
 
 * Format code to coding conventions
-* for example : \href{http://www.python.org/dev/peps/pep-0008/}{PEP-8}
+* for example: \href{http://www.python.org/dev/peps/pep-0008/}{PEP-8}
 * OR use a consistent style (especially when collaborating)
 * Conventions Specify:
 ** Indentation, maximum line length, blank lines, import, whitespace, comments and variable naming convention
@@ -127,7 +127,7 @@ Exception
 
 * We wish to automate testing of our units
 * In python we have several package available:
-** \href{http://docs.python.org/library/unittest.html}{unittest}, \href{http://somethingaboutorange.com/mrl/projects/nose/0.11.2/}{nosetest}, \href{http://codespeak.net/py/dist/test/}{pytest}
+** \href{http://docs.python.org/library/unittest.html}{unittest}, \href{http://somethingaboutorange.com/mrl/projects/nose/0.11.2/}{nosetest}, \href{http://codespeak.net/py/dist/test/}{py.test}
 
 * Tests increase the confidence that your code works correctly, not only for yourself but also for your reviewers
 * Tests are the only way to trust your code
@@ -312,7 +312,7 @@ Exception
 * The environment or programming language seems to require duplication
 
 <[example]
-* Duplication of programm version number in:
+* Duplication of a program version number in:
 ** Source code
 ** Website
 ** Licence
@@ -470,7 +470,7 @@ Exception
 ==== Agile methods ====
 
 <[figure][ht]
-    <<<images/dilbert-agile_programming.jpg, scale=0.55>>>
+    <<<images/dilbert-agile_programming.jpg, scale=0.27>>>
 [figure]>
 
 === Test Driven Development ===
@@ -534,7 +534,7 @@ Exception
 ** ...and improves the odds that programmers will keep them in  sync
 * A function is defined by:
 ** pre-conditions: what must be true in order for it to work correctly
-** post-conditions: what it guarantees will be true if its pre-conditions are met
+** post-conditions: what it guarantees will be true if pre-conditions are met
 * Pre- and post-conditions constrain how the function can evolve:
 ** can only ever relax pre-conditions (i.e., take a wider range of input)...
 ** ...or tighten post-conditions (i.e., produce a narrower range of output)
@@ -543,7 +543,7 @@ Exception
 ==== Defensive Programming ====
 
 * specify pre- and post-conditions using assertion:
-** @assert(len(input) > 0)@
+** @assert len(input) > 0@
 ** raise an @AssertionError@
 * use assertions liberally
 * program as if the rest of the world is out to get you!
@@ -552,7 +552,7 @@ Exception
 * it's never too late to do it right
 ** every time you fix a bug, put in an assertion and a comment
 ** if you made the error, the right code can't be obvious
-** you should protect yourself against someone "simplifying" the bug back in
+** you should protect yourself against someone “simplifying” the bug back in
 
 ==== Pair Programming ====
 
@@ -560,9 +560,9 @@ Exception
 * Two roles: driver and navigator
 * Driver sits at keyboard
 ** Can focus on the tactical aspects
-** See only the ''road'' ahead
+** See only the “road” ahead
 * Navigator observes and instructs
-** Can concentrate on the ''map''
+** Can concentrate on the “map”
 ** Pay attention to the big picture
 * Switch roles every so often!
 
@@ -580,10 +580,10 @@ Exception
 ** Be interrupted by others
 ** Cheat themselves (being impatient, taking shortcuts)
 
-* Pairs produce code which:\footnote[1]{Cockburn, Alistair; Williams, Laurie (2000). \href{http://collaboration.csc.ncsu.edu/laurie/Papers/XPSardinia.PDF}{"The Costs and Benefits of Pair Programming"}}
+* Pairs produce code which:\footnote[1]{Cockburn, Alistair, Williams, Laurie (2000). \href{http://collaboration.csc.ncsu.edu/laurie/Papers/XPSardinia.PDF}{\sl The Costs and Benefits of Pair Programming}}
 ** Is shorter
-** Incoporates better deisgns
-** Contains less defects
+** Incoporates better designs
+** Contains fewer defects
 
 ==== Optimization for Speed  --- My Point of View ====
 
