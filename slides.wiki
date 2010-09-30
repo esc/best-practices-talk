@@ -48,7 +48,7 @@
 * Conventions Specify:
 ** Indentation, maximum line length, blank lines, import, whitespace, comments and variable naming convention
 
-* Use automated tools to check aderence (aka static checking): \href{http://www.logilab.org/857}{pylint}
+* Use automated tools to check adherence (aka static checking): \href{http://www.logilab.org/857}{pylint}
 
 ==== Using Exceptions ====
 
@@ -303,7 +303,7 @@ Exception
 ** Impatient Duplication
 ** Interdeveloper Duplication
 
-* If you detect duplication in code thats already written, refactor mercilessly! (if possible)
+* If you detect duplication in code thats already written, refactor mercilessly!
 
 ==== Imposed Duplication ====
 
@@ -349,7 +349,7 @@ Exception
 [example]>
 
 * By far the easiest category to avoid, but requires discipline and willingness
-* Be patient, invest time now to save time later!
+* Be patient, invest time now to save time later! (especially when facing oh so important deadlines)
 
 ==== Interdeveloper Duplication ====
 
@@ -547,7 +547,7 @@ Exception
 ** raise an @AssertionError@
 * use assertions liberally
 * program as if the rest of the world is out to get you!
-* fail early, fail often
+* fail early, fail often, fail better
 * the less distance there is between the error and you detecting it, the easier it will be to find and fix
 * it's never too late to do it right
 ** every time you fix a bug, put in an assertion and a comment
@@ -589,6 +589,7 @@ Exception
 
 * Readable code is usually better than fast code
 * Programmer/Scientist time is more valuable than computer time
+* Don't optimize early, ensure code works, has tests and is documented before starting to optimize
 * Only optimize if it is absolutely necessary
 * Only optimize your bottlenecks
 * ...and identify these using a profiler
@@ -612,7 +613,7 @@ Exception
 
 ==== Quality Assurance ====
 
-* The techniques I have mentioned above help to assure high quality of the system
+* The techniques I have mentioned above help to assure high quality of the software
 * Quality is not just testing:
 ** Trying to improve the quality of software by doing more testing is like trying to lose weight by weighing yourself more often
 * Quality is designed in (For example, by using the DRY and KISS principles)
