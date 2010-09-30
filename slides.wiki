@@ -672,6 +672,12 @@ Beautiful is better than ugly.
 
 ==== The Last Slide ====
 
+* Slides based on:
+** Material by Pietro Berkes and Tiziano Zito
+** \href{http://pragprog.com/titles/tpp/the-pragmatic-programmer}{''The Pragmatic Programmer''} by Hunt and Thomas,
+** \href{http://software-carpentry.org/}{''The'' Course on Software Carpentry} by Greg Wilson
+
+
 * Open source tools used to make this presentation:
 ** \href{http://www-user.tu-chemnitz.de/~mren/wiki2beamer/doku.php}{wiki2beamer}
 ** \href{http://latex-beamer.sourceforge.net/}{\LaTeX beamer}
