@@ -77,7 +77,7 @@ Exception
 
 ==== @import@ Pitfalls ====
 
-* Don't use the star import @import *@
+* Don't use the ''star import'': @import *@
 ** Code is hard to read
 ** Modules may overwrite each other
 ** You will import ''everything'' in a module
