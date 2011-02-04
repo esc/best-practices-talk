@@ -3,7 +3,11 @@ slidefilename = haenel-best-practices.pdf
 
 all: $(base).pdf
 
+git-sha:
+	echo `git describe --tags` > git-sha
+
 $(base).pdf: $(base).tex $(base).wiki.tex
+	make git-sha
 	pdflatex $(base).tex
 	pdflatex $(base).tex
 	cp slides.pdf $(slidefilename)
@@ -15,4 +19,4 @@ clean:
 	-rm -vf $(base).{toc,snm,log,aux,out,nav}
 
 distclean: clean
-	-rm -vf $(base).pdf $(base).wiki.tex $(slidefilename)
+	-rm -vf $(base).pdf $(base).wiki.tex $(slidefilename) git-sha
