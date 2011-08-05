@@ -23,8 +23,8 @@ Valentin Haenel <valentin@haenel.co>
 
 The talk is made with:
 
-* wiki2beamer
-* LaTeX Beamer
+* [wiki2beamer](http://wiki2beamer.sourceforge.net/)
+* [LaTeX Beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home)
 
 ## License
 
