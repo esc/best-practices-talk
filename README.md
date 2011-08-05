@@ -27,7 +27,7 @@ The talk is made with:
 * [LaTeX Beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home)
 
 Pre-compiled PDFs are available from [Github
-downlodas](https://github.com/esc/best-practices-talk/downloads)
+downloads](https://github.com/esc/best-practices-talk/downloads)
 
 ## License
 
