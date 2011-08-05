@@ -7,8 +7,7 @@ all: $(base).pdf
 git-sha:
 	echo `git describe --tags` > git-sha
 
-$(base).pdf: $(base).tex $(base).wiki.tex
-	make git-sha
+$(base).pdf: | git-sha $(base).tex $(base).wiki.tex
 	pdflatex $(base).tex
 	pdflatex $(base).tex
 	cp slides.pdf "$(slidefilename)"`cat git-sha`.pdf
