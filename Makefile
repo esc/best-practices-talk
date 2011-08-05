@@ -17,7 +17,7 @@ $(base).wiki.tex: $(base).wiki
 	wiki2beamer $(base).wiki > $(base).wiki.tex
 
 clean:
-	-rm -vf $(base).{toc,snm,log,aux,out,nav}
+	-rm -vf $(addprefix $(base).,toc snm log aux out nav)
 
 distclean: clean
-	-rm -vf $(base).pdf $(base).wiki.tex $(slidefilename) git-sha
+	-rm -vf $(base).pdf $(base).wiki.tex "$(slidefilename)"`cat git-sha`.pdf git-sha
