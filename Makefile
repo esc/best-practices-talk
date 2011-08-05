@@ -10,7 +10,7 @@ git-sha:
 $(base).pdf: | git-sha $(base).tex $(base).wiki.tex
 	pdflatex $(base).tex
 	pdflatex $(base).tex
-	cp slides.pdf "$(slidefilename)"`cat git-sha`.pdf
+	cp slides.pdf "$(slidefilename)"-`cat git-sha`.pdf
 
 $(base).wiki.tex: $(base).wiki
 	wiki2beamer $(base).wiki > $(base).wiki.tex
@@ -19,4 +19,4 @@ clean:
 	-rm -vf $(addprefix $(base).,toc snm log aux out nav)
 
 distclean: clean
-	-rm -vf $(base).pdf $(base).wiki.tex "$(slidefilename)"`cat git-sha`.pdf git-sha
+	-rm -vf $(base).pdf $(base).wiki.tex "$(slidefilename)"-`cat git-sha`.pdf git-sha
