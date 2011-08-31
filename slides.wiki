@@ -50,28 +50,26 @@
 
 * Use automated tools to check adherence (aka static checking): \href{http://www.logilab.org/857}{pylint}
 
-==== Using Exceptions ====
+==== Using Exceptions ====[containsverbatim]
 
 * Usage of @try/except/else/finally@ was discussed earlier!
-
 * Python has a \href{http://docs.python.org/library/exceptions.html}{built-in Exception hierarchy}
 * These will suit your needs most of the time, If not, subclass them
 
-<[code][style=basic,  language=Python, frame=none]
-Exception
- +-- StandardError
-      +-- ArithmeticError
-           +-- FloatingPointError
-           +-- OverflowError
-           +-- ZeroDivision
-      +-- AssertionError
-      +-- IndexError
-      +-- TypeError
-      +-- ValueError
-[code]>
+<[verbatim]
+    Exception
+    +-- StandardError
+        +-- ArithmeticError
+            +-- FloatingPointError
+            +-- OverflowError
+            +-- ZeroDivision
+        +-- AssertionError
+        +-- IndexError
+        +-- TypeError
+        +-- ValueError
+[verbatim]>
 
 * Resist the tempation to use ''special'' return values (@-1, False, None@)
-
 * Errors should never pass silently
 * Unless explicitly silenced
 
