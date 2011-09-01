@@ -1,6 +1,6 @@
-% nosetests my_product_test.py
-.
+zsh» nosetests my_product_test.py
+..
 ----------------------------------------------------------------------
-Ran 1 test in 0.001s
+Ran 2 tests in 0.001s
 
 OK

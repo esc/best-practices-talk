@@ -162,14 +162,21 @@
 
 ==== Write and Run Unit Tests ====
 
+* We wish to automate testing of our software
+
+* Instead of testing the whole system we test ''units''
+
 <[block]{Definition of a ''Unit''}
 * The smallest testable piece of code
 * Example: @my\_product@
 [block]>
 
-* We wish to automate testing of our units
+==== Available Packages ====
+
 * In python we have several package available:
-** \href{http://docs.python.org/library/unittest.html}{unittest}, \href{http://somethingaboutorange.com/mrl/projects/nose/0.11.2/}{nosetest}, \href{http://codespeak.net/py/dist/test/}{py.test}
+** \href{http://docs.python.org/library/unittest.html}{unittest}
+** \href{http://somethingaboutorange.com/mrl/projects/nose/0.11.2/}{nosetest}
+** \href{http://codespeak.net/py/dist/test/}{py.test}
 
 * Tests increase the confidence that your code works correctly, not only for yourself but also for your reviewers
 * Tests are the only way to trust your code
@@ -179,7 +186,9 @@
 
 \inputminted[fontsize=\footnotesize]{py}{code/my_product_test.py}
 
-\inputminted[fontsize=\footnotesize]{py}{code/test-output}
+--1cm--
+
+\inputminted[fontsize=\footnotesize]{pycon}{code/test-output}
 
 ==== Goals and Benefits ====
 
