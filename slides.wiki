@@ -42,6 +42,10 @@
 ** For example: @numbers@ instead of @list\_of\_float\_numbers@
 ** See also: \href{http://tottinge.blogsome.com/meaningfulnames/}{Ottingers Rules for Naming}
 
+--0.5cm--
+
+\inputminted[fontsize=\footnotesize]{py}{code/my_product.py}
+
 ==== Formatting Code ====
 
 * Format code to coding conventions
@@ -127,15 +131,16 @@
 
 ==== Documenting Code ====
 
-* Minimum requirement: at least a docstring
+* Minimum requirement: at least a single line docstring
 * Not only for others, but also for yourself!
 * Serves as on-line help in the interpreter
 
-* For a library: document arguments and return objects, including types
-* Use the \href{http://projects.scipy.org/numpy/wiki/CodingStyleGuidelines}{numpy docstring conventions}
+* Document arguments and return objects, including types
+* Use the \href{https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt}{numpy docstring conventions}
 
 * Use tools to automatically generate website from docstrings
-* For example: \href{http://epydoc.sourceforge.net/}{epydoc} or \href{http://sphinx.pocoo.org/}{sphinx}
+** \href{http://epydoc.sourceforge.net/}{epydoc}
+** \href{http://sphinx.pocoo.org/}{sphinx}
 
 * For complex algorithms, document every line, and include equations in docstring
 
