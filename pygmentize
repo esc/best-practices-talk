@@ -1,0 +1,24 @@
+#! /usr/bin/python
+import pygments.styles as ps
+import pygments.plugin as pg
+from solarized import SolarizedStyle
+
+patched = ps.get_style_by_name
+
+def get_style_by_name(style_name):
+    if style_name == 'solarized':
+        return SolarizedStyle
+    else:
+        return patched(style_name)
+
+ps.get_style_by_name = get_style_by_name
+
+patched2 = pg.find_plugin_styles
+
+def find_plugin_styles(foo):
+    return 'solarized', SolarizedStyle
+
+pg.find_plugin_styles = find_plugin_styles
+
+import pygments.cmdline
+pygments.cmdline.main()
