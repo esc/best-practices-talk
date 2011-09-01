@@ -38,8 +38,8 @@
 * Beautiful is better than ugly
 
 * Give your variables ''intention revealing'' names
-** For example: @numbers@ instead of @nu@
-** For example: @numbers@ instead of @list\_of\_float\_numbers@
+** For example: _blue_@numbers@_ instead of \textcolor{blue}{@nu@}
+** For example: _blue_@numbers@_ instead of \textcolor{blue}{@list\_of\_float\_numbers@}
 ** See also: \href{http://tottinge.blogsome.com/meaningfulnames/}{Ottingers Rules for Naming}
 
 --0.5cm--
@@ -93,13 +93,14 @@
 
 ==== Using Exceptions ====
 
-* Use @try/except/else/finally@ to detect anomalous behaviour:
+* Use the _green_@try except@_ statments to detect anomalous behaviour:
 
 \inputminted[fontsize=\footnotesize]{py}{code/my_product_try.py}
 
 * Recover or fail gracefully
 
-* Resist the tempation to use ''special'' return values (@-1, False, None@)
+* Resist the tempation to use ''special'' return values
+** @(-\textcolor{blue}{1}, \textcolor{red}{False}, \textcolor{red}{None})@
 * Errors should never pass silently...
 * Unless explicitly silenced
 
@@ -123,7 +124,7 @@
 
 ==== @import@ Pitfalls ====
 
-* Don't use the ''star import'': @import *@
+* Don't use the ''star import'': @\textcolor{red}{import} *@
 ** Code is hard to read
 ** Modules may overwrite each other
 ** You will import ''everything'' in a module
@@ -379,7 +380,7 @@
 * You don't realize that you are repeating yourself
 
 <[example]
-* Variable name: @list\_of\_numbers@ instead of just @numbers@
+* Variable name: \textcolor{blue}{@list\_of\_numbers@} instead of just @\textcolor{blue}{numbers}@
 * Type information duplicated in variable name
 * What happens if the set of possible types grows or shrinks?
 * Side effect: Type information incorrect, function may operate on any sequence such as tuples
@@ -391,7 +392,7 @@
 * Reasons:
 ** End-of-day
 ** Deadline
-** Insert @excuse@ here
+** Insert _blue_@excuse@_ here
 
 <[example]
 * Copy-and-paste a snippet, instead of refactoring it into a function
@@ -594,8 +595,8 @@
 ==== Defensive Programming ====
 
 * specify pre- and post-conditions using assertion:
-** @assert len(input) > 0@
-** raise an @AssertionError@
+** @\textcolor{green}{assert} \textcolor{red}{len}(\textcolor{blue}{numbers}) > \textcolor{cyan}{0}@
+** @\textcolor{green}{raise} \textcolor{blue}{AssertionError}@
 * use assertions liberally
 * program as if the rest of the world is out to get you!
 * fail early, fail often, fail better
