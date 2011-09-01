@@ -416,6 +416,8 @@
 * Product function may already exist in some library
 * (Though I admit this may also be classified as impatient duplication)
 
+--1cm--
+
 \inputminted[fontsize=\footnotesize]{py}{code/my_product_duplication.py}
 
 === Keep it Simple ===
