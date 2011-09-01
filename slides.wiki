@@ -56,13 +56,24 @@
 ** \href{https://github.com/jcrocholl/pep8/}{pep8}
 ** \href{https://launchpad.net/pyflakes}{pyflakes}
 
-==== Using Exceptions ====[containsverbatim]
+==== Using Exceptions ====
 
-* Usage of @try/except/else/finally@ was discussed earlier!
+* Use @try/except/else/finally@ to detect anomalous behaviour:
+
+\inputminted[fontsize=\footnotesize]{py}{code/my_product_try.py}
+
+* Recover or fail gracefully
+
+* Resist the tempation to use ''special'' return values (@-1, False, None@)
+* Errors should never pass silently...
+* Unless explicitly silenced
+
+==== Appropriate Exceptions ====[containsverbatim]
+
 * Python has a \href{http://docs.python.org/library/exceptions.html}{built-in Exception hierarchy}
 * These will suit your needs most of the time, If not, subclass them
 
-<[verbatim]
+\begin{minted}[fontsize=\footnotesize]{python}
     Exception
     +-- StandardError
         +-- ArithmeticError
@@ -73,11 +84,8 @@
         +-- IndexError
         +-- TypeError
         +-- ValueError
-[verbatim]>
+\end{minted}
 
-* Resist the tempation to use ''special'' return values (@-1, False, None@)
-* Errors should never pass silently
-* Unless explicitly silenced
 
 ==== @import@ Pitfalls ====
 
