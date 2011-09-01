@@ -7,4 +7,3 @@ def my_func(numbers):
     for item in numbers:
         total2 += item
     return total - total2
-

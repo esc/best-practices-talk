@@ -169,7 +169,7 @@
 
 <[block]{Definition of a ''Unit''}
 * The smallest testable piece of code
-* Example: @my\_product@
+* Example: \textcolor{blue}{@my\_product@}
 [block]>
 
 ==== Available Packages ====
