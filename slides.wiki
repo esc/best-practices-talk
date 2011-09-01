@@ -370,7 +370,7 @@
 ** README
 ** Distribution package
 
-* Result: Increaseing version number consistently becomes difficult
+* Result: Increasing version number consistently becomes difficult
 [example]>
 
 ==== Inadvertent Duplication ====
