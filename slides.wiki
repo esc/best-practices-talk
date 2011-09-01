@@ -496,7 +496,7 @@
 
 * No one ever ''forgets'' to write the unit tests
 
-* Helps you design a good API, since you are forced to use it when testing
+* Helps you design a good API, since you are forced to use it when testing (''dog fooding'')
 
 --2em--
 
