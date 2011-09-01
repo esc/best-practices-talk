@@ -650,7 +650,10 @@
 
 <[block]{Profiler}
 * A tool to measure and provide statistics on the execution time of code.
-* For example: \href{http://docs.python.org/library/profile.html}{cProfile}
+* For example:
+** \href{http://docs.python.org/library/profile.html}{cProfile}
+** \href{http://packages.python.org/line_profiler/}{line profiler}
+** \href{http://www.vrplumber.com/programming/runsnakerun/}{run snake run}
 [block]>
 
 ==== Prototyping ====
