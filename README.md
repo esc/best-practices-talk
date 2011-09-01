@@ -26,11 +26,18 @@ The talk is made with:
 * [wiki2beamer](http://wiki2beamer.sourceforge.net/) (included in repository)
 * [LaTeX Beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home)
 * [Pygments](http://pygments.org/)
-* [minted](http://code.google.com/p/minted/) (included in repository)
+* [Minted](http://code.google.com/p/minted/) (included in repository)
 
 Pre-compiled PDFs are available from [Github
 downloads](https://github.com/esc/best-practices-talk/downloads)
 
 ## License
 
-[Attribution-ShareAlike 3.0 Unported  (CC BY-SA 3.0) ](http://creativecommons.org/licenses/by-sa/3.0/)
+### Content
+
+* All content is licensed under the terms of [Attribution-ShareAlike 3.0 Unported  (CC BY-SA 3.0) ](http://creativecommons.org/licenses/by-sa/3.0/)
+
+### Included Dependencies
+
+* Wiki2beamer is licensed under Gnu Public Licence v2
+* Minted is licensed under LaTeX Project Public License  version 1.3
