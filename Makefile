@@ -13,7 +13,7 @@ $(base).pdf: | git-sha $(base).tex $(base).wiki.tex
 	cp slides.pdf "$(slidefilename)"-`cat git-sha`.pdf
 
 $(base).wiki.tex: $(base).wiki
-	wiki2beamer $(base).wiki > $(base).wiki.tex
+	./wiki2beamer-0.9.2 $(base).wiki > $(base).wiki.tex
 
 clean:
 	-rm -vf $(addprefix $(base).,toc snm log aux out nav)
