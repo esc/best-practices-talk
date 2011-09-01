@@ -42,6 +42,8 @@
 ** For example: @numbers@ instead of @list\_of\_float\_numbers@
 ** See also: \href{http://tottinge.blogsome.com/meaningfulnames/}{Ottingers Rules for Naming}
 
+==== Formatting Code ====
+
 * Format code to coding conventions
 * for example: \href{http://www.python.org/dev/peps/pep-0008/}{PEP-8}
 * OR use a consistent style (especially when collaborating)
