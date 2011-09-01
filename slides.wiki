@@ -73,7 +73,7 @@
 * Python has a \href{http://docs.python.org/library/exceptions.html}{built-in Exception hierarchy}
 * These will suit your needs most of the time, If not, subclass them
 
-\begin{minted}[fontsize=\footnotesize]{python}
+\begin{pycode}
     Exception
     +-- StandardError
         +-- ArithmeticError
@@ -84,7 +84,7 @@
         +-- IndexError
         +-- TypeError
         +-- ValueError
-\end{minted}
+\end{pycode}
 
 
 ==== @import@ Pitfalls ====
