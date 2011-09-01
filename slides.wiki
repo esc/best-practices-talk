@@ -739,8 +739,15 @@ Beautiful is better than ugly.
 ** \href{http://www-user.tu-chemnitz.de/~mren/wiki2beamer/doku.php}{wiki2beamer}
 ** \href{http://latex-beamer.sourceforge.net/}{\LaTeX beamer}
 ** \href{http://projects.gnome.org/dia/}{dia}
+** \href{http://pygments.org/}{pygments}
+** \href{http://code.google.com/p/minted/}{minted}
 
 \hspace{10cm}
 
 Questions ?
 
+--1cm--
+
+<[center]
+\url{https://github.com/esc/best-practices-talk}
+[center]>
