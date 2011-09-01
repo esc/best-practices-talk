@@ -103,7 +103,7 @@
 * unless you have a very good reason to do otherwise
 
 
-==== @import foobar as fb@ vs. @from foo import bar@ ====[containsverbatim]
+==== @import foobar as fb@ \textbf{VS} @from foo import bar@ ====[containsverbatim]
 
 \begin{pycode}
     import numpy as np
@@ -113,6 +113,8 @@
 * _green_'''+'''_ origin of @product@ known
 * _red_'''--'''_ slightly more to type
 * _red_'''--'''_ fails only on call (late)
+
+--1cm--
 
 \begin{pycode}
     from numpy import product
