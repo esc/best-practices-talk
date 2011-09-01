@@ -289,7 +289,7 @@
 ==== What we will use... ====
 
 <[figure]
-    <<<images/git.pdf, scale=0.8>>>
+    <<<images/git.pdf, scale=0.3>>>
 [figure]>
 
 * More tomorrow...
