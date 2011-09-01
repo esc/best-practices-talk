@@ -572,7 +572,11 @@
 
 <[block]{Debugger}
 * A program to run your code one step at a time, and giving you the ability to inspect the current state
-* For example: \href{http://docs.python.org/library/pdb.html}{pdb}
+* For example:
+** \href{http://docs.python.org/library/pdb.html}{pdb}
+** \href{http://winpdb.org/}{winpdb}
+** \href{http://pypi.python.org/pypi/pudb}{pudb}
+** \href{http://bashdb.sourceforge.net/pydb/}{pydb}|\href{http://code.google.com/p/pydbgr/}{pydbgr}
 [block]>
 
 ==== Dealing with Bugs? ====
