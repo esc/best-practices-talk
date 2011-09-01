@@ -23,8 +23,10 @@ Valentin Haenel <valentin@haenel.co>
 
 The talk is made with:
 
-* [wiki2beamer](http://wiki2beamer.sourceforge.net/)
+* [wiki2beamer](http://wiki2beamer.sourceforge.net/) (included in repository)
 * [LaTeX Beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home)
+* [Pygments](http://pygments.org/)
+* [minted](http://code.google.com/p/minted/) (included in repository)
 
 Pre-compiled PDFs are available from [Github
 downloads](https://github.com/esc/best-practices-talk/downloads)
