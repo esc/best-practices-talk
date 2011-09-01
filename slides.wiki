@@ -624,7 +624,7 @@
 
 ==== Pair Programming --- Benefits ====
 
-* Knoweldge is shared:
+* Knowledge is shared:
 ** Specifics of the system
 ** Tool usage (editor, interpreter, debugger, version control)
 ** Coding style, idioms, knowledge of library
@@ -636,7 +636,7 @@
 
 * Pairs produce code which:\footnote[1]{Cockburn, Alistair, Williams, Laurie (2000). \href{http://collaboration.csc.ncsu.edu/laurie/Papers/XPSardinia.PDF}{\sl The Costs and Benefits of Pair Programming}}
 ** Is shorter
-** Incoporates better designs
+** Incorporates better designs
 ** Contains fewer defects
 
 ==== Optimization for Speed  --- My Point of View ====
