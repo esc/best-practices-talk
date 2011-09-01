@@ -684,7 +684,7 @@
 
 ==== The Zen of Python, an Excerpt====[containsverbatim]
 
-<[verbatim]
+\begin{minted}{pycon}
 >>>import this
 The Zen of Python, by Tim Peters
 
@@ -701,7 +701,7 @@ Now is better than never.
 Although never is often better than *right* now.
 
 Beautiful is better than ugly.
-[verbatim]>
+\end{minted}
 
 == Conclusion ==
 
