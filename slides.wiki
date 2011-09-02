@@ -795,11 +795,11 @@ Beautiful is better than ugly.
 
 
 * Open source tools used to make this presentation:
-** \href{http://www-user.tu-chemnitz.de/~mren/wiki2beamer/doku.php}{wiki2beamer}
+** \href{http://www-user.tu-chemnitz.de/~mren/wiki2beamer/doku.php}{Wiki2beamer}
 ** \href{http://latex-beamer.sourceforge.net/}{\LaTeX beamer}
-** \href{http://projects.gnome.org/dia/}{dia}
-** \href{http://pygments.org/}{pygments}
-** \href{http://code.google.com/p/minted/}{minted}
+** \href{http://projects.gnome.org/dia/}{Dia}
+** \href{http://pygments.org/}{Pygments}
+** \href{http://code.google.com/p/minted/}{Minted}
 
 \hspace{10cm}
 
