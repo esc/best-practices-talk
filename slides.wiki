@@ -45,7 +45,7 @@
 --0.5cm--
 
 <[example]
-\pyfile{code/my_product_naive.py}
+\pyfile{code/my_product.py}
 [example]>
 
 ==== Formatting Code ====
