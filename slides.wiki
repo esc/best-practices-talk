@@ -683,13 +683,37 @@ from my_product_fixed import my_product
 * Only optimize your bottlenecks
 * ...and identify these using a profiler
 
+==== Profilers and Viewers ====
+
 <[block]{Profiler}
-* A tool to measure and provide statistics on the execution time of code.
-* For example:
+* A tool to measure and provide statistics on the execution of code.
+** \href{http://docs.python.org/library/timeit.html}{timeit}
 ** \href{http://docs.python.org/library/profile.html}{cProfile}
 ** \href{http://packages.python.org/line_profiler/}{line profiler}
-** \href{http://www.vrplumber.com/programming/runsnakerun/}{run snake run}
 [block]>
+
+<[block]{Viewer}
+* Viewers display the profiler output, usually a call-graph
+** \href{http://code.google.com/p/jrfonseca/wiki/Gprof2Dot}{gprof2dot}
+** \href{http://www.vrplumber.com/programming/runsnakerun/}{run snake run}
+** \href{http://kcachegrind.sourceforge.net/html/Home.html}{kcachegrind}
+[block]>
+
+==== Quick Example ====
+
+<[block]{Call the Profiler}
+\pyfile{code/call-profiler}
+[block]>
+
+<[block]{Generate the Call-Graph}
+\pyfile{code/generate-call-graph}
+[block]>
+
+==== Call-Graph ====
+
+<[figure]
+    <<<images/call-graph.pdf, scale=0.1>>>
+[figure]>
 
 ==== Prototyping ====
 

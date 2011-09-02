@@ -1,0 +1,2 @@
+zsh» gprof2dot.py -f pstats profile-stats |
+    dot -Tpdf -o profile_stats.svg
