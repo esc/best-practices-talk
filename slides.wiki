@@ -181,7 +181,7 @@ my_product([1,2,3])
 
 ==== Available Packages ====
 
-* In python we have several package available:
+* In python we have several packages available:
 ** \href{http://docs.python.org/library/unittest.html}{unittest}
 ** \href{http://somethingaboutorange.com/mrl/projects/nose/0.11.2/}{nosetest}
 ** \href{http://codespeak.net/py/dist/test/}{py.test}
