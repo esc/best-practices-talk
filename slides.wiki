@@ -800,6 +800,7 @@ Beautiful is better than ugly.
 ** \href{http://projects.gnome.org/dia/}{Dia}
 ** \href{http://pygments.org/}{Pygments}
 ** \href{http://code.google.com/p/minted/}{Minted}
+** \href{https://bitbucket.org/john2x/solarized-pygment}{Solarized theme for pygments}
 
 \hspace{10cm}
 
