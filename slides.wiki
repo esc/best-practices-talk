@@ -138,22 +138,25 @@
 * unless you have a very good reason to do otherwise
 
 ==== @import foobar as fb@ \textbf{VS} @from foo import bar@ ====[containsverbatim]
-
+<[example]
 \begin{pycode}
-    import numpy as np
-    np.product([1,2,3])
+import my_product as mp
+mp.my_product([1,2,3])
 \end{pycode}
+[example]>
 
-* _green_'''+'''_ origin of @product@ known
+* _green_'''+'''_ origin of @my_product@ known
 * _red_'''--'''_ slightly more to type
 * _red_'''--'''_ fails only on call (late)
 
 --1cm--
 
+<[example]
 \begin{pycode}
-    from numpy import product
-    product([1,2,3])
+from my_product import my_product
+my_product([1,2,3])
 \end{pycode}
+[example]>
 
 * _green_'''+'''_ slightly less to type
 * _green_'''+'''_ fails on import (early)
