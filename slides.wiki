@@ -236,8 +236,6 @@ from my_product_fixed import my_product
 * Provide examples of how to use code
 [block]>
 
-* Hands-on exercise tomorrow!
-
 === Version Control ===
 
 ==== Outline ====
