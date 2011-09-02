@@ -208,7 +208,7 @@ my_product([1,2,3])
 
 \pyfile{code/my_product_fixed.py}
 
-==== But make sure that it works ====[containsverbatim]
+==== But make sure that it works! ====[containsverbatim]
 
 <[example]
 <[nowiki]
@@ -359,11 +359,11 @@ from my_product_fixed import my_product
 
 ==== Refactoring Example ====
 
-\inputminted[fontsize=\footnotesize]{py}{code/my_product_refactor.py}
+\pyfile{code/my_product_refactor.py}
 
 ==== Split into functions, and use built-ins ====
 
-\inputminted[fontsize=\footnotesize]{py}{code/my_product_done.py}
+\pyfile{code/my_product_done.py}
 
 === Do not Repeat Yourself ===
 
@@ -449,7 +449,9 @@ from my_product_fixed import my_product
 
 --1cm--
 
-\inputminted[fontsize=\footnotesize]{py}{code/my_product_duplication.py}
+<[example]
+\pyfile{code/my_product_duplication.py}
+[example]>
 
 === Keep it Simple ===
 
@@ -719,7 +721,7 @@ from my_product_fixed import my_product
 
 ==== The Zen of Python, an Excerpt====[containsverbatim]
 
-\begin{minted}{pycon}
+\begin{pyconcode}
 >>>import this
 The Zen of Python, by Tim Peters
 
@@ -736,7 +738,7 @@ Now is better than never.
 Although never is often better than *right* now.
 
 Beautiful is better than ugly.
-\end{minted}
+\end{pyconcode}
 
 == Conclusion ==
 
