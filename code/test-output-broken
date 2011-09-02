@@ -1,0 +1,17 @@
+zsh» nosetests
+.F
+======================================================================
+FAIL: Test that my_product raises a type error.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/pymodules/python2.6/nose/case.py", line 183, in runTest
+    self.test(*self.arg)
+  File "/home/valentin/git-working/best-practices-talk/\
+        code/my_product_test.py", line 10, in test_raise_type_error
+    nt.assert_raises(TypeError, my_product, ['abc', 1, 2, 3])
+AssertionError: TypeError not raised
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.011s
+
+FAILED (failures=1)

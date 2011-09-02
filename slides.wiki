@@ -190,13 +190,37 @@ my_product([1,2,3])
 * Tests are the only way to trust your code
 * It might take you a while to get used to writing them, but it will pay off quite rapidly
 
-==== Example ====
+==== Example Unit-Tests====
 
-\inputminted[fontsize=\footnotesize]{py}{code/my_product_test.py}
+<[example]
+\pyfile{code/my_product_test.py}
+[example]>
+
+==== Running the Tests ====
+
+\pyconfile{code/test-output-broken}
+
+==== Whats going on? ====
+
+\pyconfile{code/run-output}
+
+==== A Sneak Preview of Test-Driven Development (TDD) ====
+
+\pyfile{code/my_product_fixed.py}
+
+==== But make sure that it works ====[containsverbatim]
+
+<[example]
+<[nowiki]
+\begin{pycode}
+from my_product_fixed import my_product
+\end{pycode}
+[nowiki]>
+[example]>
 
 --1cm--
 
-\inputminted[fontsize=\footnotesize]{pycon}{code/test-output}
+\pyconfile{code/test-output}
 
 ==== Goals and Benefits ====
 
