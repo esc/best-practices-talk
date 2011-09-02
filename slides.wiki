@@ -97,7 +97,7 @@
 
 \inputminted[fontsize=\footnotesize]{py}{code/my_product_try.py}
 
-* Recover or fail gracefully
+* Allow you to recover or fail gracefully
 
 * Resist the tempation to use ''special'' return values
 ** @(-\textcolor{blue}{1}, \textcolor{red}{False}, \textcolor{red}{None})@
