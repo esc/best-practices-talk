@@ -633,17 +633,17 @@ from my_product_fixed import my_product
 
 ==== Defensive Programming ====
 
-* specify pre- and post-conditions using assertion:
+* Specify pre- and post-conditions using assertion:
 ** @\textcolor{green}{assert} \textcolor{red}{len}(\textcolor{blue}{numbers}) > \textcolor{cyan}{0}@
 ** @\textcolor{green}{raise} \textcolor{blue}{AssertionError}@
-* use assertions liberally
-* program as if the rest of the world is out to get you!
-* fail early, fail often, fail better
-* the less distance there is between the error and you detecting it, the easier it will be to find and fix
-* it's never too late to do it right
-** every time you fix a bug, put in an assertion and a comment
-** if you made the error, the right code can't be obvious
-** you should protect yourself against someone “simplifying” the bug back in
+* Use assertions liberally
+* Program as if the rest of the world is out to get you!
+* Fail early, fail often, fail better!
+* The less distance there is between the error and you detecting it, the easier it will be to find and fix
+* It's never too late to do it right
+** Every time you fix a bug, put in an assertion and a comment
+** If you made the error, the right code can't be obvious
+** You should protect yourself against someone “simplifying” the bug back in
 
 ==== Pair Programming ====
 
