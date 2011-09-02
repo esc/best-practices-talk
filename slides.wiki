@@ -38,7 +38,7 @@
 * Beautiful is better than ugly
 
 * Give your variables ''intention revealing'' names
-** For example: _blue_@numbers@_ instead of \textcolor{blue}{@nu@}
+** For example: _blue_@numbers@_ instead of _blue_@nu@_
 ** For example: _blue_@numbers@_ instead of \textcolor{blue}{@list\_of\_float\_numbers@}
 ** See also: \href{http://tottinge.blogsome.com/meaningfulnames/}{Ottingers Rules for Naming}
 
