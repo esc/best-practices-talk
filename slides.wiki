@@ -97,7 +97,9 @@
 
 * Use the _green_@try except@_ statments to detect anomalous behaviour:
 
-\inputminted[fontsize=\footnotesize]{py}{code/my_product_try.py}
+<[example]
+\pyfile{code/my_product_try.py}
+[example]>
 
 * Allow you to recover or fail gracefully
 
