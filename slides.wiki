@@ -114,16 +114,16 @@
 * These will suit your needs most of the time, If not, subclass them
 
 \begin{pycode}
-    Exception
-    +-- StandardError
-        +-- ArithmeticError
-            +-- FloatingPointError
-            +-- OverflowError
-            +-- ZeroDivision
-        +-- AssertionError
-        +-- IndexError
-        +-- TypeError
-        +-- ValueError
+Exception
++-- StandardError
+    +-- ArithmeticError
+        +-- FloatingPointError
+        +-- OverflowError
+        +-- ZeroDivision
+    +-- AssertionError
+    +-- IndexError
+    +-- TypeError
+    +-- ValueError
 \end{pycode}
 
 ==== @import@ Pitfalls ====
