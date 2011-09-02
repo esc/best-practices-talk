@@ -145,7 +145,7 @@ mp.my_product([1,2,3])
 \end{pycode}
 [example]>
 
-* _green_'''+'''_ origin of @my_product@ known
+* _green_'''+'''_ origin of @my\_product@ known
 * _red_'''--'''_ slightly more to type
 * _red_'''--'''_ fails only on call (late)
 
