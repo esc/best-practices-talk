@@ -7,7 +7,7 @@ summerschool.
 
 ### Upcoming events
 
-* [St. Andrews, Scotland 2011](https://python.g-node.org/wiki/)
+* [St Andrews, Scotland 2011](https://python.g-node.org/wiki/)
 
 ### Past editions
 
