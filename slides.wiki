@@ -678,7 +678,8 @@ from my_product_fixed import my_product
 
 * Readable code is usually better than fast code
 * Programmer/Scientist time is more valuable than computer time
-* Don't optimize early, ensure code works, has tests and is documented before starting to optimize
+* Don't optimize early, ensure code works, has tests and is documented...
+* ''before'' starting to optimize
 * Only optimize if it is absolutely necessary
 * Only optimize your bottlenecks
 * ...and identify these using a profiler
