@@ -18,6 +18,10 @@
 % this means stuff that is unique  to python
 % these are like mantras, repeat them over and over again
 
+==== Outline ====
+
+\tableofcontents
+
 == Best Practices ==
 
 ==== Outline ====
