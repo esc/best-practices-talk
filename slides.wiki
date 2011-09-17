@@ -800,7 +800,7 @@ Beautiful is better than ugly.
 
 
 * Open source tools used to make this presentation:
-** \href{http://www-user.tu-chemnitz.de/~mren/wiki2beamer/doku.php}{Wiki2beamer}
+** \href{http://wiki2beamer.sourceforge.net/}{Wiki2beamer}
 ** \href{http://latex-beamer.sourceforge.net/}{\LaTeX beamer}
 ** \href{http://projects.gnome.org/dia/}{Dia}
 ** \href{http://pygments.org/}{Pygments}
