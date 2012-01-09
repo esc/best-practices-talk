@@ -18,7 +18,7 @@ summerschool.
 
 ## Author
 
-Valentin Haenel <valentin@haenel.co>
+Valentin Haenel <<valentin@haenel.co>>
 
 ## Dependencies
 
@@ -36,7 +36,10 @@ downloads](https://github.com/esc/best-practices-talk/downloads)
 
 ### Content
 
-* All content is licensed under the terms of [Attribution-ShareAlike 3.0 Unported  (CC BY-SA 3.0) ](http://creativecommons.org/licenses/by-sa/3.0/)
+All Content is...
+
+* Copyright 2009-2012 Valentin Haenel <<valentin@haenel.co>>
+* Licensed under the terms of [Attribution-ShareAlike 3.0 Unported  (CC BY-SA 3.0) ](http://creativecommons.org/licenses/by-sa/3.0/)
 
 ### Included Dependencies
 
