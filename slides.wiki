@@ -123,7 +123,7 @@ Exception
     +-- ArithmeticError
         +-- FloatingPointError
         +-- OverflowError
-        +-- ZeroDivision
+        +-- ZeroDivisionError
     +-- AssertionError
     +-- IndexError
     +-- TypeError
