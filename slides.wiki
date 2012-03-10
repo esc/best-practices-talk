@@ -814,5 +814,6 @@ Questions ?
 --1cm--
 
 <[center]
-\url{https://github.com/esc/best-practices-talk}
+\url{https://github.com/esc/best-practices-talk} \\
+\url{http://krzz.de/u}
 [center]>
