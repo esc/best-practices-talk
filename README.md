@@ -27,6 +27,7 @@ The talk is made with:
 * [wiki2beamer](http://wiki2beamer.sourceforge.net/) (included in repository)
 * [LaTeX Beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home)
 * [Pygments](http://pygments.org/)
+* [Solarized Theme for Pygments](https://bitbucket.org/john2x/solarized-pygment/src/b9455fbdc902/solarized.py) (included in repository)
 * [Minted](http://code.google.com/p/minted/) (included in repository)
 * [ccBeamer] (http://blog.hartwork.org/?p=52) (included in repository)
 
