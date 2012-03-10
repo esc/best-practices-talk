@@ -13,7 +13,7 @@ summerschool.
 
 * [St Andrews, Scotland 2011](https://python.g-node.org/python-summerschool-2011/)
 * [Trento, Italy 2010](https://python.g-node.org/python-autumnschool-2010/)
-* [Warsaw, Poland 2010](http://escher.fuw.edu.pl/pythonschool/)
+* [Warsaw, Poland 2010](https://python.g-node.org/python-winterschool-2010/)
 * [Berlin, Germany 2009](http://portal.g-node.org/python-summerschool-2009/)
 
 ## Author
