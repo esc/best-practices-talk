@@ -15,7 +15,7 @@
 
 * When programming in Python: Always bear in mind the \\'''Zen of Python'''
 
-% this means stuff that is unique  to python
+% this means stuff that is unique to python
 % these are like mantras, repeat them over and over again
 
 ==== Outline ====
@@ -425,7 +425,7 @@ from my_product_fixed import my_product
 * Reasons:
 ** End-of-day
 ** Deadline
-** Insert _blue_@excuse@_ here
+** Insert _blue_@pretext@_ here
 
 <[example]
 * Copy-and-paste a snippet, instead of refactoring it into a function
