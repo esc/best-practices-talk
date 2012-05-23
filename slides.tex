@@ -1,6 +1,6 @@
-\documentclass[ hyperref={colorlinks=true,filecolor=blue,linkcolor=blue,urlcolor=blue}]{beamer}
+\documentclass{beamer}
 
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
 \usepackage{color}
 \usepackage{textcomp}
 \usepackage{graphicx}
@@ -34,7 +34,7 @@
 \definecolor{cyan}{RGB}{42,161,152}
 \definecolor{green}{RGB}{133,153,0}
 
-\hypersetup{linkcolor=cyan, urlcolor=magenta}
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=magenta}
 \usecolortheme[named=cyan]{structure}
 \setbeamercolor{example}{fg=green}
 \setbeamercolor{block title example}{fg=green, bg=base3}
@@ -68,8 +68,12 @@ Kiel, Germany, September 2012}
     \hspace{1em}
     \tiny\url{https://github.com/esc/best-practices-talk}
     \begin{tabular}[t]{lr}
-        \mbox{\CcGroupBySa{0.35}{0.95ex}}  &
-        \parbox[b]{8cm}{{\tiny\CcNote{\CcLongnameBySa}}} \\
+        \mbox{\href{https://creativecommons.org/licenses/by-sa/3.0/}
+          {\CcGroupBySa{0.35}{0.95ex}}}
+        &
+        \parbox[b]{8cm}{{\tiny
+            \href{https://creativecommons.org/licenses/by-sa/3.0/}
+            {\CcNote{\CcLongnameBySa}}}} \\
     \end{tabular}
 \end{center}
 \end{frame}
