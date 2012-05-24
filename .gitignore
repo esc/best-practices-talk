@@ -1,4 +1,42 @@
+# Project tmp files
 /slides.???
 slides.wiki.tex
 git-sha
+
+# GNU Emacs tmp files
 auto/*
+*~
+*#
+.#*
+*.stamp
+
+# Python
+*.pyc
+
+# LaTeX
+*.acr
+*.aux
+*.bbl
+*.blg
+*.brf
+*.dvi
+*.glg
+*.glo
+*.gls
+*.fax
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+#*.log
+*.loh
+*.loi
+*.lot
+*.nav
+*.out
+*.snm
+*.tns
+*.toc
+*.nlo
+*.nls
