@@ -2,7 +2,7 @@ slides = slides
 handout = handout
 slides_and_notes = dualscreen
 slidefilename = haenel-best-practices
-git_sha_func = $(shell git describe --always --tags | tee git-sha)
+git_sha_func = $(shell git describe --always --tags --dirty | tee git-sha)
 git_sha = $(git_sha_func)
 .DEFAULT_GOAL = default
 
