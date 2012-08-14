@@ -2,9 +2,11 @@ slides = slides
 handout = handout
 slides_and_notes = dualscreen
 slidefilename = haenel-best-practices
-
+.DEFAULT_GOAL = default
 
 all: $(slides).pdf $(handout).pdf $(slides_and_notes).pdf
+
+default: $(slides).pdf
 
 git-sha:
 	echo `git describe --always --tags` > git-sha
