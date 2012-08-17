@@ -10,20 +10,10 @@ all: $(slides).pdf $(handout).pdf $(slides_and_notes).pdf
 
 default: $(slides).pdf
 
-$(slides).pdf: | $(slides).tex $(slides).wiki.tex
-	pdflatex -shell-escape "$(slides)".tex
-	pdflatex -shell-escape "$(slides)".tex
-	cp "$(slides)".pdf "$(slidefilename)"-"$(slides)"-"$(git_sha)".pdf
-
-$(handout).pdf: | $(handout).tex $(slides).wiki.tex
-	pdflatex -shell-escape "$(handout)".tex
-	pdflatex -shell-escape "$(handout)".tex
-	cp "$(handout)".pdf "$(slidefilename)"-"$(handout)"-"$(git_sha)".pdf
-
-$(slides_and_notes).pdf: | $(slides_and_notes).tex $(slides).wiki.tex
-	pdflatex -shell-escape "$(slides_and_notes)".tex
-	pdflatex -shell-escape "$(slides_and_notes)".tex
-	cp "$(slides_and_notes)".pdf "$(slidefilename)"-"$(slides_and_notes)"-"$(git_sha)".pdf
+%.pdf: | %.tex $(slides).wiki.tex
+	pdflatex -shell-escape "$(*)".tex
+	pdflatex -shell-escape "$(*)".tex
+	cp "$(*)".pdf "$(slidefilename)"-"$(*)"-"$(git_sha)".pdf
 
 $(slides).wiki.tex: $(slides).wiki
 	./wiki2beamer-0.9.2 $(slides).wiki > $(slides).wiki.tex
