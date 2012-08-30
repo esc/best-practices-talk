@@ -2,7 +2,7 @@
 
 ==== Introduction ====
 
-* Many scientists write code regularly but few have formally been trained to do so
+* Many scientists write code regularly but few have been formally trained to do so
 
 % you know about variables and loops
 % good programs consists of so much more
@@ -80,12 +80,13 @@
 * Use the \href{https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt}{numpy docstring conventions}
 
 * Use tools to automatically generate website from docstrings
+** \href{http://docs.python.org/library/pydoc.html}{pydoc}
 ** \href{http://epydoc.sourceforge.net/}{epydoc}
 ** \href{http://sphinx.pocoo.org/}{sphinx}
 
 * For complex algorithms, document every line, and include equations in docstring
 
-* When your project gets bigger: provide a ''how-to'' or ''quick-start'' on your website
+* When your project gets bigger: provide a ''how-to'', ''FAQ'' or ''quick-start'' on your website
 
 ==== Example Docstring ====
 
@@ -107,8 +108,9 @@
 
 * Allow you to recover or fail gracefully
 
-* Resist the temptation to use ''special'' return values
-** @(-\textcolor{blue}{1}, \textcolor{red}{False}, \textcolor{red}{None})@
+* Resist the temptation to use ''special'' return values: they will backfire!
+** @(-\textcolor{blue}{1}, \textcolor{blue}{0}, \textcolor{red}{False}, \textcolor{red}{None})@
+* Fail early, fail often
 * Errors should never pass silently...
 * Unless explicitly silenced
 
@@ -135,6 +137,7 @@ Exception
 * Don't use the ''star import'': @\textcolor{red}{import} *@
 ** Code is hard to read
 ** Modules may overwrite each other
+** Where does this function come from?
 ** You will import ''everything'' in a module
 ** ...unless you are using the interpreter interactively
 
@@ -180,7 +183,6 @@ my_product([1,2,3])
 
 <[block]{Definition of a ''Unit''}
 * The smallest testable piece of code
-* Example: \textcolor{blue}{@my\_product@}
 [block]>
 
 ==== Available Packages ====
@@ -193,52 +195,6 @@ my_product([1,2,3])
 * Tests increase the confidence that your code works correctly, not only for yourself but also for your reviewers
 * Tests are the only way to trust your code
 * It might take you a while to get used to writing them, but it will pay off quite rapidly
-
-==== Example Unit-Tests====
-
-<[example]
-\pyfile{code/my_product_test.py}
-[example]>
-
-==== Running the Tests ====
-
-\pyconfile{code/test-output-broken}
-
-==== Whats going on? ====
-
-\pyconfile{code/run-output}
-
-==== A Sneak Preview of Test-Driven Development (TDD) ====
-
-\pyfile{code/my_product_fixed.py}
-
-==== But make sure that it works! ====[containsverbatim]
-
-<[example]
-<[nowiki]
-\begin{pycode}
-from my_product_fixed import my_product
-\end{pycode}
-[nowiki]>
-[example]>
-
---1cm--
-
-\pyconfile{code/test-output}
-
-==== Goals and Benefits ====
-
-<[block]{Goals}
-* check code works
-* check design works
-* catch regression
-[block]>
-
-<[block]{Benefits}
-* Easier to test the whole, if the units work
-* Can modify parts, and be sure the rest still works
-* Provide examples of how to use code
-[block]>
 
 === Version Control ===
 
@@ -270,7 +226,7 @@ from my_product_fixed import my_product
 * Use version control for anything that's text
 ** Code
 ** Thesis/Papers
-** Letters
+** (Love) letters
 
 * Easy collaboration across the globe
 
@@ -376,11 +332,12 @@ from my_product_fixed import my_product
 ==== Do not Repeat Yourself (DRY Principle) ====
 
 * When developing software, avoid duplication
+* No cut\&paste!
 * Not just lines code, but knowledge of all sorts
 * Do not express the same piece of knowledge in two places
 * If you need to update this knowledge you will have to update it everywhere
 
-* Its not a question of ''how'' this may fail, but instead a question of ''when''
+* It is not a question of ''how'' this may fail, but instead a question of ''when''
 
 * Categories of Duplication:
 ** Imposed Duplication
@@ -487,7 +444,7 @@ from my_product_fixed import my_product
 ==== What is a Development Methodology? ====
 
 <[block]{Consists of:}
-* A philosophy that governs the style and approach towards development
+* An attitude that informs the style and approach towards development
 * A set of tools and models to support that particular approach
 [block]>
 
@@ -530,13 +487,13 @@ from my_product_fixed import my_product
 
 ==== Agile Methods ====
 
-* Agile methods emerged during the late 90's
 * Generic name for set of more specific paradigms
 * Set of ''best practices''
 
 * Particularly suited for:
 ** Small teams (Fewer than 10 people)
-** Unpredictable or rapidly changing requirements
+** Unpredictable or rapidly changing requirements...
+** ... isn't this what science is all about?
 
 ==== Prominent Features of Agile methods ====
 
@@ -603,7 +560,7 @@ from my_product_fixed import my_product
 
 * Fix the code, and ensure the test passes
 
-* Use the test to catch the bug should it reappear
+* Use the test to catch the bug should it reappear (regression)
 
 <[block]{Debugger}
 * A program to run your code one step at a time, and giving you the ability to inspect the current state
@@ -627,7 +584,7 @@ from my_product_fixed import my_product
 ** ...and improves the odds that programmers will keep them in  sync
 * A function is defined by:
 ** pre-conditions: what must be true in order for it to work correctly
-** post-conditions: what it guarantees will be true if pre-conditions are met
+** post-conditions: what it guarantees it will be true if pre-conditions are met
 * Pre- and post-conditions constrain how the function can evolve:
 ** can only ever relax pre-conditions (i.e., take a wider range of input)...
 ** ...or tighten post-conditions (i.e., produce a narrower range of output)
@@ -663,7 +620,7 @@ from my_product_fixed import my_product
 
 ==== Pair Programming --- Benefits ====
 
-* Knowledge is shared:
+* Know-How is shared/transfered:
 ** Specifics of the system
 ** Tool usage (editor, interpreter, debugger, version control)
 ** Coding style, idioms, knowledge of library
@@ -676,7 +633,8 @@ from my_product_fixed import my_product
 * Pairs produce code which:\footnote[1]{Cockburn, Alistair, Williams, Laurie (2000). \href{http://collaboration.csc.ncsu.edu/laurie/Papers/XPSardinia.PDF}{\sl The Costs and Benefits of Pair Programming}}
 ** Is shorter
 ** Incorporates better designs
-** Contains fewer defects
+** Contains fewer defects...
+** ... 1+1 > 2 !
 
 ==== Optimization for Speed  --- My Point of View ====
 
@@ -704,22 +662,6 @@ from my_product_fixed import my_product
 ** \href{http://kcachegrind.sourceforge.net/html/Home.html}{kcachegrind}
 [block]>
 
-==== Quick Example ====
-
-<[block]{Call the Profiler}
-\pyfile{code/call-profiler}
-[block]>
-
-<[block]{Generate the Call-Graph}
-\pyfile{code/generate-call-graph}
-[block]>
-
-==== Call-Graph ====
-
-<[figure]
-    <<<images/call-graph.pdf, scale=0.1>>>
-[figure]>
-
 ==== Prototyping ====
 
 * Ever tried to hit a moving target?
@@ -746,74 +688,27 @@ from my_product_fixed import my_product
 
 \tableofcontents[currentsection]
 
-==== The Zen of Python, an Excerpt====[containsverbatim]
+==== The Zen of Python ====[containsverbatim]
 
 \begin{pyconcode}
->>>import this
-The Zen of Python, by Tim Peters
-
+Beautiful is better than ugly.
 Explicit is better than implicit.
-Readability counts.
 Simple is better than complex.
 Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
 Special cases aren't special enough to break the rules.
 Although practicality beats purity.
 Errors should never pass silently.
 Unless explicitly silenced.
 In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
 Now is better than never.
 Although never is often better than *right* now.
-
-Beautiful is better than ugly.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
 \end{pyconcode}
 
-== Conclusion ==
-
-==== Outline ====
-
-\tableofcontents[currentsection]
-
-==== Results ====
-
-* Every scientific result (especially if important) should be independently reproduced at least internally before publication. (German Research Council 1999)
-
-* Increasing pressure to make the source code (and data?) used in publications available
-
-\hspace{10cm}
-
-* With unit tested code you need not be embarrassed to publish your code
-
-* Using version control allows you to share and collaborate easily
-
-* In this day and age there is '''absolutely no excuse''' to not use them!
-
---2em--
-
-* If you can afford it, hire a developer :-)
-
-==== The Last Slide ====
-
-* Slides based on:
-** Material by Pietro Berkes and Tiziano Zito
-** \href{http://pragprog.com/titles/tpp/the-pragmatic-programmer}{''The Pragmatic Programmer''} by Hunt and Thomas,
-** \href{http://software-carpentry.org/}{''The'' Course on Software Carpentry} by Greg Wilson
-
-
-* Open source tools used to make this presentation:
-** \href{http://wiki2beamer.sourceforge.net/}{Wiki2beamer}
-** \href{http://latex-beamer.sourceforge.net/}{\LaTeX beamer}
-** \href{http://projects.gnome.org/dia/}{Dia}
-** \href{http://pygments.org/}{Pygments}
-** \href{http://code.google.com/p/minted/}{Minted}
-** \href{https://bitbucket.org/john2x/solarized-pygment}{Solarized theme for pygments}
-
-\hspace{10cm}
-
-Questions ?
-
---1cm--
-
-<[center]
-\url{https://github.com/esc/best-practices-talk} \\
-\url{http://krzz.de/u}
-[center]>
