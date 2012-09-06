@@ -7,10 +7,11 @@ summerschool.
 
 ### Upcoming events
 
-* [Kiel, Germany 2012](https://python.g-node.org/wiki/)
+* **TBA**
 
 ### Past editions
 
+* [Kiel, Germany 2012](https://python.g-node.org/wiki/) (Lecture given by Tiziano Zito)
 * [St Andrews, Scotland 2011](https://python.g-node.org/python-summerschool-2011/)
 * [Trento, Italy 2010](https://python.g-node.org/python-autumnschool-2010/)
 * [Warsaw, Poland 2010](https://python.g-node.org/python-winterschool-2010/)
