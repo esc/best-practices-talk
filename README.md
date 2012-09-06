@@ -43,6 +43,7 @@ All Content is...
 
 * Copyright 2009-2012 Valentin Haenel <<valentin@haenel.co>>
 * Licensed under the terms of [Attribution-ShareAlike 3.0 Unported  (CC BY-SA 3.0) ](http://creativecommons.org/licenses/by-sa/3.0/)
+* Inspired by previous material by Tiziano Zito, Pietro Berkes, Nico Wilbert and Greg Wilson
 
 ### Included Dependencies
 
