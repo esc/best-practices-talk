@@ -183,6 +183,7 @@ my_product([1,2,3])
 
 <[block]{Definition of a ''Unit''}
 * The smallest testable piece of code
+* Example: \textcolor{blue}{@my\_product@}
 [block]>
 
 ==== Available Packages ====
@@ -195,6 +196,52 @@ my_product([1,2,3])
 * Tests increase the confidence that your code works correctly, not only for yourself but also for your reviewers
 * Tests are the only way to trust your code
 * It might take you a while to get used to writing them, but it will pay off quite rapidly
+
+==== Example Unit-Tests====
+
+<[example]
+\pyfile{code/my_product_test.py}
+[example]>
+
+==== Running the Tests ====
+
+\pyconfile{code/test-output-broken}
+
+==== Whats going on? ====
+
+\pyconfile{code/run-output}
+
+==== A Sneak Preview of Test-Driven Development (TDD) ====
+
+\pyfile{code/my_product_fixed.py}
+
+==== But make sure that it works! ====[containsverbatim]
+
+<[example]
+<[nowiki]
+\begin{pycode}
+from my_product_fixed import my_product
+\end{pycode}
+[nowiki]>
+[example]>
+
+--1cm--
+
+\pyconfile{code/test-output}
+
+==== Goals and Benefits ====
+
+<[block]{Goals}
+* check code works
+* check design works
+* catch regression
+[block]>
+
+<[block]{Benefits}
+* Easier to test the whole, if the units work
+* Can modify parts, and be sure the rest still works
+* Provide examples of how to use code
+[block]>
 
 === Version Control ===
 
@@ -487,6 +534,7 @@ my_product([1,2,3])
 
 ==== Agile Methods ====
 
+* Agile methods emerged during the late 90's
 * Generic name for set of more specific paradigms
 * Set of ''best practices''
 
@@ -662,6 +710,22 @@ my_product([1,2,3])
 ** \href{http://kcachegrind.sourceforge.net/html/Home.html}{kcachegrind}
 [block]>
 
+==== Quick Example ====
+
+<[block]{Call the Profiler}
+\pyfile{code/call-profiler}
+[block]>
+
+<[block]{Generate the Call-Graph}
+\pyfile{code/generate-call-graph}
+[block]>
+
+==== Call-Graph ====
+
+<[figure]
+    <<<images/call-graph.pdf, scale=0.1>>>
+[figure]>
+
 ==== Prototyping ====
 
 * Ever tried to hit a moving target?
@@ -691,8 +755,12 @@ my_product([1,2,3])
 ==== The Zen of Python ====[containsverbatim]
 
 \begin{pyconcode}
+>>>import this
+The Zen of Python, by Tim Peters
+
 Beautiful is better than ugly.
 Explicit is better than implicit.
+Readability counts.
 Simple is better than complex.
 Complex is better than complicated.
 Flat is better than nested.
@@ -712,3 +780,53 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 \end{pyconcode}
 
+== Conclusion ==
+
+==== Outline ====
+
+\tableofcontents[currentsection]
+
+==== Results ====
+
+* Every scientific result (especially if important) should be independently reproduced at least internally before publication. (German Research Council 1999)
+
+* Increasing pressure to make the source code (and data?) used in publications available
+
+\hspace{10cm}
+
+* With unit tested code you need not be embarrassed to publish your code
+
+* Using version control allows you to share and collaborate easily
+
+* In this day and age there is '''absolutely no excuse''' to not use them!
+
+--2em--
+
+* If you can afford it, hire a developer :-)
+
+==== The Last Slide ====
+
+* Slides based on:
+** Material by Pietro Berkes and Tiziano Zito
+** \href{http://pragprog.com/titles/tpp/the-pragmatic-programmer}{''The Pragmatic Programmer''} by Hunt and Thomas,
+** \href{http://software-carpentry.org/}{''The'' Course on Software Carpentry} by Greg Wilson
+
+
+* Open source tools used to make this presentation:
+** \href{http://wiki2beamer.sourceforge.net/}{Wiki2beamer}
+** \href{http://latex-beamer.sourceforge.net/}{\LaTeX beamer}
+** \href{http://projects.gnome.org/dia/}{Dia}
+** \href{http://pygments.org/}{Pygments}
+** \href{http://code.google.com/p/minted/}{Minted}
+** \href{https://bitbucket.org/john2x/solarized-pygment}{Solarized theme for pygments}
+
+\hspace{10cm}
+
+Questions ?
+
+--1cm--
+
+<[center]
+\url{https://github.com/esc/best-practices-talk} \\
+\url{http://krzz.de/u}
+[center]>
