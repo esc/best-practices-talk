@@ -3,15 +3,16 @@
 ## Description
 
 This is a talk I give on a regular basis at the advanced scientific programming
-summerschool.
+summerschool and elsewhere.
 
 ### Upcoming events
 
-* **TBA**
+* [Lausanne, Switzerland 2013](http://physique.cuso.ch/cours/3cycle/detail-cours/item/courses/python-1s) (Python for Physics Students)
+* [Zürich, Switzerland 2013](https://python.g-node.org/wiki/)
 
 ### Past editions
 
-* [Kiel, Germany 2012](https://python.g-node.org/wiki/) (Lecture given by Tiziano Zito)
+* [Kiel, Germany 2012](https://python.g-node.org/wiki/python-summerschool-2011/) (Lecture given by Tiziano Zito)
 * [St Andrews, Scotland 2011](https://python.g-node.org/python-summerschool-2011/)
 * [Trento, Italy 2010](https://python.g-node.org/python-autumnschool-2010/)
 * [Warsaw, Poland 2010](https://python.g-node.org/python-winterschool-2010/)
