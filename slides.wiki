@@ -69,6 +69,7 @@
 ** \href{http://pychecker.sourceforge.net/}{pycheker}
 ** \href{https://github.com/jcrocholl/pep8/}{pep8}
 ** \href{https://launchpad.net/pyflakes}{pyflakes}
+** \href{http://pypi.python.org/pypi/flake8/}{flake8} (combination of @pep8@ and @pyflakes@)
 
 ==== Documenting Code ====
 
