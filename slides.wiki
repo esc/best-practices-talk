@@ -120,7 +120,7 @@
 * Python has a \href{http://docs.python.org/library/exceptions.html}{built-in Exception hierarchy}
 * These will suit your needs most of the time, If not, subclass them
 
-\begin{pycode}
+<[pycode]
 Exception
 +-- StandardError
     +-- ArithmeticError
@@ -131,7 +131,7 @@ Exception
     +-- IndexError
     +-- TypeError
     +-- ValueError
-\end{pycode}
+[pycode]>
 
 ==== @import@ Pitfalls ====
 
@@ -147,10 +147,10 @@ Exception
 
 ==== @import foobar as fb@ \textbf{VS} @from foo import bar@ ====[containsverbatim]
 <[example]
-\begin{pycode}
+<[pycode]
 import my_product as mp
 mp.my_product([1,2,3])
-\end{pycode}
+[pycode]>
 [example]>
 
 * _green_'''+'''_ origin of @my\_product@ known
@@ -160,10 +160,10 @@ mp.my_product([1,2,3])
 --1cm--
 
 <[example]
-\begin{pycode}
+<[pycode]
 from my_product import my_product
 my_product([1,2,3])
-\end{pycode}
+[pycode]>
 [example]>
 
 * _green_'''+'''_ slightly less to type
@@ -220,10 +220,10 @@ my_product([1,2,3])
 
 <[example]
 <[nowiki]
-\begin{pycode}
+<[pycode]
 from my_product_fixed import my_product
 \end{pycode}
-[nowiki]>
+[pycode]>
 [example]>
 
 --1cm--
