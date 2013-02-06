@@ -52,4 +52,4 @@ The following dependencies are shipped with the sources:
 
 * Wiki2beamer (file: `wiki2beamer-0.9.2`) is licensed under Gnu Public Licence v2
 * Minted (file: `minted.sty`) is licensed under LaTeX Project Public License  version 1.3
-* ccBeamer (file: `cc_beamer.tex` and `creative_commons/`) is licensed under Creative Commons Attribution-ShareAlike 3.0
+* ccBeamer (directory: `creative_commons/`) is licensed under Creative Commons Attribution-ShareAlike 3.0
