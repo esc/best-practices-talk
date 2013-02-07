@@ -724,7 +724,7 @@ from my_product_fixed import my_product
 ==== Call-Graph ====
 
 <[figure]
-    <<<images/call-graph.pdf, scale=0.1>>>
+    <<<images/call-graph2.pdf, scale=0.70>>>
 [figure]>
 
 ==== Prototyping ====
