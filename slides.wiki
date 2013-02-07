@@ -219,10 +219,10 @@ my_product([1,2,3])
 ==== But make sure that it works! ====[containsverbatim]
 
 <[example]
-<[nowiki]
 <[pycode]
+<[nowiki]
 from my_product_fixed import my_product
-\end{pycode}
+[nowiki]>
 [pycode]>
 [example]>
 
