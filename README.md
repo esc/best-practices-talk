@@ -33,9 +33,6 @@ The talk is made with:
 * [Minted](http://code.google.com/p/minted/) (included in repository)
 * [ccBeamer] (http://blog.hartwork.org/?p=52) (included in repository)
 
-Pre-compiled PDFs are <strike>available from [Github
-downloads](https://github.com/esc/best-practices-talk/downloads)</strike>
-
 ## License
 
 ### Content
