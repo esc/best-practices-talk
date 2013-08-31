@@ -7,11 +7,11 @@ summerschool and elsewhere.
 
 ### Upcoming events
 
-* [Lausanne, Switzerland 2013](http://physique.cuso.ch/cours/3cycle/detail-cours/item/courses/python-1s) (Python for Physics Students)
 * [Zürich, Switzerland 2013](https://python.g-node.org/wiki/)
 
 ### Past editions
 
+* [Lausanne, Switzerland 2013](http://physique.cuso.ch/cours/3cycle/detail-cours/item/courses/python-1s) (Python for Physics Students)
 * [Kiel, Germany 2012](https://python.g-node.org/wiki/python-summerschool-2011/) (Lecture given by Tiziano Zito)
 * [St Andrews, Scotland 2011](https://python.g-node.org/python-summerschool-2011/)
 * [Trento, Italy 2010](https://python.g-node.org/python-autumnschool-2010/)
