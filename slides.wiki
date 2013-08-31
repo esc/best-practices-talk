@@ -193,6 +193,7 @@ my_product([1,2,3])
 ** \href{http://docs.python.org/library/unittest.html}{unittest}
 ** \href{http://somethingaboutorange.com/mrl/projects/nose/0.11.2/}{nosetest}
 ** \href{http://codespeak.net/py/dist/test/}{py.test}
+** Mock
 
 * Tests increase the confidence that your code works correctly, not only for yourself but also for your reviewers
 * Tests are the only way to trust your code
@@ -613,6 +614,7 @@ from my_product_fixed import my_product
 * A program to run your code one step at a time, and giving you the ability to inspect the current state
 * For example:
 ** \href{http://docs.python.org/library/pdb.html}{pdb}
+** ipdb (IPython enhanced pdb)
 ** \href{http://winpdb.org/}{winpdb}
 ** \href{http://pypi.python.org/pypi/pudb}{pudb}
 ** \href{http://bashdb.sourceforge.net/pydb/}{pydb}|\href{http://code.google.com/p/pydbgr/}{pydbgr}
@@ -700,6 +702,7 @@ from my_product_fixed import my_product
 ** \href{http://docs.python.org/library/timeit.html}{timeit}
 ** \href{http://docs.python.org/library/profile.html}{cProfile}
 ** \href{http://packages.python.org/line_profiler/}{line profiler}
+** Memory profiler
 [block]>
 
 <[block]{Viewer}
