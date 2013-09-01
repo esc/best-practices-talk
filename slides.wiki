@@ -633,7 +633,7 @@ from my_product_fixed import my_product
 ** ...and improves the odds that programmers will keep them in  sync
 * A function is defined by:
 ** pre-conditions: what must be true in order for it to work correctly
-** post-conditions: what it guarantees it will be true if pre-conditions are met
+** post-conditions: what it guarantees will be true if pre-conditions are met
 * Pre- and post-conditions constrain how the function can evolve:
 ** can only ever relax pre-conditions (i.e., take a wider range of input)...
 ** ...or tighten post-conditions (i.e., produce a narrower range of output)
